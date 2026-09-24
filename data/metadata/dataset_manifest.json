@@ -1,10 +1,11 @@
 {
  "dataset_name": "HEB_MORPH_GROK",
  "dataset_version": "HEB_MORPH_GROK_v0.1",
- "frozen": false,
- "generation_timestamp": "2026-09-24T20:05:24+00:00",
- "git_commit": "no commit yet (repository initialised, nothing committed)",
- "git_worktree_dirty": null,
+ "frozen": true,
+ "frozen_note": "git_commit is the commit containing this exact dataset; this manifest itself is added in the following commit, which carries the release tag",
+ "generation_timestamp": "2026-09-24T20:24:44+00:00",
+ "git_commit": "a47dc8d2cfe0e4db786f94fef4636c7c470db56e",
+ "git_worktree_dirty": false,
  "source_versions": {
   "unimorph_heb": {
    "url": "https://github.com/unimorph/heb",

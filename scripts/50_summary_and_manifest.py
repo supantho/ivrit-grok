@@ -31,10 +31,26 @@ def pct(a, b):
     return f"{100 * a / b:.1f}%" if b else "n/a"
 
 
+def dataset_checksums() -> dict:
+    C = paths.CANONICAL
+    files = sorted([*C.glob("*.parquet"), *C.glob("*.tsv"),
+                    *(paths.DERIVED / "past_reinflection").glob("*"), *(paths.DERIVED / "full_paradigm").glob("*"),
+                    *(paths.DERIVED / "synthetic" / "v1" / "canonical").glob("*")])
+    return {str(p.relative_to(paths.DATA)): sha256(p) for p in files}
+
+
 def main(freeze: bool = False):
     """freeze=True: do not regenerate summaries; write the manifest with frozen=true,
     pinned to the current HEAD commit (which must contain the dataset, with a clean
     dataset worktree)."""
+    ms = paths.METADATA / "dataset_manifest.json"
+    if ms.exists():
+        old = json.loads(ms.read_text())
+        if old.get("frozen") and old.get("dataset_version") == f"{DATASET_NAME}_{DATASET_VERSION}":
+            if old.get("checksums") != dataset_checksums():
+                sys.exit(f"REFUSING: {DATASET_VERSION} is frozen and the data changed. Bump DATASET_VERSION.")
+            print(f"{DATASET_VERSION} is frozen and the data are byte-identical; nothing regenerated.")
+            return
     C = paths.CANONICAL
     roots, lex, forms = (pd.read_parquet(C / f"{t}.parquet") for t in ["roots", "lexemes", "forms"])
     conflicts = pd.read_csv(R / "conflicts.tsv", sep="\t")
@@ -139,10 +155,7 @@ def main(freeze: bool = False):
         (paths.METADATA / "SCHEMA.md").write_text("\n".join(S), encoding="utf-8")
 
     # ---------------- manifest ----------------
-    files = sorted([*C.glob("*.parquet"), *C.glob("*.tsv"),
-                    *(paths.DERIVED / "past_reinflection").glob("*"), *(paths.DERIVED / "full_paradigm").glob("*"),
-                    *(paths.DERIVED / "synthetic" / "v1" / "canonical").glob("*")])
-    checks = {str(p.relative_to(paths.DATA)): sha256(p) for p in files}
+    checks = dataset_checksums()
     split_digest = hashlib.sha256()
     for p in sorted(paths.SPLITS.rglob("manifest.json")):
         split_digest.update(p.read_bytes())
@@ -154,11 +167,6 @@ def main(freeze: bool = False):
     except Exception:
         commit, dirty = None, None
     retrieval = json.loads((paths.RAW / "retrieval_log.json").read_text())
-    ms = paths.METADATA / "dataset_manifest.json"
-    if ms.exists():
-        old = json.loads(ms.read_text())
-        if old.get("frozen") and old.get("dataset_version") == DATASET_VERSION and old.get("checksums") != checks:
-            sys.exit(f"REFUSING to overwrite frozen {DATASET_VERSION}: checksums changed. Bump DATASET_VERSION.")
     if freeze and (commit is None or dirty):
         sys.exit("cannot freeze: dataset must be committed and its worktree clean")
     manifest = dict(
