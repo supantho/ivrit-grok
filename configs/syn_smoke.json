@@ -1,0 +1,3 @@
+{"run_name": "syn_smoke", "dataset": "synthetic_v1", "split": "root_holdout_seed0",
+ "d_model": 64, "n_layers": 1, "n_heads": 2, "d_mlp": 128,
+ "steps": 300, "batch_size": 256, "eval_every": 100, "eval_max_examples": 256, "n_checkpoints": 3, "device": "cpu"}

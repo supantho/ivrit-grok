@@ -71,3 +71,26 @@ IDs, tiers and provenance stay in the `analysis__*` columns of the derived files
 * `form_unvocalized` is the **plene** spelling from UniMorph `heb`. `form_stripped` is the deterministic defective spelling (niqqud removed). They differ (דיבר vs דבר), and both are kept.
 * Root and binyan are **never guessed**. If the evidence supports more than one, the field is NULL, the record is QUESTIONABLE and the case is listed in `reports/conflicts.tsv`.
 * Structural root classes (computed from the radicals) and traditional גזרות (only as stated by Wiktionary) are **separate columns**.
+
+## Training (minimal synthetic-model pipeline)
+
+`training/` trains small decoder-only transformers on any view/split. It reads data **only** through
+`hebmorph.loader`, so a model structurally cannot see root, binyan or other analysis fields.
+
+```bash
+# local CPU smoke test (~15 s)
+python -m training.train --config configs/syn_smoke.json
+# GPU jobs on della (account adele); key=value overrides are optional
+sbatch slurm/train.sbatch configs/syn_root_holdout.json
+sbatch slurm/train.sbatch configs/syn_root_holdout_grok.json seed=1 run_name='"grok_seed1"'
+```
+
+* **Input sequence:** `<bos> source chars <sep> F:PST F:2 F:SG F:FEM <sep> target chars <eos>`. Characters are NFC code points, so niqqud marks are separate tokens. Loss is on the target span only.
+* **Model** (`training/model.py`): pre-LN transformer written out explicitly for interpretability. Default: 2 layers, d=128, 4 heads. Attention patterns can be stored via `attn.store_patterns = True`.
+* **Optimization:** AdamW, weight decay 1.0 (grokking-style), warmup then constant LR. `train_subsample` sets up data-limited regimes, and `batch_size=-1` gives full-batch training.
+* **Outputs** in `runs/<run_name>/`:
+  * `config.json`: config, git commit, dataset version, split-manifest sha256, vocabulary.
+  * `metrics.jsonl`: loss, token accuracy and exact-match accuracy for train/dev/test, test exact match per target feature bundle, and weight norm.
+  * `ckpt/`: log-spaced checkpoints.
+* **Configs:** `configs/syn_*.json`. The synthetic data must be generated first (`python scripts/40_synthetic.py`), because synthetic splits are not committed.
+* **Environment:** PyTorch ≥2.1. On della: `/home/sr2982/.conda/envs/gpt-env`.
