@@ -21,5 +21,6 @@
  "split": "iid_seed0",
  "condition": "unv",
  "train_subsample": null,
- "run_name": "grok_v1/real_iid_unv_nall"
+ "run_name": "grok_v1/real_iid_unv_nall",
+ "decay_norm_and_bias": false
 }

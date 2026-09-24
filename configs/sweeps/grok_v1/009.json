@@ -21,5 +21,6 @@
  "split": "root_holdout_seed0",
  "condition": "voc",
  "train_subsample": 500,
- "run_name": "grok_v1/syn_root_holdout_voc_n500"
+ "run_name": "grok_v1/syn_root_holdout_voc_n500",
+ "decay_norm_and_bias": false
 }

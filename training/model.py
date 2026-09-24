@@ -19,6 +19,7 @@ class ModelConfig:
     n_layers: int = 2
     n_heads: int = 4
     d_mlp: int = 512
+    use_layernorm: bool = True
 
 
 class Attention(nn.Module):
@@ -49,8 +50,9 @@ class Attention(nn.Module):
 class Block(nn.Module):
     def __init__(self, c: ModelConfig):
         super().__init__()
-        self.ln1, self.attn = nn.LayerNorm(c.d_model), Attention(c)
-        self.ln2 = nn.LayerNorm(c.d_model)
+        norm = (lambda: nn.LayerNorm(c.d_model)) if c.use_layernorm else nn.Identity
+        self.ln1, self.attn = norm(), Attention(c)
+        self.ln2 = norm()
         self.mlp = nn.Sequential(nn.Linear(c.d_model, c.d_mlp), nn.GELU(), nn.Linear(c.d_mlp, c.d_model))
 
     def forward(self, x, pad_mask):
@@ -65,7 +67,7 @@ class TinyGPT(nn.Module):
         self.tok = nn.Embedding(c.vocab_size, c.d_model)
         self.pos = nn.Embedding(c.max_len, c.d_model)
         self.blocks = nn.ModuleList(Block(c) for _ in range(c.n_layers))
-        self.ln_f = nn.LayerNorm(c.d_model)
+        self.ln_f = nn.LayerNorm(c.d_model) if c.use_layernorm else nn.Identity()
         self.unembed = nn.Linear(c.d_model, c.vocab_size, bias=False)
         self.apply(self._init)
 

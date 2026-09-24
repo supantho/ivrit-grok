@@ -53,6 +53,11 @@ class TrainConfig:
     batch_size: int = 512                  # -1 = full batch
     lr: float = 1e-3
     weight_decay: float = 1.0
+    # Power et al. (2022) used plain AdamW, i.e. weight decay on ALL parameters. Exempting LayerNorm
+    # gains/biases (GPT convention) lets the model inflate the final LN gain to scale logits and
+    # escape the decay entirely (observed in sweep grok_v1), so the default here decays everything.
+    decay_norm_and_bias: bool = True
+    use_layernorm: bool = True             # False = LayerNorm-free variant (as in Nanda et al., 2023)
     betas: tuple = (0.9, 0.98)
     warmup_steps: int = 200
     grad_clip: float = 1.0
@@ -150,10 +155,13 @@ def run(cfg: TrainConfig) -> Path:
         eval_sets[p] = _subset(e, sel)
 
     mcfg = ModelConfig(vocab_size=len(vocab), max_len=cfg.max_len, d_model=cfg.d_model, n_layers=cfg.n_layers,
-                       n_heads=cfg.n_heads, d_mlp=cfg.d_mlp)
+                       n_heads=cfg.n_heads, d_mlp=cfg.d_mlp, use_layernorm=cfg.use_layernorm)
     model = TinyGPT(mcfg).to(device)
-    decay = [p for n, p in model.named_parameters() if p.dim() >= 2]
-    no_decay = [p for n, p in model.named_parameters() if p.dim() < 2]
+    if cfg.decay_norm_and_bias:
+        decay, no_decay = list(model.parameters()), []
+    else:
+        decay = [p for n, p in model.named_parameters() if p.dim() >= 2]
+        no_decay = [p for n, p in model.named_parameters() if p.dim() < 2]
     opt = torch.optim.AdamW([{"params": decay, "weight_decay": cfg.weight_decay},
                              {"params": no_decay, "weight_decay": 0.0}], lr=cfg.lr, betas=tuple(cfg.betas))
     sched = torch.optim.lr_scheduler.LambdaLR(opt, lambda s: min(1.0, (s + 1) / max(1, cfg.warmup_steps)))
@@ -194,6 +202,8 @@ def run(cfg: TrainConfig) -> Path:
             if step % cfg.eval_every == 0 or step == 1 or step == cfg.steps:
                 rec = dict(step=step, train_batch_loss=loss.item(), lr=sched.get_last_lr()[0],
                            weight_norm=float(sum((p.detach() ** 2).sum() for p in model.parameters()) ** 0.5),
+                           norm_params_norm=float(sum((p.detach() ** 2).sum() for n, p in model.named_parameters()
+                                                      if p.dim() < 2) ** 0.5),
                            elapsed_s=round(time.time() - t0, 1))
                 for p, e in eval_sets.items():
                     r = evaluate(model, e, vocab, device, per_cell=(p != "train"))

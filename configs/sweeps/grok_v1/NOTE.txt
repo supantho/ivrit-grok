@@ -1,0 +1,1 @@
+grok_v1 was run with decay_norm_and_bias=False (GPT convention): the final LayerNorm gain escaped weight decay and inflated logits (ln_f.weight norm 11 -> 61). Cancelled; superseded by grok_v2 (all parameters decayed, as in Power et al. 2022).

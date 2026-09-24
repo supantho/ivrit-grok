@@ -9,6 +9,8 @@
   0.98
  ],
  "weight_decay": 1.0,
+ "decay_norm_and_bias": true,
+ "use_layernorm": true,
  "warmup_steps": 10,
  "batch_size": -1,
  "steps": 50000,
@@ -17,10 +19,9 @@
  "n_checkpoints": 40,
  "max_len": 64,
  "seed": 0,
- "dataset": "synthetic_v1",
+ "dataset": "real",
  "split": "iid_seed0",
  "condition": "voc",
- "train_subsample": 250,
- "run_name": "grok_v1/syn_iid_voc_n250",
- "decay_norm_and_bias": false
+ "train_subsample": 1000,
+ "run_name": "grok_v2/real_iid_voc_n1000"
 }

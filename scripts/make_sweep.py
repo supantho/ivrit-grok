@@ -20,7 +20,7 @@ for f in out.glob("*.json"):
     f.unlink()
 
 BASE = dict(d_model=128, n_layers=2, n_heads=4, d_mlp=512, lr=1e-3, betas=[0.9, 0.98], weight_decay=1.0,
-            warmup_steps=10, batch_size=-1, steps=50000, eval_every=500, eval_max_examples=1024,
+            decay_norm_and_bias=True, use_layernorm=True, warmup_steps=10, batch_size=-1, steps=50000, eval_every=500, eval_max_examples=1024,
             n_checkpoints=40, max_len=64, seed=0)
 GRID = []
 # synthetic: small training fractions of the 7,000-lexeme x 8-cell table

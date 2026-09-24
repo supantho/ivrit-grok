@@ -54,3 +54,11 @@ def test_tiny_model_memorises():
     prompts = [e.tokens[i, : int(e.prompt_len[i])] for i in range(len(EX))]
     out = greedy_decode(m.eval(), prompts, max_new=20, eos_id=EOS)
     assert [v.dec_chars(o.tolist()) for o in out] == [x.target_form for x in EX]
+
+
+def test_layernorm_free_variant_and_decay_groups():
+    from training.train import TrainConfig
+    m = TinyGPT(ModelConfig(vocab_size=30, max_len=16, d_model=32, n_layers=2, n_heads=2, d_mlp=64, use_layernorm=False))
+    assert not any("ln" in n for n, _ in m.named_parameters())
+    assert torch.isfinite(m(torch.tensor([[1, 5, 6, 2]]))).all()
+    assert TrainConfig().decay_norm_and_bias is True   # Power et al.: AdamW decays every parameter
