@@ -1,0 +1,36 @@
+source	metric	value
+unimorph_heb	verb lines heb_voc	29512
+unimorph_heb	verb lines heb	29511
+unimorph_heb	paradigms heb_voc	1042
+unimorph_heb	paradigms heb	1043
+unimorph_heb	voc->unvoc pairing PAIRED	1028
+unimorph_heb	voc->unvoc pairing PAIRED_PARTIAL	14
+unimorph_heb	heb.args cross-check voc_triples	29484
+unimorph_heb	heb.args cross-check args_triples	29484
+unimorph_heb	heb.args cross-check in_voc_not_args	0
+unimorph_heb	heb.args cross-check in_args_not_voc	0
+unimorph_heb	heb.args cross-check args_unconvertible_tags	0
+unimorph_heb	heb.args cross-check args_explicit_gap_rows	44
+unimorph_heb	UD-derived verb lines (attestation only)	4530
+unimorph_heb	lexemes (after merging identical duplicate paradigms)	1042
+unimorph_heb	lexemes match_status=MATCHED	835
+unimorph_heb	lexemes match_status=NO_MATCH	178
+unimorph_heb	lexemes match_status=ROOT_AMBIGUOUS	12
+unimorph_heb	lexemes match_status=MATCHED_UNVOC_ONLY	11
+unimorph_heb	lexemes match_status=BINYAN_AMBIGUOUS	6
+unimorph_heb	lexemes with root assigned	849
+unimorph_heb	lexemes with binyan assigned	857
+unimorph_heb	lexemes ud_attested	591
+hewiktionary	pages_scanned	37379
+hewiktionary	relevant_pages	2944
+hewiktionary	verb_entry_templates	2909
+hewiktionary	verb_entries_with_root	2837
+hewiktionary	conj_table_cells	22240
+hewiktionary	conj_table_root_pages	710
+hewiktionary	full_table_cells	1215
+hewiktionary	Wiktionary-only lexemes added	1903
+unimorph_heb	forms	29512
+unimorph_heb	forms with vocalized	29512
+unimorph_heb	forms with plene unvocalized	29510
+hewiktionary	UniMorph forms corroborated by a Wiktionary table	2632
+hewiktionary	UniMorph forms contradicted by a Wiktionary table	121

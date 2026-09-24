@@ -1,0 +1,381 @@
+view	split	strategy	seed	partition	examples_voc	examples_unv	pair_ids	forms	lexemes	roots	orthographic_root_groups	root_binyan_pairs	targets_identical_to_an_exposed_form_voc	targets_identical_to_an_exposed_form_unv
+past_reinflection	iid_seed0	iid	0	train	5275	5224	5275	5275	832	599	597	832		
+past_reinflection	iid_seed0	iid	0	dev	660	655	660	660	467	384	382	467		
+past_reinflection	iid_seed0	iid	0	test	659	651	659	659	491	399	398	491		
+past_reinflection	lexeme_holdout_seed0	lexeme_holdout	0	train	5267	5203	5267	5267	666	505	504	666		
+past_reinflection	lexeme_holdout_seed0	lexeme_holdout	0	dev	663	663	663	663	83	80	80	83		
+past_reinflection	lexeme_holdout_seed0	lexeme_holdout	0	test	664	664	664	664	83	80	80	83		
+past_reinflection	root_holdout_seed0	root_holdout	0	train	5245	5189	5245	5245	662	480	478	662		
+past_reinflection	root_holdout_seed0	root_holdout	0	dev	685	677	685	685	87	59	59	87		
+past_reinflection	root_holdout_seed0	root_holdout	0	test	664	664	664	664	83	60	60	83		
+past_reinflection	root_binyan_holdout_seed0	root_binyan_holdout	0	train	5277	5229	5277	5277	666	599	597	666		
+past_reinflection	root_binyan_holdout_seed0	root_binyan_holdout	0	dev	659	659	659	659	83	74	74	83		
+past_reinflection	root_binyan_holdout_seed0	root_binyan_holdout	0	test	658	642	658	658	83	69	69	83		
+past_reinflection	cell_k2_seed0	cell_k	0	train	818	810	818	818	818	589	587	818		
+past_reinflection	cell_k2_seed0	cell_k	0	dev	574	574	574	574	82	78	78	82	0.0	32.0
+past_reinflection	cell_k2_seed0	cell_k	0	test	5152	5096	5152	5152	736	544	542	736	0.0	186.0
+past_reinflection	cell_k4_seed0	cell_k	0	train	2454	2430	2454	2454	818	589	587	818		
+past_reinflection	cell_k4_seed0	cell_k	0	dev	410	410	410	410	82	81	81	82	0.0	50.0
+past_reinflection	cell_k4_seed0	cell_k	0	test	3680	3640	3680	3680	736	537	535	736	0.0	423.0
+past_reinflection	cell_k6_seed0	cell_k	0	train	4090	4050	4090	4090	818	589	587	818		
+past_reinflection	cell_k6_seed0	cell_k	0	dev	246	246	246	246	82	82	82	82	0.0	48.0
+past_reinflection	cell_k6_seed0	cell_k	0	test	2208	2184	2208	2208	736	544	543	736	0.0	419.0
+past_reinflection	cell_k8_seed0	cell_k	0	train	5726	5670	5726	5726	818	589	587	818		
+past_reinflection	cell_k8_seed0	cell_k	0	dev	82	81	82	82	82	80	80	82	0.0	21.0
+past_reinflection	cell_k8_seed0	cell_k	0	test	736	729	736	736	736	539	537	736	0.0	183.0
+past_reinflection	iid_seed1	iid	1	train	5275	5228	5275	5275	832	599	597	832		
+past_reinflection	iid_seed1	iid	1	dev	660	650	660	660	460	387	385	460		
+past_reinflection	iid_seed1	iid	1	test	659	652	659	659	457	372	372	457		
+past_reinflection	lexeme_holdout_seed1	lexeme_holdout	1	train	5276	5228	5276	5276	666	506	505	666		
+past_reinflection	lexeme_holdout_seed1	lexeme_holdout	1	dev	659	643	659	659	83	80	80	83		
+past_reinflection	lexeme_holdout_seed1	lexeme_holdout	1	test	659	659	659	659	83	78	78	83		
+past_reinflection	root_holdout_seed1	root_holdout	1	train	5313	5249	5313	5313	670	480	478	670		
+past_reinflection	root_holdout_seed1	root_holdout	1	dev	609	609	609	609	78	59	59	78		
+past_reinflection	root_holdout_seed1	root_holdout	1	test	672	672	672	672	84	60	60	84		
+past_reinflection	root_binyan_holdout_seed1	root_binyan_holdout	1	train	5272	5240	5272	5272	666	599	597	666		
+past_reinflection	root_binyan_holdout_seed1	root_binyan_holdout	1	dev	658	634	658	658	83	69	69	83		
+past_reinflection	root_binyan_holdout_seed1	root_binyan_holdout	1	test	664	656	664	664	83	74	74	83		
+past_reinflection	cell_k2_seed1	cell_k	1	train	818	810	818	818	818	589	587	818		
+past_reinflection	cell_k2_seed1	cell_k	1	dev	574	567	574	574	82	76	76	82	0.0	24.0
+past_reinflection	cell_k2_seed1	cell_k	1	test	5152	5103	5152	5152	736	550	548	736	0.0	208.0
+past_reinflection	cell_k4_seed1	cell_k	1	train	2454	2430	2454	2454	818	589	587	818		
+past_reinflection	cell_k4_seed1	cell_k	1	dev	410	405	410	410	82	81	81	82	0.0	35.0
+past_reinflection	cell_k4_seed1	cell_k	1	test	3680	3645	3680	3680	736	535	534	736	0.0	410.0
+past_reinflection	cell_k6_seed1	cell_k	1	train	4090	4050	4090	4090	818	589	587	818		
+past_reinflection	cell_k6_seed1	cell_k	1	dev	246	243	246	246	82	81	81	82	0.0	46.0
+past_reinflection	cell_k6_seed1	cell_k	1	test	2208	2187	2208	2208	736	541	540	736	0.0	406.0
+past_reinflection	cell_k8_seed1	cell_k	1	train	5726	5670	5726	5726	818	589	587	818		
+past_reinflection	cell_k8_seed1	cell_k	1	dev	82	81	82	82	82	81	81	82	0.0	22.0
+past_reinflection	cell_k8_seed1	cell_k	1	test	736	729	736	736	736	542	540	736	0.0	181.0
+past_reinflection	iid_seed2	iid	2	train	5275	5223	5275	5275	831	599	597	831		
+past_reinflection	iid_seed2	iid	2	dev	660	654	660	660	475	380	380	475		
+past_reinflection	iid_seed2	iid	2	test	659	653	659	659	461	376	375	461		
+past_reinflection	lexeme_holdout_seed2	lexeme_holdout	2	train	5271	5223	5271	5271	666	506	504	666		
+past_reinflection	lexeme_holdout_seed2	lexeme_holdout	2	dev	659	651	659	659	83	79	79	83		
+past_reinflection	lexeme_holdout_seed2	lexeme_holdout	2	test	664	656	664	664	83	82	82	83		
+past_reinflection	root_holdout_seed2	root_holdout	2	train	5266	5210	5266	5266	664	480	478	664		
+past_reinflection	root_holdout_seed2	root_holdout	2	dev	688	680	688	688	88	59	59	88		
+past_reinflection	root_holdout_seed2	root_holdout	2	test	640	640	640	640	80	60	60	80		
+past_reinflection	root_binyan_holdout_seed2	root_binyan_holdout	2	train	5277	5261	5277	5277	666	599	597	666		
+past_reinflection	root_binyan_holdout_seed2	root_binyan_holdout	2	dev	654	614	654	654	83	72	72	83		
+past_reinflection	root_binyan_holdout_seed2	root_binyan_holdout	2	test	663	655	663	663	83	63	63	83		
+past_reinflection	cell_k2_seed2	cell_k	2	train	818	810	818	818	818	589	587	818		
+past_reinflection	cell_k2_seed2	cell_k	2	dev	574	574	574	574	82	78	78	82	0.0	22.0
+past_reinflection	cell_k2_seed2	cell_k	2	test	5152	5096	5152	5152	736	554	552	736	0.0	186.0
+past_reinflection	cell_k4_seed2	cell_k	2	train	2454	2430	2454	2454	818	589	587	818		
+past_reinflection	cell_k4_seed2	cell_k	2	dev	410	405	410	410	82	79	79	82	0.0	51.0
+past_reinflection	cell_k4_seed2	cell_k	2	test	3680	3645	3680	3680	736	549	547	736	0.0	395.0
+past_reinflection	cell_k6_seed2	cell_k	2	train	4090	4050	4090	4090	818	589	587	818		
+past_reinflection	cell_k6_seed2	cell_k	2	dev	246	246	246	246	82	78	78	82	0.0	55.0
+past_reinflection	cell_k6_seed2	cell_k	2	test	2208	2184	2208	2208	736	545	544	736	0.0	373.0
+past_reinflection	cell_k8_seed2	cell_k	2	train	5726	5670	5726	5726	818	589	587	818		
+past_reinflection	cell_k8_seed2	cell_k	2	dev	82	82	82	82	82	79	79	82	0.0	27.0
+past_reinflection	cell_k8_seed2	cell_k	2	test	736	728	736	736	736	545	543	736	0.0	185.0
+past_reinflection	iid_seed3	iid	3	train	5275	5223	5275	5275	832	599	597	832		
+past_reinflection	iid_seed3	iid	3	dev	660	652	660	660	465	374	374	465		
+past_reinflection	iid_seed3	iid	3	test	659	655	659	659	450	369	369	450		
+past_reinflection	lexeme_holdout_seed3	lexeme_holdout	3	train	5296	5248	5296	5296	666	503	501	666		
+past_reinflection	lexeme_holdout_seed3	lexeme_holdout	3	dev	649	641	649	649	83	80	80	83		
+past_reinflection	lexeme_holdout_seed3	lexeme_holdout	3	test	649	641	649	649	83	78	78	83		
+past_reinflection	root_holdout_seed3	root_holdout	3	train	5316	5252	5316	5316	671	479	478	671		
+past_reinflection	root_holdout_seed3	root_holdout	3	dev	638	638	638	638	81	60	59	81		
+past_reinflection	root_holdout_seed3	root_holdout	3	test	640	640	640	640	80	60	60	80		
+past_reinflection	root_binyan_holdout_seed3	root_binyan_holdout	3	train	5272	5248	5272	5272	666	599	597	666		
+past_reinflection	root_binyan_holdout_seed3	root_binyan_holdout	3	dev	663	647	663	663	83	65	65	83		
+past_reinflection	root_binyan_holdout_seed3	root_binyan_holdout	3	test	659	635	659	659	83	70	70	83		
+past_reinflection	cell_k2_seed3	cell_k	3	train	818	810	818	818	818	589	587	818		
+past_reinflection	cell_k2_seed3	cell_k	3	dev	574	567	574	574	82	79	79	82	0.0	18.0
+past_reinflection	cell_k2_seed3	cell_k	3	test	5152	5103	5152	5152	736	543	543	736	0.0	180.0
+past_reinflection	cell_k4_seed3	cell_k	3	train	2454	2430	2454	2454	818	589	587	818		
+past_reinflection	cell_k4_seed3	cell_k	3	dev	410	405	410	410	82	79	79	82	0.0	43.0
+past_reinflection	cell_k4_seed3	cell_k	3	test	3680	3645	3680	3680	736	543	541	736	0.0	384.0
+past_reinflection	cell_k6_seed3	cell_k	3	train	4090	4050	4090	4090	818	589	587	818		
+past_reinflection	cell_k6_seed3	cell_k	3	dev	246	246	246	246	82	78	78	82	0.0	40.0
+past_reinflection	cell_k6_seed3	cell_k	3	test	2208	2184	2208	2208	736	543	542	736	0.0	379.0
+past_reinflection	cell_k8_seed3	cell_k	3	train	5726	5670	5726	5726	818	589	587	818		
+past_reinflection	cell_k8_seed3	cell_k	3	dev	82	80	82	82	82	80	80	82	0.0	26.0
+past_reinflection	cell_k8_seed3	cell_k	3	test	736	730	736	736	736	539	537	736	0.0	201.0
+past_reinflection	iid_seed4	iid	4	train	5275	5226	5275	5275	832	599	597	832		
+past_reinflection	iid_seed4	iid	4	dev	660	654	660	660	466	381	381	466		
+past_reinflection	iid_seed4	iid	4	test	659	650	659	659	479	390	390	479		
+past_reinflection	lexeme_holdout_seed4	lexeme_holdout	4	train	5291	5243	5291	5291	666	508	506	666		
+past_reinflection	lexeme_holdout_seed4	lexeme_holdout	4	dev	644	636	644	644	83	79	79	83		
+past_reinflection	lexeme_holdout_seed4	lexeme_holdout	4	test	659	651	659	659	83	79	79	83		
+past_reinflection	root_holdout_seed4	root_holdout	4	train	5278	5222	5278	5278	663	479	478	663		
+past_reinflection	root_holdout_seed4	root_holdout	4	dev	647	647	647	647	84	60	59	84		
+past_reinflection	root_holdout_seed4	root_holdout	4	test	669	661	669	669	85	60	60	85		
+past_reinflection	root_binyan_holdout_seed4	root_binyan_holdout	4	train	5276	5244	5276	5276	666	599	597	666		
+past_reinflection	root_binyan_holdout_seed4	root_binyan_holdout	4	dev	659	651	659	659	83	75	75	83		
+past_reinflection	root_binyan_holdout_seed4	root_binyan_holdout	4	test	659	635	659	659	83	71	71	83		
+past_reinflection	cell_k2_seed4	cell_k	4	train	818	810	818	818	818	589	587	818		
+past_reinflection	cell_k2_seed4	cell_k	4	dev	574	567	574	574	82	80	80	82	0.0	21.0
+past_reinflection	cell_k2_seed4	cell_k	4	test	5152	5103	5152	5152	736	545	543	736	0.0	202.0
+past_reinflection	cell_k4_seed4	cell_k	4	train	2454	2430	2454	2454	818	589	587	818		
+past_reinflection	cell_k4_seed4	cell_k	4	dev	410	410	410	410	82	82	82	82	0.0	48.0
+past_reinflection	cell_k4_seed4	cell_k	4	test	3680	3640	3680	3680	736	546	545	736	0.0	397.0
+past_reinflection	cell_k6_seed4	cell_k	4	train	4090	4050	4090	4090	818	589	587	818		
+past_reinflection	cell_k6_seed4	cell_k	4	dev	246	243	246	246	82	80	80	82	0.0	45.0
+past_reinflection	cell_k6_seed4	cell_k	4	test	2208	2187	2208	2208	736	549	547	736	0.0	406.0
+past_reinflection	cell_k8_seed4	cell_k	4	train	5726	5670	5726	5726	818	589	587	818		
+past_reinflection	cell_k8_seed4	cell_k	4	dev	82	80	82	82	82	80	80	82	0.0	19.0
+past_reinflection	cell_k8_seed4	cell_k	4	test	736	730	736	736	736	540	539	736	0.0	200.0
+past_reinflection	rootclass_strong_seed0	class_ood	0	train	4275	4243	4275	4275	539	392	390	539		
+past_reinflection	rootclass_strong_seed0	class_ood	0	dev	432	416	432	432	54	43	43	54		
+past_reinflection	rootclass_strong_seed0	class_ood	0	test	1887	1871	1887	1887	239	164	164	239		
+past_reinflection	rootclass_final_he_seed0	class_ood	0	train	5276	5228	5276	5276	667	480	478	667		
+past_reinflection	rootclass_final_he_seed0	class_ood	0	dev	590	574	590	590	74	53	53	74		
+past_reinflection	rootclass_final_he_seed0	class_ood	0	test	728	728	728	728	91	66	66	91		
+past_reinflection	rootclass_hollow_candidate_seed0	class_ood	0	train	5430	5366	5430	5430	684	483	482	684		
+past_reinflection	rootclass_hollow_candidate_seed0	class_ood	0	dev	531	531	531	531	67	55	54	67		
+past_reinflection	rootclass_hollow_candidate_seed0	class_ood	0	test	633	633	633	633	81	61	61	81		
+past_reinflection	rootclass_initial_nun_seed0	class_ood	0	train	5296	5256	5296	5296	669	497	495	669		
+past_reinflection	rootclass_initial_nun_seed0	class_ood	0	dev	731	715	731	731	92	55	55	92		
+past_reinflection	rootclass_initial_nun_seed0	class_ood	0	test	567	559	567	567	71	47	47	71		
+past_reinflection	rootclass_geminate_seed0	class_ood	0	train	5639	5591	5639	5639	712	510	508	712		
+past_reinflection	rootclass_geminate_seed0	class_ood	0	dev	632	616	632	632	79	57	57	79		
+past_reinflection	rootclass_geminate_seed0	class_ood	0	test	323	323	323	323	41	32	32	41		
+past_reinflection	rootclass_guttural_containing_seed0	class_ood	0	train	2953	2889	2953	2953	375	253	253	375		
+past_reinflection	rootclass_guttural_containing_seed0	class_ood	0	dev	283	283	283	283	36	28	28	36		
+past_reinflection	rootclass_guttural_containing_seed0	class_ood	0	test	3358	3358	3358	3358	421	318	316	421		
+past_reinflection	rootclass_initial_yod_waw_seed0	class_ood	0	train	5631	5607	5631	5631	709	516	514	709		
+past_reinflection	rootclass_initial_yod_waw_seed0	class_ood	0	dev	601	601	601	601	77	57	57	77		
+past_reinflection	rootclass_initial_yod_waw_seed0	class_ood	0	test	362	322	362	362	46	26	26	46		
+past_reinflection	rootclass_quadriliteral_seed0	class_ood	0	train	5728	5664	5728	5728	720	515	513	720		
+past_reinflection	rootclass_quadriliteral_seed0	class_ood	0	dev	607	607	607	607	79	57	57	79		
+past_reinflection	rootclass_quadriliteral_seed0	class_ood	0	test	259	259	259	259	33	27	27	33		
+past_reinflection	tradclass_SHLEMIM_seed0	class_ood	0	train	1452	1420	1452	1452	184	112	112	184		
+past_reinflection	tradclass_SHLEMIM_seed0	class_ood	0	dev	160	160	160	160	20	12	12	20		
+past_reinflection	tradclass_SHLEMIM_seed0	class_ood	0	test	1641	1625	1641	1641	207	127	126	207		
+past_reinflection	tradclass_SHLEMIM_seed0	class_ood	0	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_PE_NUN_seed0	class_ood	0	train	2669	2621	2669	2669	338	206	205	338		
+past_reinflection	tradclass_PE_NUN_seed0	class_ood	0	dev	280	280	280	280	35	24	24	35		
+past_reinflection	tradclass_PE_NUN_seed0	class_ood	0	test	304	304	304	304	38	21	21	38		
+past_reinflection	tradclass_PE_NUN_seed0	class_ood	0	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_PE_YOD_WAW_seed0	class_ood	0	train	2802	2770	2802	2802	354	215	214	354		
+past_reinflection	tradclass_PE_YOD_WAW_seed0	class_ood	0	dev	235	235	235	235	30	22	22	30		
+past_reinflection	tradclass_PE_YOD_WAW_seed0	class_ood	0	test	216	200	216	216	27	14	14	27		
+past_reinflection	tradclass_PE_YOD_WAW_seed0	class_ood	0	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_PE_ALEF_seed0	class_ood	0	train	2925	2893	2925	2925	370	223	222	370		
+past_reinflection	tradclass_PE_ALEF_seed0	class_ood	0	dev	224	208	224	224	28	22	22	28		
+past_reinflection	tradclass_PE_ALEF_seed0	class_ood	0	test	104	104	104	104	13	6	6	13		
+past_reinflection	tradclass_PE_ALEF_seed0	class_ood	0	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_AYIN_WAW_YOD_seed0	class_ood	0	train	2692	2644	2692	2692	339	198	197	339		
+past_reinflection	tradclass_AYIN_WAW_YOD_seed0	class_ood	0	dev	192	192	192	192	24	19	19	24		
+past_reinflection	tradclass_AYIN_WAW_YOD_seed0	class_ood	0	test	369	369	369	369	48	34	34	48		
+past_reinflection	tradclass_AYIN_WAW_YOD_seed0	class_ood	0	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_AYIN_AYIN_seed0	class_ood	0	train	2717	2669	2717	2717	344	213	212	344		
+past_reinflection	tradclass_AYIN_AYIN_seed0	class_ood	0	dev	384	384	384	384	48	22	22	48		
+past_reinflection	tradclass_AYIN_AYIN_seed0	class_ood	0	test	152	152	152	152	19	16	16	19		
+past_reinflection	tradclass_AYIN_AYIN_seed0	class_ood	0	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_LAMED_YOD_HE_seed0	class_ood	0	train	2503	2455	2503	2503	316	198	197	316		
+past_reinflection	tradclass_LAMED_YOD_HE_seed0	class_ood	0	dev	406	406	406	406	52	28	28	52		
+past_reinflection	tradclass_LAMED_YOD_HE_seed0	class_ood	0	test	344	344	344	344	43	25	25	43		
+past_reinflection	tradclass_LAMED_YOD_HE_seed0	class_ood	0	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_LAMED_ALEF_seed0	class_ood	0	train	2709	2677	2709	2709	343	216	215	343		
+past_reinflection	tradclass_LAMED_ALEF_seed0	class_ood	0	dev	336	320	336	336	42	24	24	42		
+past_reinflection	tradclass_LAMED_ALEF_seed0	class_ood	0	test	208	208	208	208	26	11	11	26		
+past_reinflection	tradclass_LAMED_ALEF_seed0	class_ood	0	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_QUADRILITERAL_seed0	class_ood	0	train	2885	2837	2885	2885	365	219	218	365		
+past_reinflection	tradclass_QUADRILITERAL_seed0	class_ood	0	dev	312	312	312	312	39	26	26	39		
+past_reinflection	tradclass_QUADRILITERAL_seed0	class_ood	0	test	56	56	56	56	7	6	6	7		
+past_reinflection	tradclass_QUADRILITERAL_seed0	class_ood	0	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	rootclass_strong_seed1	class_ood	1	train	4243	4195	4243	4243	535	392	390	535		
+past_reinflection	rootclass_strong_seed1	class_ood	1	dev	464	464	464	464	58	43	43	58		
+past_reinflection	rootclass_strong_seed1	class_ood	1	test	1887	1871	1887	1887	239	164	164	239		
+past_reinflection	rootclass_final_he_seed1	class_ood	1	train	5282	5218	5282	5282	668	480	478	668		
+past_reinflection	rootclass_final_he_seed1	class_ood	1	dev	584	584	584	584	73	53	53	73		
+past_reinflection	rootclass_final_he_seed1	class_ood	1	test	728	728	728	728	91	66	66	91		
+past_reinflection	rootclass_hollow_candidate_seed1	class_ood	1	train	5361	5297	5361	5361	676	484	482	676		
+past_reinflection	rootclass_hollow_candidate_seed1	class_ood	1	dev	600	600	600	600	75	54	54	75		
+past_reinflection	rootclass_hollow_candidate_seed1	class_ood	1	test	633	633	633	633	81	61	61	81		
+past_reinflection	rootclass_initial_nun_seed1	class_ood	1	train	5307	5267	5307	5307	671	497	495	671		
+past_reinflection	rootclass_initial_nun_seed1	class_ood	1	dev	720	704	720	720	90	55	55	90		
+past_reinflection	rootclass_initial_nun_seed1	class_ood	1	test	567	559	567	567	71	47	47	71		
+past_reinflection	rootclass_geminate_seed1	class_ood	1	train	5543	5495	5543	5543	700	509	508	700		
+past_reinflection	rootclass_geminate_seed1	class_ood	1	dev	728	712	728	728	91	58	57	91		
+past_reinflection	rootclass_geminate_seed1	class_ood	1	test	323	323	323	323	41	32	32	41		
+past_reinflection	rootclass_guttural_containing_seed1	class_ood	1	train	2901	2845	2901	2901	369	253	253	369		
+past_reinflection	rootclass_guttural_containing_seed1	class_ood	1	dev	335	327	335	335	42	28	28	42		
+past_reinflection	rootclass_guttural_containing_seed1	class_ood	1	test	3358	3358	3358	3358	421	318	316	421		
+past_reinflection	rootclass_initial_yod_waw_seed1	class_ood	1	train	5560	5536	5560	5560	702	516	514	702		
+past_reinflection	rootclass_initial_yod_waw_seed1	class_ood	1	dev	672	672	672	672	84	57	57	84		
+past_reinflection	rootclass_initial_yod_waw_seed1	class_ood	1	test	362	322	362	362	46	26	26	46		
+past_reinflection	rootclass_quadriliteral_seed1	class_ood	1	train	5672	5616	5672	5672	716	515	513	716		
+past_reinflection	rootclass_quadriliteral_seed1	class_ood	1	dev	663	655	663	663	83	57	57	83		
+past_reinflection	rootclass_quadriliteral_seed1	class_ood	1	test	259	259	259	259	33	27	27	33		
+past_reinflection	tradclass_SHLEMIM_seed1	class_ood	1	train	1433	1401	1433	1433	181	109	109	181		
+past_reinflection	tradclass_SHLEMIM_seed1	class_ood	1	dev	179	179	179	179	23	15	15	23		
+past_reinflection	tradclass_SHLEMIM_seed1	class_ood	1	test	1641	1625	1641	1641	207	127	126	207		
+past_reinflection	tradclass_SHLEMIM_seed1	class_ood	1	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_PE_NUN_seed1	class_ood	1	train	2669	2621	2669	2669	338	206	205	338		
+past_reinflection	tradclass_PE_NUN_seed1	class_ood	1	dev	280	280	280	280	35	24	24	35		
+past_reinflection	tradclass_PE_NUN_seed1	class_ood	1	test	304	304	304	304	38	21	21	38		
+past_reinflection	tradclass_PE_NUN_seed1	class_ood	1	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_PE_YOD_WAW_seed1	class_ood	1	train	2757	2725	2757	2757	349	213	212	349		
+past_reinflection	tradclass_PE_YOD_WAW_seed1	class_ood	1	dev	280	280	280	280	35	24	24	35		
+past_reinflection	tradclass_PE_YOD_WAW_seed1	class_ood	1	test	216	200	216	216	27	14	14	27		
+past_reinflection	tradclass_PE_YOD_WAW_seed1	class_ood	1	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_PE_ALEF_seed1	class_ood	1	train	2877	2829	2877	2877	364	224	223	364		
+past_reinflection	tradclass_PE_ALEF_seed1	class_ood	1	dev	272	272	272	272	34	21	21	34		
+past_reinflection	tradclass_PE_ALEF_seed1	class_ood	1	test	104	104	104	104	13	6	6	13		
+past_reinflection	tradclass_PE_ALEF_seed1	class_ood	1	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_AYIN_WAW_YOD_seed1	class_ood	1	train	2537	2489	2537	2537	319	196	195	319		
+past_reinflection	tradclass_AYIN_WAW_YOD_seed1	class_ood	1	dev	347	347	347	347	44	21	21	44		
+past_reinflection	tradclass_AYIN_WAW_YOD_seed1	class_ood	1	test	369	369	369	369	48	34	34	48		
+past_reinflection	tradclass_AYIN_WAW_YOD_seed1	class_ood	1	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_AYIN_AYIN_seed1	class_ood	1	train	2786	2738	2786	2786	352	212	211	352		
+past_reinflection	tradclass_AYIN_AYIN_seed1	class_ood	1	dev	315	315	315	315	40	23	23	40		
+past_reinflection	tradclass_AYIN_AYIN_seed1	class_ood	1	test	152	152	152	152	19	16	16	19		
+past_reinflection	tradclass_AYIN_AYIN_seed1	class_ood	1	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_LAMED_YOD_HE_seed1	class_ood	1	train	2594	2562	2594	2594	328	202	201	328		
+past_reinflection	tradclass_LAMED_YOD_HE_seed1	class_ood	1	dev	315	299	315	315	40	24	24	40		
+past_reinflection	tradclass_LAMED_YOD_HE_seed1	class_ood	1	test	344	344	344	344	43	25	25	43		
+past_reinflection	tradclass_LAMED_YOD_HE_seed1	class_ood	1	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_LAMED_ALEF_seed1	class_ood	1	train	2781	2733	2781	2781	352	217	216	352		
+past_reinflection	tradclass_LAMED_ALEF_seed1	class_ood	1	dev	264	264	264	264	33	23	23	33		
+past_reinflection	tradclass_LAMED_ALEF_seed1	class_ood	1	test	208	208	208	208	26	11	11	26		
+past_reinflection	tradclass_LAMED_ALEF_seed1	class_ood	1	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_QUADRILITERAL_seed1	class_ood	1	train	2853	2805	2853	2853	361	218	218	361		
+past_reinflection	tradclass_QUADRILITERAL_seed1	class_ood	1	dev	344	344	344	344	43	27	26	43		
+past_reinflection	tradclass_QUADRILITERAL_seed1	class_ood	1	test	56	56	56	56	7	6	6	7		
+past_reinflection	tradclass_QUADRILITERAL_seed1	class_ood	1	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	rootclass_strong_seed2	class_ood	2	train	4275	4227	4275	4275	539	392	390	539		
+past_reinflection	rootclass_strong_seed2	class_ood	2	dev	432	432	432	432	54	43	43	54		
+past_reinflection	rootclass_strong_seed2	class_ood	2	test	1887	1871	1887	1887	239	164	164	239		
+past_reinflection	rootclass_final_he_seed2	class_ood	2	train	5300	5236	5300	5300	669	480	478	669		
+past_reinflection	rootclass_final_he_seed2	class_ood	2	dev	566	566	566	566	72	53	53	72		
+past_reinflection	rootclass_final_he_seed2	class_ood	2	test	728	728	728	728	91	66	66	91		
+past_reinflection	rootclass_hollow_candidate_seed2	class_ood	2	train	5355	5307	5355	5355	675	483	482	675		
+past_reinflection	rootclass_hollow_candidate_seed2	class_ood	2	dev	606	590	606	606	76	55	54	76		
+past_reinflection	rootclass_hollow_candidate_seed2	class_ood	2	test	633	633	633	633	81	61	61	81		
+past_reinflection	rootclass_initial_nun_seed2	class_ood	2	train	5475	5419	5475	5475	692	497	495	692		
+past_reinflection	rootclass_initial_nun_seed2	class_ood	2	dev	552	552	552	552	69	55	55	69		
+past_reinflection	rootclass_initial_nun_seed2	class_ood	2	test	567	559	567	567	71	47	47	71		
+past_reinflection	rootclass_geminate_seed2	class_ood	2	train	5567	5535	5567	5567	703	510	508	703		
+past_reinflection	rootclass_geminate_seed2	class_ood	2	dev	704	672	704	704	88	57	57	88		
+past_reinflection	rootclass_geminate_seed2	class_ood	2	test	323	323	323	323	41	32	32	41		
+past_reinflection	rootclass_guttural_containing_seed2	class_ood	2	train	2889	2825	2889	2889	367	253	253	367		
+past_reinflection	rootclass_guttural_containing_seed2	class_ood	2	dev	347	347	347	347	44	28	28	44		
+past_reinflection	rootclass_guttural_containing_seed2	class_ood	2	test	3358	3358	3358	3358	421	318	316	421		
+past_reinflection	rootclass_initial_yod_waw_seed2	class_ood	2	train	5640	5616	5640	5640	712	516	514	712		
+past_reinflection	rootclass_initial_yod_waw_seed2	class_ood	2	dev	592	592	592	592	74	57	57	74		
+past_reinflection	rootclass_initial_yod_waw_seed2	class_ood	2	test	362	322	362	362	46	26	26	46		
+past_reinflection	rootclass_quadriliteral_seed2	class_ood	2	train	5676	5612	5676	5676	716	515	513	716		
+past_reinflection	rootclass_quadriliteral_seed2	class_ood	2	dev	659	659	659	659	83	57	57	83		
+past_reinflection	rootclass_quadriliteral_seed2	class_ood	2	test	259	259	259	259	33	27	27	33		
+past_reinflection	tradclass_SHLEMIM_seed2	class_ood	2	train	1476	1460	1476	1476	187	114	114	187		
+past_reinflection	tradclass_SHLEMIM_seed2	class_ood	2	dev	136	120	136	136	17	10	10	17		
+past_reinflection	tradclass_SHLEMIM_seed2	class_ood	2	test	1641	1625	1641	1641	207	127	126	207		
+past_reinflection	tradclass_SHLEMIM_seed2	class_ood	2	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_PE_NUN_seed2	class_ood	2	train	2613	2565	2613	2613	331	206	206	331		
+past_reinflection	tradclass_PE_NUN_seed2	class_ood	2	dev	336	336	336	336	42	24	23	42		
+past_reinflection	tradclass_PE_NUN_seed2	class_ood	2	test	304	304	304	304	38	21	21	38		
+past_reinflection	tradclass_PE_NUN_seed2	class_ood	2	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_PE_YOD_WAW_seed2	class_ood	2	train	2791	2759	2791	2791	352	215	214	352		
+past_reinflection	tradclass_PE_YOD_WAW_seed2	class_ood	2	dev	246	246	246	246	32	22	22	32		
+past_reinflection	tradclass_PE_YOD_WAW_seed2	class_ood	2	test	216	200	216	216	27	14	14	27		
+past_reinflection	tradclass_PE_YOD_WAW_seed2	class_ood	2	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_PE_ALEF_seed2	class_ood	2	train	2879	2831	2879	2879	363	227	226	363		
+past_reinflection	tradclass_PE_ALEF_seed2	class_ood	2	dev	270	270	270	270	35	18	18	35		
+past_reinflection	tradclass_PE_ALEF_seed2	class_ood	2	test	104	104	104	104	13	6	6	13		
+past_reinflection	tradclass_PE_ALEF_seed2	class_ood	2	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_AYIN_WAW_YOD_seed2	class_ood	2	train	2667	2619	2667	2667	334	200	199	334		
+past_reinflection	tradclass_AYIN_WAW_YOD_seed2	class_ood	2	dev	217	217	217	217	29	17	17	29		
+past_reinflection	tradclass_AYIN_WAW_YOD_seed2	class_ood	2	test	369	369	369	369	48	34	34	48		
+past_reinflection	tradclass_AYIN_WAW_YOD_seed2	class_ood	2	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_AYIN_AYIN_seed2	class_ood	2	train	2770	2722	2770	2770	350	213	212	350		
+past_reinflection	tradclass_AYIN_AYIN_seed2	class_ood	2	dev	331	331	331	331	42	22	22	42		
+past_reinflection	tradclass_AYIN_AYIN_seed2	class_ood	2	test	152	152	152	152	19	16	16	19		
+past_reinflection	tradclass_AYIN_AYIN_seed2	class_ood	2	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_LAMED_YOD_HE_seed2	class_ood	2	train	2578	2546	2578	2578	326	200	199	326		
+past_reinflection	tradclass_LAMED_YOD_HE_seed2	class_ood	2	dev	331	315	331	331	42	26	26	42		
+past_reinflection	tradclass_LAMED_YOD_HE_seed2	class_ood	2	test	344	344	344	344	43	25	25	43		
+past_reinflection	tradclass_LAMED_YOD_HE_seed2	class_ood	2	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_LAMED_ALEF_seed2	class_ood	2	train	2749	2717	2749	2749	348	217	216	348		
+past_reinflection	tradclass_LAMED_ALEF_seed2	class_ood	2	dev	296	280	296	296	37	23	23	37		
+past_reinflection	tradclass_LAMED_ALEF_seed2	class_ood	2	test	208	208	208	208	26	11	11	26		
+past_reinflection	tradclass_LAMED_ALEF_seed2	class_ood	2	excluded	3341	3325	3341	3341	421	348	347	421		
+past_reinflection	tradclass_QUADRILITERAL_seed2	class_ood	2	train	2885	2837	2885	2885	365	220	219	365		
+past_reinflection	tradclass_QUADRILITERAL_seed2	class_ood	2	dev	312	312	312	312	39	25	25	39		
+past_reinflection	tradclass_QUADRILITERAL_seed2	class_ood	2	test	56	56	56	56	7	6	6	7		
+past_reinflection	tradclass_QUADRILITERAL_seed2	class_ood	2	excluded	3341	3325	3341	3341	421	348	347	421		
+full_paradigm	cell_k2_seed0	cell_k	0	train	1636	1620	1636	1636	818	589	587	818		
+full_paradigm	cell_k2_seed0	cell_k	0	dev	1148	1148	1148	574	82	78	78	82	0.0	64.0
+full_paradigm	cell_k2_seed0	cell_k	0	test	10304	10192	10304	5152	736	544	542	736	0.0	372.0
+full_paradigm	cell_k2_seed0	cell_k	0	excluded	45808	45360	45808	7362	818	589	587	818		
+full_paradigm	cell_k4_seed0	cell_k	0	train	9816	9720	9816	3272	818	589	587	818		
+full_paradigm	cell_k4_seed0	cell_k	0	dev	1640	1640	1640	410	82	81	81	82	0.0	200.0
+full_paradigm	cell_k4_seed0	cell_k	0	test	14720	14560	14720	3680	736	537	535	736	0.0	1692.0
+full_paradigm	cell_k4_seed0	cell_k	0	excluded	32720	32400	32720	7362	818	589	587	818		
+full_paradigm	cell_k6_seed0	cell_k	0	train	24540	24300	24540	4908	818	589	587	818		
+full_paradigm	cell_k6_seed0	cell_k	0	dev	1476	1476	1476	246	82	82	82	82	0.0	288.0
+full_paradigm	cell_k6_seed0	cell_k	0	test	13248	13104	13248	2208	736	544	543	736	0.0	2514.0
+full_paradigm	cell_k6_seed0	cell_k	0	excluded	19632	19440	19632	7362	818	589	587	818		
+full_paradigm	cell_k8_seed0	cell_k	0	train	45808	45360	45808	6544	818	589	587	818		
+full_paradigm	cell_k8_seed0	cell_k	0	dev	656	648	656	82	82	80	80	82	0.0	168.0
+full_paradigm	cell_k8_seed0	cell_k	0	test	5888	5832	5888	736	736	539	537	736	0.0	1464.0
+full_paradigm	cell_k8_seed0	cell_k	0	excluded	6544	6480	6544	6544	818	589	587	818		
+full_paradigm	cell_k2_seed1	cell_k	1	train	1636	1620	1636	1636	818	589	587	818		
+full_paradigm	cell_k2_seed1	cell_k	1	dev	1148	1134	1148	574	82	76	76	82	0.0	48.0
+full_paradigm	cell_k2_seed1	cell_k	1	test	10304	10206	10304	5152	736	550	548	736	0.0	416.0
+full_paradigm	cell_k2_seed1	cell_k	1	excluded	45808	45360	45808	7362	818	589	587	818		
+full_paradigm	cell_k4_seed1	cell_k	1	train	9816	9720	9816	3272	818	589	587	818		
+full_paradigm	cell_k4_seed1	cell_k	1	dev	1640	1620	1640	410	82	81	81	82	0.0	140.0
+full_paradigm	cell_k4_seed1	cell_k	1	test	14720	14580	14720	3680	736	535	534	736	0.0	1640.0
+full_paradigm	cell_k4_seed1	cell_k	1	excluded	32720	32400	32720	7362	818	589	587	818		
+full_paradigm	cell_k6_seed1	cell_k	1	train	24540	24300	24540	4908	818	589	587	818		
+full_paradigm	cell_k6_seed1	cell_k	1	dev	1476	1458	1476	246	82	81	81	82	0.0	276.0
+full_paradigm	cell_k6_seed1	cell_k	1	test	13248	13122	13248	2208	736	541	540	736	0.0	2436.0
+full_paradigm	cell_k6_seed1	cell_k	1	excluded	19632	19440	19632	7362	818	589	587	818		
+full_paradigm	cell_k8_seed1	cell_k	1	train	45808	45360	45808	6544	818	589	587	818		
+full_paradigm	cell_k8_seed1	cell_k	1	dev	656	648	656	82	82	81	81	82	0.0	176.0
+full_paradigm	cell_k8_seed1	cell_k	1	test	5888	5832	5888	736	736	542	540	736	0.0	1448.0
+full_paradigm	cell_k8_seed1	cell_k	1	excluded	6544	6480	6544	6544	818	589	587	818		
+full_paradigm	cell_k2_seed2	cell_k	2	train	1636	1620	1636	1636	818	589	587	818		
+full_paradigm	cell_k2_seed2	cell_k	2	dev	1148	1148	1148	574	82	78	78	82	0.0	44.0
+full_paradigm	cell_k2_seed2	cell_k	2	test	10304	10192	10304	5152	736	554	552	736	0.0	372.0
+full_paradigm	cell_k2_seed2	cell_k	2	excluded	45808	45360	45808	7362	818	589	587	818		
+full_paradigm	cell_k4_seed2	cell_k	2	train	9816	9720	9816	3272	818	589	587	818		
+full_paradigm	cell_k4_seed2	cell_k	2	dev	1640	1620	1640	410	82	79	79	82	0.0	204.0
+full_paradigm	cell_k4_seed2	cell_k	2	test	14720	14580	14720	3680	736	549	547	736	0.0	1580.0
+full_paradigm	cell_k4_seed2	cell_k	2	excluded	32720	32400	32720	7362	818	589	587	818		
+full_paradigm	cell_k6_seed2	cell_k	2	train	24540	24300	24540	4908	818	589	587	818		
+full_paradigm	cell_k6_seed2	cell_k	2	dev	1476	1476	1476	246	82	78	78	82	0.0	330.0
+full_paradigm	cell_k6_seed2	cell_k	2	test	13248	13104	13248	2208	736	545	544	736	0.0	2238.0
+full_paradigm	cell_k6_seed2	cell_k	2	excluded	19632	19440	19632	7362	818	589	587	818		
+full_paradigm	cell_k8_seed2	cell_k	2	train	45808	45360	45808	6544	818	589	587	818		
+full_paradigm	cell_k8_seed2	cell_k	2	dev	656	656	656	82	82	79	79	82	0.0	216.0
+full_paradigm	cell_k8_seed2	cell_k	2	test	5888	5824	5888	736	736	545	543	736	0.0	1480.0
+full_paradigm	cell_k8_seed2	cell_k	2	excluded	6544	6480	6544	6544	818	589	587	818		
+full_paradigm	cell_k2_seed3	cell_k	3	train	1636	1620	1636	1636	818	589	587	818		
+full_paradigm	cell_k2_seed3	cell_k	3	dev	1148	1134	1148	574	82	79	79	82	0.0	36.0
+full_paradigm	cell_k2_seed3	cell_k	3	test	10304	10206	10304	5152	736	543	543	736	0.0	360.0
+full_paradigm	cell_k2_seed3	cell_k	3	excluded	45808	45360	45808	7362	818	589	587	818		
+full_paradigm	cell_k4_seed3	cell_k	3	train	9816	9720	9816	3272	818	589	587	818		
+full_paradigm	cell_k4_seed3	cell_k	3	dev	1640	1620	1640	410	82	79	79	82	0.0	172.0
+full_paradigm	cell_k4_seed3	cell_k	3	test	14720	14580	14720	3680	736	543	541	736	0.0	1536.0
+full_paradigm	cell_k4_seed3	cell_k	3	excluded	32720	32400	32720	7362	818	589	587	818		
+full_paradigm	cell_k6_seed3	cell_k	3	train	24540	24300	24540	4908	818	589	587	818		
+full_paradigm	cell_k6_seed3	cell_k	3	dev	1476	1476	1476	246	82	78	78	82	0.0	240.0
+full_paradigm	cell_k6_seed3	cell_k	3	test	13248	13104	13248	2208	736	543	542	736	0.0	2274.0
+full_paradigm	cell_k6_seed3	cell_k	3	excluded	19632	19440	19632	7362	818	589	587	818		
+full_paradigm	cell_k8_seed3	cell_k	3	train	45808	45360	45808	6544	818	589	587	818		
+full_paradigm	cell_k8_seed3	cell_k	3	dev	656	640	656	82	82	80	80	82	0.0	208.0
+full_paradigm	cell_k8_seed3	cell_k	3	test	5888	5840	5888	736	736	539	537	736	0.0	1608.0
+full_paradigm	cell_k8_seed3	cell_k	3	excluded	6544	6480	6544	6544	818	589	587	818		
+full_paradigm	cell_k2_seed4	cell_k	4	train	1636	1620	1636	1636	818	589	587	818		
+full_paradigm	cell_k2_seed4	cell_k	4	dev	1148	1134	1148	574	82	80	80	82	0.0	42.0
+full_paradigm	cell_k2_seed4	cell_k	4	test	10304	10206	10304	5152	736	545	543	736	0.0	404.0
+full_paradigm	cell_k2_seed4	cell_k	4	excluded	45808	45360	45808	7362	818	589	587	818		
+full_paradigm	cell_k4_seed4	cell_k	4	train	9816	9720	9816	3272	818	589	587	818		
+full_paradigm	cell_k4_seed4	cell_k	4	dev	1640	1640	1640	410	82	82	82	82	0.0	192.0
+full_paradigm	cell_k4_seed4	cell_k	4	test	14720	14560	14720	3680	736	546	545	736	0.0	1588.0
+full_paradigm	cell_k4_seed4	cell_k	4	excluded	32720	32400	32720	7362	818	589	587	818		
+full_paradigm	cell_k6_seed4	cell_k	4	train	24540	24300	24540	4908	818	589	587	818		
+full_paradigm	cell_k6_seed4	cell_k	4	dev	1476	1458	1476	246	82	80	80	82	0.0	270.0
+full_paradigm	cell_k6_seed4	cell_k	4	test	13248	13122	13248	2208	736	549	547	736	0.0	2436.0
+full_paradigm	cell_k6_seed4	cell_k	4	excluded	19632	19440	19632	7362	818	589	587	818		
+full_paradigm	cell_k8_seed4	cell_k	4	train	45808	45360	45808	6544	818	589	587	818		
+full_paradigm	cell_k8_seed4	cell_k	4	dev	656	640	656	82	82	80	80	82	0.0	152.0
+full_paradigm	cell_k8_seed4	cell_k	4	test	5888	5840	5888	736	736	540	539	736	0.0	1600.0
+full_paradigm	cell_k8_seed4	cell_k	4	excluded	6544	6480	6544	6544	818	589	587	818		

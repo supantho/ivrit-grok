@@ -1,0 +1,6 @@
+{
+  "unimorph_heb": {"url": "https://github.com/unimorph/heb", "commit": "b2bff12338caa1922e6aeea128c617730f93d334",
+                   "retrieved": "2026-09-24"},
+  "hewiktionary_dump": {"url": "https://dumps.wikimedia.org/hewiktionary/20260901/hewiktionary-20260901-pages-articles.xml.bz2",
+                        "sha1": "eb96787cc3c45a938259aeede923ccc7cdc143a7", "retrieved": "2026-09-24"}
+}

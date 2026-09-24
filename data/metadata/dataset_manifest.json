@@ -1,0 +1,108 @@
+{
+ "dataset_name": "HEB_MORPH_GROK",
+ "dataset_version": "HEB_MORPH_GROK_v0.1",
+ "frozen": false,
+ "generation_timestamp": "2026-09-24T20:05:24+00:00",
+ "git_commit": "no commit yet (repository initialised, nothing committed)",
+ "git_worktree_dirty": null,
+ "source_versions": {
+  "unimorph_heb": {
+   "url": "https://github.com/unimorph/heb",
+   "commit": "b2bff12338caa1922e6aeea128c617730f93d334",
+   "retrieved": "2026-09-24",
+   "license": "CC BY-SA 3.0"
+  },
+  "hewiktionary": {
+   "url": "https://dumps.wikimedia.org/hewiktionary/20260901/hewiktionary-20260901-pages-articles.xml.bz2",
+   "dump_date": "20260901",
+   "sha1": "eb96787cc3c45a938259aeede923ccc7cdc143a7",
+   "retrieved": "2026-09-24",
+   "license": "CC BY-SA 4.0 (text); GFDL"
+  }
+ },
+ "source_commits": {
+  "unimorph_heb": "b2bff12338caa1922e6aeea128c617730f93d334",
+  "hewiktionary_dump": "20260901"
+ },
+ "schema_version": "0.1.0",
+ "parser_versions": {
+  "hebrew_normalizer": "0.1.0",
+  "unimorph_parser": "0.1.0",
+  "wiktionary_parser": "0.1.0",
+  "matcher": "0.1.0",
+  "canonical_builder": "0.1.0",
+  "derived_views": "0.1.0",
+  "splitter": "0.1.0",
+  "synthetic_generator": "0.1.0"
+ },
+ "random_seeds": {
+  "splits": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "class_ood_splits": [
+   0,
+   1,
+   2
+  ],
+  "cell_k": [
+   2,
+   4,
+   6,
+   8
+  ],
+  "synthetic_v1": 12345,
+  "synthetic_splits": [
+   0,
+   1,
+   2
+  ]
+ },
+ "counts": {
+  "roots": 1685,
+  "lexemes": 2945,
+  "forms": 33802,
+  "unimorph_lexemes": 1042,
+  "complete_past_paradigms": 1051,
+  "past_reinflection_examples": 16744,
+  "past_reinflection_eligible": 13124,
+  "split_manifests": 111,
+  "tiers": {
+   "GOLD": 259,
+   "SILVER": 2371,
+   "QUESTIONABLE": 315
+  }
+ },
+ "checksums": {
+  "canonical/forms.parquet": "88a97371bae4b1873dc30b2b08131cf995f7ea8a325b3ab62198f2345ce6509a",
+  "canonical/forms.tsv": "ac55888bcf89f83e745c0b427abab9d37b7198c0eb546cf5e766c7beacba7121",
+  "canonical/lexemes.parquet": "d537a44971165f312fab3f2e46e510e4e275d26fbe344c56056fde82ce87db13",
+  "canonical/lexemes.tsv": "7caa0435a3539fa41d9f2757c57e0731e2cb979e2ddaf7155bca5ec19c7ec2b9",
+  "canonical/provenance.parquet": "f0c98f109dfd0b8bb1b6261a99996ddcf19b629f2f9ea353864af231d4733d3d",
+  "canonical/provenance.tsv": "0c06359cfab096ccb934d5fecccb3552325ad442f8d78b9e7691f4eae44cb3c3",
+  "canonical/roots.parquet": "741a49bd0ec5d10a971f2d68cffed1e74bbe94a2842acb02aa59ef2f728e0ac7",
+  "canonical/roots.tsv": "7393fbb18679a6c6949c25d89e44e27648206d8aee202b4a875ece18595ae143",
+  "canonical/validation.parquet": "c9c61ba7750ff242f93da43b1e47c2612a0d9f9d5769ebd2198def9b1408a35d",
+  "canonical/validation.tsv": "055c16ff55bf03febc8f4d0dddfa53f219b9381f2be6944f1f6c6f6fa650c1ad",
+  "derived/full_paradigm/full_paradigm.jsonl": "e0229578b5cf415b76a20f0e304d5aeb5d5a0cab0542cf87f0bd1301205605db",
+  "derived/full_paradigm/full_paradigm.parquet": "c059b1f736bec68700d9719308af74dc61f2ff5eead1d730add3ac106ded048b",
+  "derived/full_paradigm/full_paradigm.tsv": "aa9e6921e486c86acfb4a344fbeadcbbd75461c65c240d26162cf4405d9af981",
+  "derived/past_reinflection/past_reinflection.jsonl": "d84c0f4eedb3acbde799d6d99e7fcee4d6ca33d4d2b7da77bf5e1352d22c807a",
+  "derived/past_reinflection/past_reinflection.parquet": "206ac789f0606a84676884fb2624c5dcd6907acf404b4793ea78f2069d0ae6a9",
+  "derived/past_reinflection/past_reinflection.tsv": "6087ea12940f370e4b1619e0a9c40a32a807856ce397b9362d7833bd4ede1ad8",
+  "derived/synthetic/v1/canonical/forms.parquet": "87ffbfb404c415cbdd5803afc5a6eff1a71801a4862e6f923844381b8d52d033",
+  "derived/synthetic/v1/canonical/forms.tsv": "ecafe6efe4356bae4e5677f5706d252fb49bd2ccfbb73307a6cf02b9d2cd71b3",
+  "derived/synthetic/v1/canonical/lexemes.parquet": "51457e22d0f97f380f969413c52adc08f3ab4aa3c39ff7286d787c40ec63fdd1",
+  "derived/synthetic/v1/canonical/lexemes.tsv": "fe46fe3b60147e316a47b19493afbb96ee144b28428d3d4fca4e0dad8df2330e",
+  "derived/synthetic/v1/canonical/provenance.parquet": "8864cc4a7f83f56befb52a8e40713b509e24bfbfc34dc640b060e2e3d7226e1b",
+  "derived/synthetic/v1/canonical/provenance.tsv": "3f3e6f900a42e217147e31a3888dce7043b3edb09779095d598f59bbb1a3a295",
+  "derived/synthetic/v1/canonical/roots.parquet": "341edd2b91744e1f0f614c227222c3e2c3d22d77b889b5ee6bc46ed1a1d03486",
+  "derived/synthetic/v1/canonical/roots.tsv": "deaf8c6d701ace7312fe7f96373fbc322e3ef0217b4d30c3c41e3cc6e7538d0d",
+  "derived/synthetic/v1/canonical/validation.parquet": "b0262fa48a873cdfc14fbc31a8e2668497cd2415ff6052111e807641db1b8d94",
+  "derived/synthetic/v1/canonical/validation.tsv": "4c1ae88cbd11ed5260c241bcd4bccefffa4e22e39e374796320424f63e2e8b66"
+ },
+ "split_manifests_sha256": "006bfe56f12a102f36a6a03b5ec8b24e7ecc0d831d2fc001eebce5724bd784cd"
+}

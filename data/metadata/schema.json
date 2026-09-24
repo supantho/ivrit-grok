@@ -1,0 +1,984 @@
+{
+  "schema_version": "0.1.0",
+  "tables": {
+    "roots": {
+      "primary_key": "root_id",
+      "columns": [
+        {
+          "name": "root_id",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Stable ID: 'RT-' + sha1('root|' + root_normalized)[:10]. Synthetic roots use 'SYN-RT-...'."
+        },
+        {
+          "name": "root_raw",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Root exactly as first written by the primary source record (e.g. template text 'שׁ־מ־ר' or '{{שרש3|..}}')."
+        },
+        {
+          "name": "root_normalized",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Root identity: radicals joined without separator, final forms normalized (ך->כ); ש carries its shin/sin dot (שׁ / שׂ) when resolved (from source radicals, else from the lexeme's vocalized lemma -- see lexemes.shin_sin_resolution), bare ש if unresolved."
+        },
+        {
+          "name": "radical_1",
+          "dtype": "string",
+          "nullable": false,
+          "description": "First radical (bare letter, shin/sin dot removed; see root_normalized for the dotted form)."
+        },
+        {
+          "name": "radical_2",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Second radical."
+        },
+        {
+          "name": "radical_3",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Third radical."
+        },
+        {
+          "name": "radical_4",
+          "dtype": "string",
+          "nullable": true,
+          "description": "Fourth radical (quadriliteral+ roots), else null."
+        },
+        {
+          "name": "radical_5",
+          "dtype": "string",
+          "nullable": true,
+          "description": "Fifth radical (quinqueliteral roots, Wiktionary-only), else null."
+        },
+        {
+          "name": "root_length",
+          "dtype": "Int64",
+          "nullable": false,
+          "description": "Number of radicals."
+        },
+        {
+          "name": "traditional_class",
+          "dtype": "string",
+          "nullable": true,
+          "description": "Normalized traditional גזרה labels EXPLICITLY given by Wiktionary for this root's lexemes ('+'-joined, sorted), e.g. 'PE_NUN+LAMED_YOD_HE'. Null if no source states one. Never inferred."
+        },
+        {
+          "name": "traditional_class_raw",
+          "dtype": "string",
+          "nullable": true,
+          "description": "The raw גזרה strings from the sources (' ; '-joined)."
+        },
+        {
+          "name": "r1_is_nun",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "radical_1 == נ (computed from radicals)."
+        },
+        {
+          "name": "r1_is_yod",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "radical_1 == י."
+        },
+        {
+          "name": "r1_is_waw",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "radical_1 == ו."
+        },
+        {
+          "name": "r1_is_alef",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "radical_1 == א."
+        },
+        {
+          "name": "r2_is_yod",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "radical_2 == י."
+        },
+        {
+          "name": "r2_is_waw",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "radical_2 == ו."
+        },
+        {
+          "name": "r3_is_he",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "radical_3 == ה (literal position 3, also for quadriliterals)."
+        },
+        {
+          "name": "r3_is_yod",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "radical_3 == י."
+        },
+        {
+          "name": "r3_is_alef",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "radical_3 == א."
+        },
+        {
+          "name": "rfinal_is_he",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "Last radical == ה."
+        },
+        {
+          "name": "r1_is_guttural",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "radical_1 in {א,ה,ח,ע} (ר is NOT counted as guttural; see has_resh)."
+        },
+        {
+          "name": "r2_is_guttural",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "radical_2 in {א,ה,ח,ע}."
+        },
+        {
+          "name": "r3_is_guttural",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "radical_3 in {א,ה,ח,ע}."
+        },
+        {
+          "name": "has_resh",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "Any radical == ר."
+        },
+        {
+          "name": "is_geminate",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "Triliteral root with radical_2 == radical_3."
+        },
+        {
+          "name": "is_reduplicated_quadriliteral",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "Quadriliteral with r1==r3 and r2==r4 (e.g. גלגל)."
+        },
+        {
+          "name": "has_weak_radical",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "r1 in {נ,י,ו,א} or r2 in {ו,י} or r3 in {ה,י,א} or geminate (transparent definition; see README)."
+        },
+        {
+          "name": "structural_signature",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Per-radical symbols joined by '.': N=נ Y=י W=ו H=ה A=א X=ח E=ע R=ר C=other; '+GEM' suffix if geminate. e.g. כתב->C.C.C, נפל->N.C.C, קום->C.W.C."
+        },
+        {
+          "name": "structural_class",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Single primary structural class by fixed priority (quadriliteral > geminate > hollow_candidate > final_he > initial_nun > initial_yod_waw > final_alef > initial_alef > guttural_containing > strong). Computed, not a traditional label."
+        },
+        {
+          "name": "sc_strong",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "No weak radical, no guttural (א ה ח ע), triliteral, not geminate."
+        },
+        {
+          "name": "sc_final_he",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "Triliteral, radical_3 == ה."
+        },
+        {
+          "name": "sc_hollow_candidate",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "Triliteral, radical_2 in {ו,י}. 'Candidate' because some such roots inflect as strong."
+        },
+        {
+          "name": "sc_initial_nun",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "radical_1 == נ."
+        },
+        {
+          "name": "sc_initial_yod_waw",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "radical_1 in {י,ו}."
+        },
+        {
+          "name": "sc_geminate",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "= is_geminate."
+        },
+        {
+          "name": "sc_guttural_containing",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "Any radical in {א,ה,ח,ע}."
+        },
+        {
+          "name": "sc_quadriliteral",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "root_length >= 4."
+        },
+        {
+          "name": "root_orthographic",
+          "dtype": "string",
+          "nullable": false,
+          "description": "root_normalized with shin/sin dots removed: what the root looks like in unvocalized text."
+        },
+        {
+          "name": "orthographic_root_group_id",
+          "dtype": "string",
+          "nullable": false,
+          "description": "'RG-' + sha1(root_orthographic): shared by roots that differ only in shin/sin (e.g. שׂכר / שׁכר). Root-holdout splits group by this ID so that unvocalized strings cannot leak across the split."
+        },
+        {
+          "name": "n_lexemes",
+          "dtype": "Int64",
+          "nullable": false,
+          "description": "Number of lexemes (root x binyan) with this root in lexemes table."
+        },
+        {
+          "name": "binyanim",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Sorted '|'-joined binyanim of this root's lexemes (unknown binyan -> '?')."
+        },
+        {
+          "name": "source_primary",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Primary source asserting the root: 'hewiktionary' or 'synthetic_v1'."
+        },
+        {
+          "name": "source_ids",
+          "dtype": "string",
+          "nullable": false,
+          "description": "'|'-joined source record identifiers supporting the root (see provenance)."
+        },
+        {
+          "name": "confidence",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "Max confidence_root over this root's lexemes."
+        },
+        {
+          "name": "quality_tier",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Best quality tier among this root's lexemes."
+        },
+        {
+          "name": "quality_flags",
+          "dtype": "string",
+          "nullable": true,
+          "description": "'|'-joined flags; null if none."
+        }
+      ]
+    },
+    "lexemes": {
+      "primary_key": "lexeme_id",
+      "columns": [
+        {
+          "name": "lexeme_id",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Stable ID: 'LX-' + sha1(source + '|' + NFC vocalized lemma [+ '|k' for k-th distinct paradigm])[:10]."
+        },
+        {
+          "name": "language",
+          "dtype": "string",
+          "nullable": false,
+          "description": "ISO 639-3 'heb' (synthetic: 'x-syn-heb')."
+        },
+        {
+          "name": "root_id",
+          "dtype": "string",
+          "nullable": true,
+          "description": "FK to roots. NULL if the root is missing or ambiguous (never guessed)."
+        },
+        {
+          "name": "root_radicals_dotted",
+          "dtype": "string",
+          "nullable": true,
+          "description": "Radicals as given by the source incl. shin/sin dots, '-'-joined (e.g. 'שׂ-ח-ק'); null if not given."
+        },
+        {
+          "name": "shin_sin_resolution",
+          "dtype": "string",
+          "nullable": true,
+          "description": "How ש radicals got their dot: NA (no ש) | SOURCE (root template) | FORM (read off vocalized lemma) | MIXED | UNRESOLVED; null if no root."
+        },
+        {
+          "name": "root_homonym_index",
+          "dtype": "string",
+          "nullable": true,
+          "description": "Wiktionary homonym index of the root (e.g. 'א','ב') if given."
+        },
+        {
+          "name": "binyan",
+          "dtype": "string",
+          "nullable": true,
+          "description": "One of PAAL NIFAL PIEL PUAL HIFIL HUFAL HITPAEL; NULL if missing/ambiguous (never guessed or taken from the shape heuristic)."
+        },
+        {
+          "name": "binyan_raw",
+          "dtype": "string",
+          "nullable": true,
+          "description": "Raw binyan label(s) from sources ('|'-joined)."
+        },
+        {
+          "name": "lemma_vocalized",
+          "dtype": "string",
+          "nullable": false,
+          "description": "NFC vocalized lemma as given by the primary source (UniMorph heb_voc lemma column / Wiktionary headword)."
+        },
+        {
+          "name": "lemma_unvocalized",
+          "dtype": "string",
+          "nullable": true,
+          "description": "Plene (ktiv male) unvocalized lemma: UniMorph 'heb' lemma of the paired paradigm, or Wiktionary 'כתיב מלא'."
+        },
+        {
+          "name": "infinitive_vocalized",
+          "dtype": "string",
+          "nullable": true,
+          "description": "NFIN cell, vocalized."
+        },
+        {
+          "name": "infinitive_unvocalized",
+          "dtype": "string",
+          "nullable": true,
+          "description": "NFIN cell, plene unvocalized."
+        },
+        {
+          "name": "citation_past_3ms_vocalized",
+          "dtype": "string",
+          "nullable": true,
+          "description": "PST.3MSG cell, vocalized."
+        },
+        {
+          "name": "citation_past_3ms_unvocalized",
+          "dtype": "string",
+          "nullable": true,
+          "description": "PST.3MSG cell, plene unvocalized."
+        },
+        {
+          "name": "gloss_en",
+          "dtype": "string",
+          "nullable": true,
+          "description": "English translations from {{ת|אנגלית|..}} in the matched Wiktionary section(s); null if none. Section-level, not sense-disambiguated."
+        },
+        {
+          "name": "sense_id",
+          "dtype": "string",
+          "nullable": true,
+          "description": "Wiktionary homonym markers of the matched section(s) when several sections share root x binyan (e.g. 'משני:א|משני:ב'); else null."
+        },
+        {
+          "name": "modern_hebrew",
+          "dtype": "boolean",
+          "nullable": true,
+          "description": "True for UniMorph lexemes (source inventory = Modern Hebrew conjugation tables); True for Wiktionary-only lexemes only if a 'עברית חדשה' register tag is present; else null (unknown)."
+        },
+        {
+          "name": "attested",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "Lexeme appears as an entry/paradigm in a lexicographic source (all real records True; synthetic False)."
+        },
+        {
+          "name": "has_unimorph_paradigm",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "Lexeme has a UniMorph paradigm (else Wiktionary-only)."
+        },
+        {
+          "name": "source_primary",
+          "dtype": "string",
+          "nullable": false,
+          "description": "'unimorph_heb' | 'hewiktionary' | 'synthetic_v1'."
+        },
+        {
+          "name": "source_ids",
+          "dtype": "string",
+          "nullable": false,
+          "description": "'|'-joined source record identifiers (see provenance)."
+        },
+        {
+          "name": "match_status",
+          "dtype": "string",
+          "nullable": false,
+          "description": "MATCHED | MATCHED_UNVOC_ONLY | ROOT_AMBIGUOUS | BINYAN_AMBIGUOUS | ROOT_AND_BINYAN_AMBIGUOUS | NO_MATCH | WIKTIONARY_ONLY | SYNTHETIC."
+        },
+        {
+          "name": "match_method",
+          "dtype": "string",
+          "nullable": true,
+          "description": "'|'-joined methods of the evidence that agrees with the assigned root/binyan."
+        },
+        {
+          "name": "match_score",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "Noisy-OR of agreeing evidence weights (0 if nothing assigned)."
+        },
+        {
+          "name": "match_evidence",
+          "dtype": "string",
+          "nullable": true,
+          "description": "JSON list of all evidence records considered (incl. disagreeing ones)."
+        },
+        {
+          "name": "match_ambiguous",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "True if >1 root or >1 binyan was supported by evidence."
+        },
+        {
+          "name": "binyan_shape_heuristic",
+          "dtype": "string",
+          "nullable": true,
+          "description": "Binyan predicted from the vocalized paradigm shape (VALIDATION ONLY)."
+        },
+        {
+          "name": "binyan_shape_rule",
+          "dtype": "string",
+          "nullable": true,
+          "description": "Rule that produced binyan_shape_heuristic."
+        },
+        {
+          "name": "voc_unvoc_pairing_status",
+          "dtype": "string",
+          "nullable": true,
+          "description": "PAIRED | PAIRED_PARTIAL | PAIRED_TIE_IDENTICAL | AMBIGUOUS | UNPAIRED (UniMorph lexemes)."
+        },
+        {
+          "name": "voc_unvoc_pairing_score",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "Fraction of cells whose vocalized and plene forms agree on letters modulo ו/י."
+        },
+        {
+          "name": "gizra_labels",
+          "dtype": "string",
+          "nullable": true,
+          "description": "Traditional גזרה labels stated by the matched Wiktionary entries of this lexeme."
+        },
+        {
+          "name": "wiktionary_registers",
+          "dtype": "string",
+          "nullable": true,
+          "description": "{{רובד}} register tags in matched Wiktionary sections."
+        },
+        {
+          "name": "n_cells",
+          "dtype": "Int64",
+          "nullable": false,
+          "description": "Number of paradigm cells in forms table."
+        },
+        {
+          "name": "past_expected_cells",
+          "dtype": "Int64",
+          "nullable": false,
+          "description": "Always 9 (canonical past paradigm)."
+        },
+        {
+          "name": "past_observed_cells",
+          "dtype": "Int64",
+          "nullable": false,
+          "description": "Number of the 9 canonical past cells with a vocalized form."
+        },
+        {
+          "name": "past_completeness",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "past_observed_cells / 9."
+        },
+        {
+          "name": "past_complete",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "past_observed_cells == 9."
+        },
+        {
+          "name": "ud_attested",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "Some plene form of this lexeme occurs as a verb form in UniMorph from_UD_unvoc (surface match only; may be a homograph)."
+        },
+        {
+          "name": "confidence_root",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "Noisy-OR of agreeing root evidence weights; 0 if missing/ambiguous; halved if ROOT_FORM_MISMATCH."
+        },
+        {
+          "name": "confidence_binyan",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "Noisy-OR of agreeing binyan evidence weights; 0 if missing/ambiguous; halved if shape heuristic disagrees."
+        },
+        {
+          "name": "confidence_lexeme",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "min(confidence_root, confidence_binyan) x (1 if voc/unvoc PAIRED else 0.8)."
+        },
+        {
+          "name": "quality_tier",
+          "dtype": "string",
+          "nullable": false,
+          "description": "GOLD | SILVER | QUESTIONABLE (see README)."
+        },
+        {
+          "name": "quality_flags",
+          "dtype": "string",
+          "nullable": true,
+          "description": "'|'-joined flags; null if none."
+        }
+      ]
+    },
+    "forms": {
+      "primary_key": "form_id",
+      "columns": [
+        {
+          "name": "form_id",
+          "dtype": "string",
+          "nullable": false,
+          "description": "'<lexeme_id>.<canonical_cell>' (unique: one row per lexeme x cell)."
+        },
+        {
+          "name": "lexeme_id",
+          "dtype": "string",
+          "nullable": false,
+          "description": "FK to lexemes."
+        },
+        {
+          "name": "root_id",
+          "dtype": "string",
+          "nullable": true,
+          "description": "Copy of lexemes.root_id (analysis convenience)."
+        },
+        {
+          "name": "form_raw",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Surface string exactly as in the primary source (vocalized source when available)."
+        },
+        {
+          "name": "form_nfc",
+          "dtype": "string",
+          "nullable": false,
+          "description": "NFC(form_raw)."
+        },
+        {
+          "name": "form_vocalized",
+          "dtype": "string",
+          "nullable": true,
+          "description": "NFC vocalized form (null if the only source is unvocalized)."
+        },
+        {
+          "name": "form_unvocalized",
+          "dtype": "string",
+          "nullable": true,
+          "description": "NFC plene (ktiv male) form from the unvocalized source; null if unavailable. NOT derived by stripping."
+        },
+        {
+          "name": "form_stripped",
+          "dtype": "string",
+          "nullable": true,
+          "description": "strip_niqqud(form_vocalized): defective (ktiv haser) spelling, deterministic."
+        },
+        {
+          "name": "form_vocalized_variants",
+          "dtype": "string",
+          "nullable": true,
+          "description": "'|'-joined other vocalized forms given for the same lexeme x cell (e.g. duplicate source paradigms, Wiktionary variants)."
+        },
+        {
+          "name": "form_unvocalized_variants",
+          "dtype": "string",
+          "nullable": true,
+          "description": "'|'-joined other plene spellings given for the same lexeme x cell."
+        },
+        {
+          "name": "pos",
+          "dtype": "string",
+          "nullable": false,
+          "description": "'V' or 'V.MSDR' (verbal noun)."
+        },
+        {
+          "name": "finiteness",
+          "dtype": "string",
+          "nullable": false,
+          "description": "FIN | NFIN."
+        },
+        {
+          "name": "tense",
+          "dtype": "string",
+          "nullable": false,
+          "description": "PST | PRS | FUT | NA."
+        },
+        {
+          "name": "aspect",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Always NA (not morphologically marked / not annotated)."
+        },
+        {
+          "name": "mood",
+          "dtype": "string",
+          "nullable": false,
+          "description": "IND | IMP | NA."
+        },
+        {
+          "name": "person",
+          "dtype": "string",
+          "nullable": false,
+          "description": "1 | 2 | 3 | NA (present participles and non-finite forms: NA)."
+        },
+        {
+          "name": "number",
+          "dtype": "string",
+          "nullable": false,
+          "description": "SG | PL | NA."
+        },
+        {
+          "name": "gender",
+          "dtype": "string",
+          "nullable": false,
+          "description": "MASC | FEM | NA (1st person and PST.3PL: NA -- not expressed)."
+        },
+        {
+          "name": "voice",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Always NA: voice is not annotated by the sources; the binyan column carries voice-related information."
+        },
+        {
+          "name": "binyan",
+          "dtype": "string",
+          "nullable": true,
+          "description": "Copy of lexemes.binyan."
+        },
+        {
+          "name": "canonical_cell",
+          "dtype": "string",
+          "nullable": false,
+          "description": "e.g. PST.1SG PST.2MSG PST.3PL PRS.FSG FUT.3MPL IMP.2FSG NFIN MSDR."
+        },
+        {
+          "name": "is_past_cell",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "canonical_cell in the 9 canonical past cells."
+        },
+        {
+          "name": "unimorph_tag_raw",
+          "dtype": "string",
+          "nullable": true,
+          "description": "Original UniMorph tag (null for Wiktionary-only forms)."
+        },
+        {
+          "name": "is_syncretic",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "Another cell of the same lexeme has an identical VOCALIZED form."
+        },
+        {
+          "name": "syncretism_group",
+          "dtype": "string",
+          "nullable": true,
+          "description": "'<lexeme_id>:V<k>' shared by cells with identical vocalized forms; null if unique."
+        },
+        {
+          "name": "is_syncretic_unvocalized",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "Another cell of the same lexeme has an identical PLENE UNVOCALIZED form."
+        },
+        {
+          "name": "syncretism_group_unvocalized",
+          "dtype": "string",
+          "nullable": true,
+          "description": "'<lexeme_id>:U<k>' shared by cells with identical plene forms; null if unique."
+        },
+        {
+          "name": "plene_consistent",
+          "dtype": "boolean",
+          "nullable": true,
+          "description": "Vocalized and plene forms agree on letters modulo ו/י (null if either missing)."
+        },
+        {
+          "name": "wiktionary_corroborated",
+          "dtype": "boolean",
+          "nullable": true,
+          "description": "True: a Wiktionary table gives the same vocalized form in this cell; False: it gives a different one (conflict); null: no Wiktionary table value."
+        },
+        {
+          "name": "ud_attested",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "form_unvocalized occurs among UD-derived verb forms (surface match only)."
+        },
+        {
+          "name": "is_attested",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "Form is taken from a source (not generated)."
+        },
+        {
+          "name": "is_generated",
+          "dtype": "boolean",
+          "nullable": false,
+          "description": "Form was generated by a program (synthetic data only)."
+        },
+        {
+          "name": "source_primary",
+          "dtype": "string",
+          "nullable": false,
+          "description": "'unimorph_heb' | 'hewiktionary' | 'synthetic_v1'."
+        },
+        {
+          "name": "source_ids",
+          "dtype": "string",
+          "nullable": false,
+          "description": "'|'-joined source record identifiers."
+        },
+        {
+          "name": "confidence",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "confidence_lexeme x form-level factor (1; 0.5 if a form-level check failed)."
+        },
+        {
+          "name": "quality_tier",
+          "dtype": "string",
+          "nullable": false,
+          "description": "GOLD | SILVER | QUESTIONABLE; never better than the lexeme's tier."
+        },
+        {
+          "name": "quality_flags",
+          "dtype": "string",
+          "nullable": true,
+          "description": "'|'-joined flags; null if none."
+        }
+      ]
+    },
+    "provenance": {
+      "primary_key": "provenance_id",
+      "columns": [
+        {
+          "name": "provenance_id",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Unique row ID."
+        },
+        {
+          "name": "canonical_record_id",
+          "dtype": "string",
+          "nullable": false,
+          "description": "root_id / lexeme_id / form_id."
+        },
+        {
+          "name": "record_type",
+          "dtype": "string",
+          "nullable": false,
+          "description": "root | lexeme | form."
+        },
+        {
+          "name": "field_supported",
+          "dtype": "string",
+          "nullable": false,
+          "description": "What this source record supports (e.g. form_vocalized, form_unvocalized, root, binyan, paradigm)."
+        },
+        {
+          "name": "source_name",
+          "dtype": "string",
+          "nullable": false,
+          "description": "unimorph_heb | hewiktionary | synthetic_v1."
+        },
+        {
+          "name": "source_url",
+          "dtype": "string",
+          "nullable": false,
+          "description": "URL (UniMorph: blob URL at pinned commit with #L<line>; Wiktionary: page at pinned revision)."
+        },
+        {
+          "name": "source_file",
+          "dtype": "string",
+          "nullable": false,
+          "description": "File name within the source (UniMorph file / dump file name)."
+        },
+        {
+          "name": "source_version_or_commit",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Git commit or dump date."
+        },
+        {
+          "name": "source_record_identifier",
+          "dtype": "string",
+          "nullable": false,
+          "description": "e.g. 'heb_voc:1234' or 'wikt:page=<id>:rev=<id>:sec=<offset>:tpl=<k>'."
+        },
+        {
+          "name": "source_line_if_available",
+          "dtype": "Int64",
+          "nullable": true,
+          "description": "1-based line number in source file."
+        },
+        {
+          "name": "retrieval_date",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Date the raw source was retrieved (ISO)."
+        },
+        {
+          "name": "parser_version",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Version of the parser that read this record."
+        },
+        {
+          "name": "raw_source_value",
+          "dtype": "string",
+          "nullable": false,
+          "description": "The raw source text supporting the field (line / template / cell value)."
+        }
+      ]
+    },
+    "validation": {
+      "primary_key": "check_id",
+      "columns": [
+        {
+          "name": "check_id",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Unique row ID."
+        },
+        {
+          "name": "record_id",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Affected record (or '*' for table-level checks)."
+        },
+        {
+          "name": "record_type",
+          "dtype": "string",
+          "nullable": false,
+          "description": "root | lexeme | form | table | source."
+        },
+        {
+          "name": "check_name",
+          "dtype": "string",
+          "nullable": false,
+          "description": "Name of the check (see README)."
+        },
+        {
+          "name": "severity",
+          "dtype": "string",
+          "nullable": false,
+          "description": "ERROR | WARNING | INFO."
+        },
+        {
+          "name": "details",
+          "dtype": "string",
+          "nullable": true,
+          "description": "Human-readable details / values involved."
+        }
+      ]
+    }
+  },
+  "enums": {
+    "lexemes.binyan": [
+      "HIFIL",
+      "HITPAEL",
+      "HUFAL",
+      "NIFAL",
+      "PAAL",
+      "PIEL",
+      "PUAL"
+    ],
+    "forms.binyan": [
+      "HIFIL",
+      "HITPAEL",
+      "HUFAL",
+      "NIFAL",
+      "PAAL",
+      "PIEL",
+      "PUAL"
+    ],
+    "roots.quality_tier": [
+      "GOLD",
+      "QUESTIONABLE",
+      "SILVER"
+    ],
+    "lexemes.quality_tier": [
+      "GOLD",
+      "QUESTIONABLE",
+      "SILVER"
+    ],
+    "forms.quality_tier": [
+      "GOLD",
+      "QUESTIONABLE",
+      "SILVER"
+    ],
+    "forms.tense": [
+      "FUT",
+      "NA",
+      "PRS",
+      "PST"
+    ],
+    "forms.mood": [
+      "IMP",
+      "IND",
+      "NA"
+    ],
+    "forms.person": [
+      "1",
+      "2",
+      "3",
+      "NA"
+    ],
+    "forms.number": [
+      "NA",
+      "PL",
+      "SG"
+    ],
+    "forms.gender": [
+      "FEM",
+      "MASC",
+      "NA"
+    ],
+    "forms.aspect": [
+      "NA"
+    ],
+    "forms.voice": [
+      "NA"
+    ],
+    "provenance.record_type": [
+      "form",
+      "lexeme",
+      "root"
+    ],
+    "validation.severity": [
+      "ERROR",
+      "INFO",
+      "WARNING"
+    ]
+  }
+}

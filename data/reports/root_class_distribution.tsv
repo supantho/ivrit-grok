@@ -1,0 +1,359 @@
+dimension	value	roots
+structural_class	strong	428
+structural_class	guttural_containing	383
+structural_class	quadriliteral	185
+structural_class	hollow_candidate	181
+structural_class	final_he	145
+structural_class	geminate	132
+structural_class	initial_nun	89
+structural_class	initial_yod_waw	63
+structural_class	initial_alef	54
+structural_class	final_alef	25
+structural_signature	C.C.C	216
+structural_signature	C.C.C+GEM	68
+structural_signature	C.R.C	67
+structural_signature	C.C.R	65
+structural_signature	C.C.C.C	56
+structural_signature	C.W.C	53
+structural_signature	C.C.H	51
+structural_signature	N.C.C	43
+structural_signature	X.C.C	41
+structural_signature	C.C.X	40
+structural_signature	E.C.C	39
+structural_signature	C.X.C	38
+structural_signature	C.C.E	30
+structural_signature	R.C.C	30
+structural_signature	C.E.C	27
+structural_signature	C.Y.C	27
+structural_signature	C.C.N	26
+structural_signature	A.C.C	26
+structural_signature	C.N.C	18
+structural_signature	Y.C.C	18
+structural_signature	C.R.C.C	17
+structural_signature	C.C.A	15
+structural_signature	C.A.C	12
+structural_signature	X.C.H	11
+structural_signature	N.C.R	11
+structural_signature	C.R.R+GEM	11
+structural_signature	X.R.C	11
+structural_signature	X.C.C+GEM	10
+structural_signature	N.C.H	10
+structural_signature	C.H.C	10
+structural_signature	E.C.R	9
+structural_signature	E.R.C	9
+structural_signature	C.R.H	9
+structural_signature	C.W.R	9
+structural_signature	C.R.X	9
+structural_signature	X.C.R	9
+structural_signature	A.C.R	9
+structural_signature	C.E.R	8
+structural_signature	N.C.X	8
+structural_signature	C.H.H+GEM	8
+structural_signature	C.N.H	8
+structural_signature	C.W.H	8
+structural_signature	C.E.H	7
+structural_signature	C.N.N+GEM	7
+structural_signature	Y.C.E	7
+structural_signature	R.C.H	7
+structural_signature	C.N.C.C	7
+structural_signature	C.R.E	7
+structural_signature	C.W.X	7
+structural_signature	N.W.C	7
+structural_signature	H.C.C	7
+structural_signature	E.C.H	6
+structural_signature	E.W.C	6
+structural_signature	R.X.C	6
+structural_signature	R.E.C	6
+structural_signature	C.R.C.R	6
+structural_signature	Y.C.R	6
+structural_signature	R.C.E	6
+structural_signature	C.E.C.E	6
+structural_signature	X.W.C	5
+structural_signature	X.N.C	5
+structural_signature	A.C.H	5
+structural_signature	C.H.R	5
+structural_signature	C.A.H	5
+structural_signature	Y.X.C	5
+structural_signature	A.R.C	5
+structural_signature	A.C.C.C	5
+structural_signature	N.C.E	5
+structural_signature	X.C.N	5
+structural_signature	E.N.C	5
+structural_signature	C.X.N	5
+structural_signature	C.W.N	5
+structural_signature	A.C.C+GEM	5
+structural_signature	Y.R.C	4
+structural_signature	E.C.C+GEM	4
+structural_signature	A.W.C	4
+structural_signature	C.N.X	4
+structural_signature	N.H.C	4
+structural_signature	C.A.R	4
+structural_signature	Y.E.C	4
+structural_signature	N.C.N.C	4
+structural_signature	R.Y.C	4
+structural_signature	C.N.C.R	4
+structural_signature	E.R.C.C	4
+structural_signature	H.C.H	4
+structural_signature	A.C.N	4
+structural_signature	C.Y.N	4
+structural_signature	N.X.C	4
+structural_signature	E.C.N	4
+structural_signature	Y.C.H	3
+structural_signature	X.Y.C	3
+structural_signature	C.R.A	3
+structural_signature	C.X.R	3
+structural_signature	N.A.C	3
+structural_signature	C.Y.X	3
+structural_signature	H.C.C+GEM	3
+structural_signature	C.X.H	3
+structural_signature	X.C.C.C	3
+structural_signature	A.C.C.N	3
+structural_signature	R.C.N	3
+structural_signature	C.W.E	3
+structural_signature	R.C.X	3
+structural_signature	C.C.N.C.N	3
+structural_signature	R.C.C+GEM	3
+structural_signature	C.C.R.R	3
+structural_signature	C.A.N	3
+structural_signature	C.C.C.N	3
+structural_signature	H.C.R	3
+structural_signature	C.C.C.R	3
+structural_signature	A.C.C.R	3
+structural_signature	C.N.A	3
+structural_signature	A.H.C	3
+structural_signature	H.C.H.C	3
+structural_signature	N.C.A	3
+structural_signature	Y.C.N	2
+structural_signature	C.N.E	2
+structural_signature	N.C.N	2
+structural_signature	A.Y.C	2
+structural_signature	A.N.C	2
+structural_signature	R.W.C	2
+structural_signature	Y.C.X	2
+structural_signature	Y.C.A	2
+structural_signature	C.C.N.C	2
+structural_signature	C.H.C.H	2
+structural_signature	H.R.C	2
+structural_signature	C.C.C.C.C	2
+structural_signature	Y.A.C	2
+structural_signature	C.R.C.N	2
+structural_signature	E.C.E.C	2
+structural_signature	C.R.C.E	2
+structural_signature	X.C.A	2
+structural_signature	Y.C.C+GEM	2
+structural_signature	N.C.C+GEM	2
+structural_signature	R.H.C	2
+structural_signature	N.E.C	2
+structural_signature	Y.H.C	2
+structural_signature	C.E.N	2
+structural_signature	C.Y.R	2
+structural_signature	X.R.C.N	2
+structural_signature	C.X.C.N	2
+structural_signature	C.X.R.R	1
+structural_signature	E.N.H	1
+structural_signature	N.H.R	1
+structural_signature	N.W.E	1
+structural_signature	A.X.C	1
+structural_signature	H.Y.H	1
+structural_signature	R.C.A	1
+structural_signature	X.Y.H	1
+structural_signature	Y.R.H	1
+structural_signature	A.W.N	1
+structural_signature	C.W.A	1
+structural_signature	E.W.R	1
+structural_signature	A.X.R	1
+structural_signature	A.C.X.N	1
+structural_signature	A.R.X	1
+structural_signature	A.W.R	1
+structural_signature	C.N.Y	1
+structural_signature	R.E.E+GEM	1
+structural_signature	Y.N.C	1
+structural_signature	N.W.X	1
+structural_signature	N.E.R	1
+structural_signature	R.A.H	1
+structural_signature	R.Y.X	1
+structural_signature	A.R.C.N	1
+structural_signature	X.N.N+GEM	1
+structural_signature	C.X.W.H	1
+structural_signature	A.C.R.X	1
+structural_signature	R.C.R.C	1
+structural_signature	E.Y.N	1
+structural_signature	R.N.N+GEM	1
+structural_signature	W.C.C	1
+structural_signature	Y.E.R	1
+structural_signature	X.C.C.N	1
+structural_signature	H.N.C.C	1
+structural_signature	A.C.R.C	1
+structural_signature	C.X.X+GEM	1
+structural_signature	Y.H.R	1
+structural_signature	N.Y.N	1
+structural_signature	C.C.X.C	1
+structural_signature	C.R.N	1
+structural_signature	R.E.H	1
+structural_signature	H.N.H	1
+structural_signature	Y.R.A	1
+structural_signature	X.N.H	1
+structural_signature	C.A.C.A	1
+structural_signature	X.W.H	1
+structural_signature	N.Y.R	1
+structural_signature	C.R.X.N	1
+structural_signature	C.Y.E	1
+structural_signature	W.C.N	1
+structural_signature	A.N.H	1
+structural_signature	H.W.C	1
+structural_signature	H.R.H	1
+structural_signature	W.C.X	1
+structural_signature	C.C.N.E	1
+structural_signature	X.R.R+GEM	1
+structural_signature	X.R.H	1
+structural_signature	X.W.R	1
+structural_signature	N.E.N.E	1
+structural_signature	N.X.R	1
+structural_signature	A.N.C.C.C	1
+structural_signature	C.X.C.X.C	1
+structural_signature	C.R.N.C	1
+structural_signature	C.E.C.N.C	1
+structural_signature	C.C.R.C.C	1
+structural_signature	C.C.W	1
+structural_signature	A.H.H+GEM	1
+structural_signature	C.R.H.C	1
+structural_signature	C.E.N.X	1
+structural_signature	W.C.A	1
+structural_signature	C.N.W.R	1
+structural_signature	A.R.R+GEM	1
+structural_signature	C.C.W.N	1
+structural_signature	N.W.A	1
+structural_signature	Y.N.H	1
+structural_signature	A.W.H	1
+structural_signature	Y.E.H	1
+structural_signature	C.C.E.N	1
+structural_signature	H.W.N	1
+structural_signature	N.A.R	1
+structural_signature	A.R.C.C.N	1
+structural_signature	W.C.R	1
+structural_signature	A.R.H	1
+structural_signature	R.W.H	1
+structural_signature	C.X.Y	1
+structural_signature	C.X.A	1
+structural_signature	H.W.H	1
+structural_signature	E.W.H	1
+structural_signature	E.R.H	1
+structural_signature	C.C.E.C	1
+structural_signature	A.X.H	1
+structural_signature	N.A.H	1
+structural_signature	N.W.H	1
+structural_signature	A.N.X	1
+structural_signature	C.N.C.R.N	1
+structural_signature	C.N.R.R	1
+structural_signature	C.E.Y	1
+structural_signature	X.R.C.C	1
+structural_signature	N.X.H	1
+structural_signature	N.H.H+GEM	1
+structural_signature	R.C.C.C	1
+structural_signature	Y.N.N+GEM	1
+structural_signature	A.W.R.R	1
+structural_signature	A.C.X	1
+structural_signature	H.R.H.R	1
+structural_signature	C.C.R.N	1
+structural_signature	C.Y.A	1
+structural_signature	C.Y.H	1
+structural_signature	C.W.Y	1
+structural_signature	Y.C.Y.C	1
+structural_signature	R.W.E	1
+structural_signature	X.C.X.C	1
+structural_signature	C.C.N.N	1
+traditional_class	NOT_STATED	1099
+traditional_class	SHLEMIM	270
+traditional_class	AYIN_WAW_YOD	60
+traditional_class	QUADRILITERAL	52
+traditional_class	AYIN_AYIN	45
+traditional_class	LAMED_YOD_HE	36
+traditional_class	PE_NUN	30
+traditional_class	LAMED_ALEF	16
+traditional_class	PE_YOD_WAW	16
+traditional_class	QUINQUILITERAL	8
+traditional_class	AYIN_AYIN+SHLEMIM	5
+traditional_class	PE_ALEF	5
+traditional_class	PE_GUTTURAL	4
+traditional_class	PE_NUN+SHLEMIM	4
+traditional_class	LAMED_YOD_HE+PE_NUN	4
+traditional_class	PE_YOD_TSADI	4
+traditional_class	AYIN_GUTTURAL	4
+traditional_class	LAMED_YOD_HE+PE_YOD_WAW	4
+traditional_class	LAMED_GUTTURAL	3
+traditional_class	AYIN_WAW_YOD+SHLEMIM	3
+traditional_class	AYIN_AYIN+LAMED_YOD_HE	2
+traditional_class	LAMED_ALEF+PE_YOD_WAW	2
+traditional_class	AYIN_GUTTURAL+SHLEMIM	2
+traditional_class	AYIN_WAW_YOD+LAMED_ALEF	1
+traditional_class	LAMED_GUTTURAL+PE_YOD_WAW	1
+traditional_class	PE_YOD_WAW+SHLEMIM	1
+traditional_class	LAMED_GUTTURAL+SHLEMIM	1
+traditional_class	LAMED_YOD_HE+PE_ALEF	1
+traditional_class	PE_GUTTURAL+SHLEMIM	1
+traditional_class	LAMED_ALEF+PE_NUN	1
+flag	sc_strong	427
+flag	sc_final_he	172
+flag	sc_hollow_candidate	181
+flag	sc_initial_nun	122
+flag	sc_initial_yod_waw	73
+flag	sc_geminate	132
+flag	sc_guttural_containing	833
+flag	sc_quadriliteral	185
+flag	has_weak_radical	721
+flag	is_geminate	132
+structural_x_traditional	final_alef x LAMED_ALEF	15
+structural_x_traditional	final_alef x NOT_STATED	10
+structural_x_traditional	final_he x LAMED_YOD_HE	34
+structural_x_traditional	final_he x LAMED_YOD_HE+PE_ALEF	1
+structural_x_traditional	final_he x LAMED_YOD_HE+PE_NUN	4
+structural_x_traditional	final_he x LAMED_YOD_HE+PE_YOD_WAW	4
+structural_x_traditional	final_he x NOT_STATED	101
+structural_x_traditional	final_he x SHLEMIM	1
+structural_x_traditional	geminate x AYIN_AYIN	43
+structural_x_traditional	geminate x AYIN_AYIN+SHLEMIM	5
+structural_x_traditional	geminate x NOT_STATED	75
+structural_x_traditional	geminate x PE_YOD_WAW	1
+structural_x_traditional	geminate x SHLEMIM	8
+structural_x_traditional	guttural_containing x AYIN_GUTTURAL	3
+structural_x_traditional	guttural_containing x AYIN_GUTTURAL+SHLEMIM	1
+structural_x_traditional	guttural_containing x LAMED_GUTTURAL	3
+structural_x_traditional	guttural_containing x LAMED_GUTTURAL+SHLEMIM	1
+structural_x_traditional	guttural_containing x NOT_STATED	273
+structural_x_traditional	guttural_containing x PE_GUTTURAL	4
+structural_x_traditional	guttural_containing x PE_GUTTURAL+SHLEMIM	1
+structural_x_traditional	guttural_containing x PE_YOD_WAW	1
+structural_x_traditional	guttural_containing x SHLEMIM	96
+structural_x_traditional	hollow_candidate x AYIN_AYIN	1
+structural_x_traditional	hollow_candidate x AYIN_AYIN+LAMED_YOD_HE	2
+structural_x_traditional	hollow_candidate x AYIN_WAW_YOD	60
+structural_x_traditional	hollow_candidate x AYIN_WAW_YOD+LAMED_ALEF	1
+structural_x_traditional	hollow_candidate x AYIN_WAW_YOD+SHLEMIM	3
+structural_x_traditional	hollow_candidate x LAMED_ALEF	1
+structural_x_traditional	hollow_candidate x LAMED_YOD_HE	2
+structural_x_traditional	hollow_candidate x NOT_STATED	97
+structural_x_traditional	hollow_candidate x SHLEMIM	14
+structural_x_traditional	initial_alef x NOT_STATED	36
+structural_x_traditional	initial_alef x PE_ALEF	5
+structural_x_traditional	initial_alef x SHLEMIM	13
+structural_x_traditional	initial_nun x LAMED_ALEF+PE_NUN	1
+structural_x_traditional	initial_nun x NOT_STATED	46
+structural_x_traditional	initial_nun x PE_NUN	30
+structural_x_traditional	initial_nun x PE_NUN+SHLEMIM	4
+structural_x_traditional	initial_nun x SHLEMIM	8
+structural_x_traditional	initial_yod_waw x LAMED_ALEF+PE_YOD_WAW	2
+structural_x_traditional	initial_yod_waw x LAMED_GUTTURAL+PE_YOD_WAW	1
+structural_x_traditional	initial_yod_waw x NOT_STATED	38
+structural_x_traditional	initial_yod_waw x PE_YOD_TSADI	4
+structural_x_traditional	initial_yod_waw x PE_YOD_WAW	14
+structural_x_traditional	initial_yod_waw x PE_YOD_WAW+SHLEMIM	1
+structural_x_traditional	initial_yod_waw x SHLEMIM	3
+structural_x_traditional	quadriliteral x AYIN_AYIN	1
+structural_x_traditional	quadriliteral x NOT_STATED	123
+structural_x_traditional	quadriliteral x QUADRILITERAL	52
+structural_x_traditional	quadriliteral x QUINQUILITERAL	8
+structural_x_traditional	quadriliteral x SHLEMIM	1
+structural_x_traditional	strong x AYIN_GUTTURAL	1
+structural_x_traditional	strong x AYIN_GUTTURAL+SHLEMIM	1
+structural_x_traditional	strong x NOT_STATED	300
+structural_x_traditional	strong x SHLEMIM	126

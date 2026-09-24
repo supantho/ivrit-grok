@@ -1,0 +1,260 @@
+conflict_type	record_type	record_id	lemma	details	candidates	sources
+WIKT_FORM_MISMATCH	form	LX-2fc0487e27.FUT.3MSG	בֻּטַּל	UniMorph יְבֻטַּל vs Wiktionary יְבֻטָּל		wikt:conj:p57744:r520831:t0:פועל עתיד
+WIKT_FORM_MISMATCH	form	LX-4ba42bef9c.FUT.3MSG	גָּזַר	UniMorph יִגְזֹר vs Wiktionary יִגְּזֹר		wikt:conj:p33663:r445479:t0:קל עתיד
+WIKT_FORM_MISMATCH	form	LX-17e67356d1.FUT.3MSG	גָּנַב	UniMorph יִגְנֹב vs Wiktionary יִגְנׁב		wikt:conj:p22289:r234785:t0:קל עתיד
+WIKT_FORM_MISMATCH	form	LX-17e67356d1.IMP.2MSG	גָּנַב	UniMorph גְּנֹב vs Wiktionary גְּנׁב		wikt:conj:p22289:r234785:t0:קל ציווי
+WIKT_FORM_MISMATCH	form	LX-17e67356d1.NFIN	גָּנַב	UniMorph לִגְנֹב vs Wiktionary לִגְנׁב		wikt:conj:p22289:r234785:t0:קל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-42b57ae79e.FUT.3MSG	דָּפַק	UniMorph יִדְפֹק vs Wiktionary יִדְפֹּק		wikt:conj:p31106:r519860:t0:קל עתיד
+WIKT_FORM_MISMATCH	form	LX-42b57ae79e.NFIN	דָּפַק	UniMorph לִדְפֹק vs Wiktionary לִדְפֹּק		wikt:conj:p31106:r519860:t0:קל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-6192a7a203.IMP.2MSG	הִצְחִיק	UniMorph הַצְחֵק vs Wiktionary הַצְחִיק		wikt:conj:p46466:r518942:t0:הפעיל ציווי
+WIKT_FORM_MISMATCH	form	LX-6b0d107388.IMP.2MSG	הִצְלִיחַ	UniMorph הַצְלֵחַ vs Wiktionary הַצְלַח		wikt:conj:p45609:r237259:t0:הפעיל ציווי
+CELL_CONFLICT_UNVOCALIZED	form	LX-828b91b0c3.FUT.3FPL	הִתְוַכֵּחַ	several plene spellings for one lexeme x cell: תתוכחנה | תתווכחנה		heb:4309|heb:21714
+ROOT_AMBIGUOUS	lexeme	LX-7598d9bfae	הִתְכַּתֵּב	evidence supports several roots: כתב, קרנ	"[{""method"": ""entry_headword_exact"", ""root"": ""כ-ת-ב"", ""binyan"": ""HITPAEL"", ""record"": ""wikt:entry:p63356:r499574:o24:t0"", ""page"": ""התכתב""}, {""method"": ""conj_table_past_exact"", ""root"": ""כ-ת-ב"", ""binyan"": ""HITPAEL"", ""record"": ""wikt:conj:p13625:r270847:t0:התפעל עבר"", ""page"": ""כתב (שורש)""}, {""method"": ""full_table_past_exact"", ""root"": ""כ-ת-ב"", ""binyan"": ""HITPAEL"", ""record"": ""wikt:full:p23780:r508927:t6:נסתר_עבר"", ""page"": ""נספח:גזרת השלמים""}, {""method"": ""conj_table_infinitive_exact"", ""root"": ""כ-ת-ב"", ""binyan"": ""HITPAEL"", ""record"": ""wikt:conj:p13625:r270847:t0:התפעל שם הפועל"", ""page"": ""כתב (שורש)""}, {""method"": ""conj_table_infinitive_exact"", ""root"": ""ק-ר-נ"", ""binyan"": ""HITPAEL"", ""record"": ""wikt:conj:p63641:r508975:t0:התפעל שם הפועל"", ""page"": ""קרן (שורש)""}]"	wikt:conj:p13625:r270847:t0:התפעל עבר|wikt:conj:p13625:r270847:t0:התפעל שם הפועל|wikt:conj:p63641:r508975:t0:התפעל שם הפועל|wikt:entry:p63356:r499574:o24:t0|wikt:full:p23780:r508927:t6:נסתר_עבר
+WIKT_FORM_MISMATCH	form	LX-da58ea4612.FUT.3MPL	הִתְמַצֵּא	UniMorph יִתְמַצְּאוּ vs Wiktionary יִתְמַצְּאו		wikt:full:p24707:r508933:t6:נסתרים_עתיד
+WIKT_FORM_MISMATCH	form	LX-9389d0d56a.PST.2FSG	הִתְנַשֵּׁק	UniMorph הִתְנַשַּׁקְתְּ vs Wiktionary הִתְנַשַּׁקְתָּ		wikt:full:p23828:r508930:t6:נוכחת_עבר
+WIKT_FORM_MISMATCH	form	LX-25abec0cbb.IMP.2MSG	הוֹדִיעַ	UniMorph הוֹדֵעַ vs Wiktionary הוֹדַע		wikt:conj:p20093:r422476:t0:הפעיל ציווי
+ROOT_AMBIGUOUS	lexeme	LX-5d26abed74	הוֹכִיחַ	evidence supports several roots: וכח, יכח	"[{""method"": ""entry_headword_exact"", ""root"": ""ו-כ-ח"", ""binyan"": ""HIFIL"", ""record"": ""wikt:entry:p53697:r520902:o9:t0"", ""page"": ""הוכיח""}, {""method"": ""conj_table_past_exact"", ""root"": ""י-כ-ח"", ""binyan"": ""HIFIL"", ""record"": ""wikt:conj:p32022:r509699:t0:הפעיל עבר"", ""page"": ""וכח (שורש)""}, {""method"": ""conj_table_infinitive_exact"", ""root"": ""י-כ-ח"", ""binyan"": ""HIFIL"", ""record"": ""wikt:conj:p32022:r509699:t0:הפעיל שם הפועל"", ""page"": ""וכח (שורש)""}]"	wikt:conj:p32022:r509699:t0:הפעיל עבר|wikt:conj:p32022:r509699:t0:הפעיל שם הפועל|wikt:entry:p53697:r520902:o9:t0
+WIKT_FORM_MISMATCH	form	LX-4ac10ca2bd.IMP.2MSG	הוֹפִיעַ	UniMorph הוֹפֵעַ vs Wiktionary הוֹפַע		wikt:conj:p32452:r270760:t0:הפעיל ציווי
+WIKT_FORM_MISMATCH	form	LX-b3899b9aae.PRS.MSG	חָזַק	UniMorph חָזֵק vs Wiktionary חָזָק		wikt:conj:p45614:r237300:t0:קל הווה
+WIKT_FORM_MISMATCH	form	LX-b3899b9aae.FUT.3MSG	חָזַק	UniMorph יֶחֱזַק vs Wiktionary יֶחְזַק		wikt:conj:p45614:r237300:t0:קל עתיד
+WIKT_FORM_MISMATCH	form	LX-b3899b9aae.NFIN	חָזַק	UniMorph לַחֲזֹק vs Wiktionary לַחְזֹק		wikt:conj:p45614:r237300:t0:קל שם הפועל
+ROOT_AMBIGUOUS	lexeme	LX-833fdcfadb	חוֹלֵל	evidence supports several roots: חול, חיל	"[{""method"": ""entry_headword_exact"", ""root"": ""ח-ו-ל"", ""binyan"": ""PIEL"", ""record"": ""wikt:entry:p11596:r521957:o0:t0"", ""page"": ""חולל""}, {""method"": ""entry_headword_exact"", ""root"": ""ח-י-ל"", ""binyan"": ""PIEL"", ""record"": ""wikt:entry:p11596:r521957:o791:t0"", ""page"": ""חולל""}, {""method"": ""conj_table_past_exact"", ""root"": ""ח-י-ל"", ""binyan"": ""PIEL"", ""record"": ""wikt:conj:p11583:r321026:t0:פיעל עבר"", ""page"": ""חיל א (שורש)""}, {""method"": ""conj_table_past_exact"", ""root"": ""ח-ו-ל"", ""binyan"": ""PIEL"", ""record"": ""wikt:conj:p20089:r163651:t0:פיעל עבר"", ""page"": ""חול (שורש)""}, {""method"": ""conj_table_infinitive_exact"", ""root"": ""ח-י-ל"", ""binyan"": ""PIEL"", ""record"": ""wikt:conj:p11583:r321026:t0:פיעל שם הפועל"", ""page"": ""חיל א (שורש)""}, {""method"": ""conj_table_infinitive_exact"", ""root"": ""ח-ו-ל"", ""binyan"": ""PIEL"", ""record"": ""wikt:conj:p20089:r163651:t0:פיעל שם הפועל"", ""page"": ""חול (שורש)""}]"	wikt:conj:p11583:r321026:t0:פיעל עבר|wikt:conj:p11583:r321026:t0:פיעל שם הפועל|wikt:conj:p20089:r163651:t0:פיעל עבר|wikt:conj:p20089:r163651:t0:פיעל שם הפועל|wikt:entry:p11596:r521957:o0:t0|wikt:entry:p11596:r521957:o791:t0
+WIKT_FORM_MISMATCH	form	LX-971f876f7b.NFIN	יָכֹל	UniMorph לִהְיוֹת יָכוֹל vs Wiktionary לִיכֹל | לוּכַל		wikt:conj:p31610:r358362:t0:קל שם הפועל
+VOC_UNVOC_INCONSISTENT	form	LX-dc8695bc5d.PST.1SG	מֵת	vocalized מַתִּי (stripped מתי) vs plene מתתי		heb_voc:8182|heb:8884
+VOC_UNVOC_INCONSISTENT	form	LX-dc8695bc5d.PST.2MSG	מֵת	vocalized מַתָּ (stripped מת) vs plene מתת		heb_voc:8185|heb:8882
+VOC_UNVOC_INCONSISTENT	form	LX-dc8695bc5d.PST.2FSG	מֵת	vocalized מַתְּ (stripped מת) vs plene מתת		heb_voc:8180|heb:8883
+VOC_UNVOC_INCONSISTENT	form	LX-dc8695bc5d.PST.2MPL	מֵת	vocalized מַתֶּם (stripped מתם) vs plene מתתם		heb_voc:8183|heb:8885
+VOC_UNVOC_INCONSISTENT	form	LX-dc8695bc5d.PST.2FPL	מֵת	vocalized מַתֶּן (stripped מתן) vs plene מתתן		heb_voc:8184|heb:8886
+BINYAN_AMBIGUOUS	lexeme	LX-27ecb0d9f6	נִגַּשׁ	evidence supports several binyanim: NIFAL, PAAL	"[{""method"": ""entry_headword_exact"", ""root"": ""נ-ג-ש"", ""binyan"": ""NIFAL"", ""binyan_raw"": ""נפעל"", ""record"": ""wikt:entry:p30877:r518677:o23:t0"", ""page"": ""נגש""}, {""method"": ""conj_table_past_exact"", ""root"": ""נ-ג-שׁ"", ""binyan"": ""NIFAL"", ""binyan_raw"": ""נפעל"", ""record"": ""wikt:conj:p30875:r518679:t0:נפעל עבר"", ""page"": ""נגש (שורש)""}, {""method"": ""conj_table_infinitive_exact"", ""root"": ""נ-ג-שׁ"", ""binyan"": ""PAAL"", ""binyan_raw"": ""קל"", ""record"": ""wikt:conj:p30875:r518679:t0:קל שם הפועל"", ""page"": ""נגש (שורש)""}]"	wikt:conj:p30875:r518679:t0:נפעל עבר|wikt:conj:p30875:r518679:t0:קל שם הפועל|wikt:entry:p30877:r518677:o23:t0
+WIKT_FORM_MISMATCH	form	LX-ccdfd26a66.IMP.2FSG	נִמְצָא	UniMorph הִמָּצְאִי vs Wiktionary הִמָּצְאי		wikt:full:p24707:r508933:t1:נוכחת_צווי
+WIKT_FORM_MISMATCH	form	LX-4384a81da4.FUT.3MSG	נָבַח	UniMorph יִבַּח vs Wiktionary יִנְבַּח		wikt:conj:p42986:r237272:t0:קל עתיד
+WIKT_FORM_MISMATCH	form	LX-4384a81da4.NFIN	נָבַח	UniMorph לִבֹּחַ vs Wiktionary לִנְבֹּחַ		wikt:conj:p42986:r237272:t0:קל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-7a8b4fc1f5.FUT.3MSG	סָגַר	UniMorph יִסְגֹּר vs Wiktionary יִסְגוֹר		wikt:conj:p56472:r383392:t0:קל עתיד
+WIKT_FORM_MISMATCH	form	LX-7a8b4fc1f5.NFIN	סָגַר	UniMorph לִסְגֹּר vs Wiktionary לְסְגוֹר		wikt:conj:p56472:r383392:t0:קל שם הפועל
+ROOT_AMBIGUOUS	lexeme	LX-0ab103d61a	עוֹרֵר	evidence supports several roots: עור, ערר	"[{""method"": ""entry_headword_exact"", ""root"": ""ע-ר-ר"", ""binyan"": ""PIEL"", ""record"": ""wikt:entry:p55405:r508184:o0:t0"", ""page"": ""עורר""}, {""method"": ""entry_headword_exact"", ""root"": ""ע-ו-ר"", ""binyan"": ""PIEL"", ""record"": ""wikt:entry:p55405:r508184:o1612:t0"", ""page"": ""עורר""}, {""method"": ""conj_table_past_exact"", ""root"": ""ע-ו-ר"", ""binyan"": ""PIEL"", ""record"": ""wikt:conj:p32407:r266365:t0:פיעל עבר"", ""page"": ""עור א (שורש)""}]"	wikt:conj:p32407:r266365:t0:פיעל עבר|wikt:entry:p55405:r508184:o0:t0|wikt:entry:p55405:r508184:o1612:t0
+WIKT_FORM_MISMATCH	form	LX-b513d389f8.PRS.MSG	פָּקַד	UniMorph פּוֹקֵד vs Wiktionary פוֹקֵד		wikt:conj:p13376:r432157:t0:קל הווה
+WIKT_FORM_MISMATCH	form	LX-2d4117a3d2.FUT.3MSG	פָּתַח	UniMorph יִפְתַּח vs Wiktionary יִפְתַח		wikt:conj:p43836:r404278:t0:קל עתיד
+LEMMA_CITATION_MISMATCH	lexeme	LX-a646782180	קָטַן	UniMorph lemma קָטַן != PST.3MSG cell קָטֹן		heb_voc:11999
+WIKT_FORM_MISMATCH	form	LX-3474548eed.PRS.MSG	קֻצַּר	UniMorph מְקֻצָּר vs Wiktionary מְקֻצַּר		wikt:conj:p17774:r413986:t0:פועל הווה
+WIKT_FORM_MISMATCH	form	LX-5cf9adf740.FUT.3MSG	רִצָּה	UniMorph יְרַצֶּה vs Wiktionary ירַצֶּה		wikt:conj:p20067:r511869:t0:פיעל עתיד
+WIKT_FORM_MISMATCH	form	LX-cff72e0868.NFIN	שָׁטַף	UniMorph לִשְׁטֹף vs Wiktionary לְשְׁטוֹף		wikt:conj:p56483:r390429:t0:קל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-ba9b4ec182.NFIN	אִבֵּד	UniMorph לְאַבֵּד vs Wiktionary לאַבֵּד		wikt:conj:p16602:r445684:t0:פיעל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-0183a3d20c.FUT.3MSG	אָנַס	UniMorph יֶאֱנֹס vs Wiktionary יַאֲנֹס		wikt:conj:p18087:r389066:t0:קל עתיד
+WIKT_FORM_MISMATCH	form	LX-0183a3d20c.IMP.2MSG	אָנַס	UniMorph אֱנֹס vs Wiktionary אֲנֹס		wikt:conj:p18087:r389066:t0:קל ציווי
+WIKT_FORM_MISMATCH	form	LX-0183a3d20c.NFIN	אָנַס	UniMorph לֶאֱנֹס vs Wiktionary לַאֲנֹס		wikt:conj:p18087:r389066:t0:קל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-e9a5325895.NFIN	אָסַף	UniMorph לֶאֱסֹף vs Wiktionary לְאֱסוֹף		wikt:conj:p56612:r385324:t0:קל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-6302ea5da3.FUT.3MSG	אוֹר	UniMorph יֵאוֹר vs Wiktionary יָאוֹר		wikt:conj:p31944:r408780:t0:קל עתיד
+VOC_UNVOC_INCONSISTENT	form	LX-e671b27ab0.PST.1SG	אוֹתֵת	vocalized אוֹתַתִּי (stripped אותתי) vs plene אותתתי		heb_voc:14949|heb:14371
+VOC_UNVOC_INCONSISTENT	form	LX-e671b27ab0.PST.2MSG	אוֹתֵת	vocalized אוֹתַתָּ (stripped אותת) vs plene אותתת		heb_voc:14952|heb:14369
+VOC_UNVOC_INCONSISTENT	form	LX-e671b27ab0.PST.2FSG	אוֹתֵת	vocalized אוֹתַתְּ (stripped אותת) vs plene אותתת		heb_voc:14947|heb:14370
+VOC_UNVOC_INCONSISTENT	form	LX-e671b27ab0.PST.2MPL	אוֹתֵת	vocalized אוֹתַתֶּם (stripped אותתם) vs plene אותתתם		heb_voc:14950|heb:14372
+VOC_UNVOC_INCONSISTENT	form	LX-e671b27ab0.PST.2FPL	אוֹתֵת	vocalized אוֹתַתֶּן (stripped אותתן) vs plene אותתתן		heb_voc:14951|heb:14373
+WIKT_FORM_MISMATCH	form	LX-58d1c93420.PRS.MSG	גֵּרֵשׁ	UniMorph מְגָרֵשׁ vs Wiktionary מְגָּרֵש		wikt:conj:p31940:r320671:t0:פיעל הווה
+WIKT_FORM_MISMATCH	form	LX-58d1c93420.FUT.3MSG	גֵּרֵשׁ	UniMorph יְגָרֵשׁ vs Wiktionary יְגָּרֵש		wikt:conj:p31940:r320671:t0:פיעל עתיד
+WIKT_FORM_MISMATCH	form	LX-58d1c93420.IMP.2MSG	גֵּרֵשׁ	UniMorph גָּרֵשׁ vs Wiktionary גָּרֵש		wikt:conj:p31940:r320671:t0:פיעל ציווי
+WIKT_FORM_MISMATCH	form	LX-58d1c93420.NFIN	גֵּרֵשׁ	UniMorph לְגָרֵשׁ vs Wiktionary לְגָּרֵש		wikt:conj:p31940:r320671:t0:פיעל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-71e732f9a4.FUT.3MSG	גָּבַר	UniMorph יִגְבַּר vs Wiktionary יִגְבּוֹר		wikt:conj:p56461:r383241:t0:קל עתיד
+WIKT_FORM_MISMATCH	form	LX-71e732f9a4.IMP.2MSG	גָּבַר	UniMorph גְּבַר vs Wiktionary גְּבוֹר		wikt:conj:p56461:r383241:t0:קל ציווי
+WIKT_FORM_MISMATCH	form	LX-4589a8c915.PRS.MSG	דָּבַק	UniMorph דּוֹבֵק vs Wiktionary דָּבֵק		wikt:conj:p45634:r270874:t0:קל הווה
+WIKT_FORM_MISMATCH	form	LX-4589a8c915.FUT.3MSG	דָּבַק	UniMorph יִדְבַּק vs Wiktionary יִדְבֹּק		wikt:conj:p45634:r270874:t0:קל עתיד
+WIKT_FORM_MISMATCH	form	LX-4589a8c915.IMP.2MSG	דָּבַק	UniMorph דְּבַק vs Wiktionary דְבֹק		wikt:conj:p45634:r270874:t0:קל ציווי
+WIKT_FORM_MISMATCH	form	LX-acf3993b6d.NFIN	דָּחָה	UniMorph לִדְחוֹת vs Wiktionary לְדְחוֹת		wikt:conj:p56539:r384341:t0:קל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-f8dff23754.IMP.2MSG	הִטַּהֵר	UniMorph הִטַּהֵר vs Wiktionary הִטָּהֵר		wikt:conj:p56331:r448139:t0:התפעל ציווי
+WIKT_FORM_MISMATCH	form	LX-f8dff23754.NFIN	הִטַּהֵר	UniMorph לְהִטַּהֵר vs Wiktionary לְהִטָּהֵר		wikt:conj:p56331:r448139:t0:התפעל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-d8afb5b1e7.IMP.2MSG	הִכְרִיחַ	UniMorph הַכְרֵחַ vs Wiktionary הַכְרַח		wikt:conj:p45425:r321432:t0:הפעיל ציווי
+BINYAN_AMBIGUOUS	lexeme	LX-a884f3aa6c	הִלֵּל	evidence supports several binyanim: PAAL, PIEL	"[{""method"": ""entry_headword_exact"", ""root"": ""ה-ל-ל"", ""binyan"": ""PAAL"", ""binyan_raw"": ""קל"", ""record"": ""wikt:entry:p13014:r519653:o70:t0"", ""page"": ""הלל""}, {""method"": ""conj_table_past_exact"", ""root"": ""ה-ל-ל"", ""binyan"": ""PIEL"", ""binyan_raw"": ""פיעל"", ""record"": ""wikt:conj:p60277:r516663:t0:פיעל עבר"", ""page"": ""הלל (שורש)""}, {""method"": ""conj_table_infinitive_exact"", ""root"": ""ה-ל-ל"", ""binyan"": ""PIEL"", ""binyan_raw"": ""פיעל"", ""record"": ""wikt:conj:p60277:r516663:t0:פיעל שם הפועל"", ""page"": ""הלל (שורש)""}]"	wikt:conj:p60277:r516663:t0:פיעל עבר|wikt:conj:p60277:r516663:t0:פיעל שם הפועל|wikt:entry:p13014:r519653:o70:t0
+VOC_UNVOC_INCONSISTENT	form	LX-932d874cf9.PST.1SG	הִפְחִית	vocalized הִפְחַתִּי (stripped הפחתי) vs plene הפחתתי		heb_voc:17721|heb:19153
+VOC_UNVOC_INCONSISTENT	form	LX-932d874cf9.PST.2MSG	הִפְחִית	vocalized הִפְחַתָּ (stripped הפחת) vs plene הפחתת		heb_voc:17724|heb:19151
+VOC_UNVOC_INCONSISTENT	form	LX-932d874cf9.PST.2FSG	הִפְחִית	vocalized הִפְחַתְּ (stripped הפחת) vs plene הפחתת		heb_voc:17719|heb:19152
+VOC_UNVOC_INCONSISTENT	form	LX-932d874cf9.PST.2MPL	הִפְחִית	vocalized הִפְחַתֶּם (stripped הפחתם) vs plene הפחתתם		heb_voc:17722|heb:19154
+VOC_UNVOC_INCONSISTENT	form	LX-932d874cf9.PST.2FPL	הִפְחִית	vocalized הִפְחַתֶּן (stripped הפחתן) vs plene הפחתתן		heb_voc:17723|heb:19155
+WIKT_FORM_MISMATCH	form	LX-d931a00a27.IMP.2MSG	הִפְרִיעַ	UniMorph הַפְרֵעַ vs Wiktionary הַפְרַע		wikt:conj:p15005:r270885:t0:הפעיל ציווי
+WIKT_FORM_MISMATCH	form	LX-1fc8f3763d.IMP.2MSG	הִפְתִּיעַ	UniMorph הַפְתֵּעַ vs Wiktionary הַפְתַּע		wikt:conj:p34316:r266440:t0:הפעיל ציווי
+WIKT_FORM_MISMATCH	form	LX-6d85cac134.IMP.2MSG	הִצְבִּיעַ	UniMorph הַצְבֵּעַ vs Wiktionary הַצְבַּע		wikt:conj:p10884:r269950:t0:הפעיל ציווי
+VOC_UNVOC_INCONSISTENT	form	LX-b60a3a131b.PST.1SG	הִצִּית	vocalized הִצַּתִּי (stripped הצתי) vs plene הצתתי		heb_voc:18185|heb:19704
+VOC_UNVOC_INCONSISTENT	form	LX-b60a3a131b.PST.2MSG	הִצִּית	vocalized הִצַּתָּ (stripped הצת) vs plene הצתת		heb_voc:18188|heb:19702
+VOC_UNVOC_INCONSISTENT	form	LX-b60a3a131b.PST.2FSG	הִצִּית	vocalized הִצַּתְּ (stripped הצת) vs plene הצתת		heb_voc:18183|heb:19703
+VOC_UNVOC_INCONSISTENT	form	LX-b60a3a131b.PST.2MPL	הִצִּית	vocalized הִצַּתֶּם (stripped הצתם) vs plene הצתתם		heb_voc:18186|heb:19705
+VOC_UNVOC_INCONSISTENT	form	LX-b60a3a131b.PST.2FPL	הִצִּית	vocalized הִצַּתֶּן (stripped הצתן) vs plene הצתתן		heb_voc:18187|heb:19706
+WIKT_FORM_MISMATCH	form	LX-4132cb40c8.IMP.2MSG	הִשְׁהָה	UniMorph הַשְׁהֵה vs Wiktionary הַשְׁהֶה		wikt:conj:p57085:r390662:t0:הפעיל ציווי
+WIKT_FORM_MISMATCH	form	LX-2855ce8717.IMP.2MSG	הִשְׁמִיעַ	UniMorph הַשְׁמֵעַ vs Wiktionary הַשְׁמַע		wikt:conj:p17650:r342932:t0:הפעיל ציווי
+WIKT_FORM_MISMATCH	form	LX-2855ce8717.NFIN	הִשְׁמִיעַ	UniMorph לְהַשְׁמִיעַ vs Wiktionary להַשְׁמִיעַ		wikt:conj:p17650:r342932:t0:הפעיל שם הפועל
+ROOT_AMBIGUOUS	lexeme	LX-b1e944da04	הִשְׁקָה	evidence supports several roots: שקה, שקי	"[{""method"": ""entry_headword_exact"", ""root"": ""שׁ-ק-י"", ""binyan"": ""HIFIL"", ""record"": ""wikt:entry:p45733:r509683:o4050:t0"", ""page"": ""השקה""}, {""method"": ""conj_table_past_exact"", ""root"": ""שׁ-ק-ה"", ""binyan"": ""HIFIL"", ""record"": ""wikt:conj:p61233:r453477:t0:הפעיל עבר"", ""page"": ""שׁקי (שורש)""}, {""method"": ""conj_table_infinitive_exact"", ""root"": ""שׁ-ק-ה"", ""binyan"": ""HIFIL"", ""record"": ""wikt:conj:p61233:r453477:t0:הפעיל שם הפועל"", ""page"": ""שׁקי (שורש)""}]"	wikt:conj:p61233:r453477:t0:הפעיל עבר|wikt:conj:p61233:r453477:t0:הפעיל שם הפועל|wikt:entry:p45733:r509683:o4050:t0
+WIKT_FORM_MISMATCH	form	LX-993161330e.NFIN	הִשְׁתַּנָּה	UniMorph לְהִשְׁתַּנּוֹת vs Wiktionary לְהִשְׁתַּנוֹת		wikt:conj:p45366:r271015:t0:התפעל שם הפועל
+ROOT_AMBIGUOUS	lexeme	LX-f66a0ca4da	הֵחִיל	evidence supports several roots: חול, חיל	"[{""method"": ""entry_headword_exact"", ""root"": ""ח-ו-ל"", ""binyan"": ""HIFIL"", ""record"": ""wikt:entry:p11527:r494334:o0:t0"", ""page"": ""החיל""}, {""method"": ""entry_headword_exact"", ""root"": ""ח-י-ל"", ""binyan"": ""HIFIL"", ""record"": ""wikt:entry:p11527:r494334:o436:t0"", ""page"": ""החיל""}, {""method"": ""conj_table_past_exact"", ""root"": ""ח-י-ל"", ""binyan"": ""HIFIL"", ""record"": ""wikt:conj:p11583:r321026:t0:הפעיל עבר"", ""page"": ""חיל א (שורש)""}, {""method"": ""conj_table_past_exact"", ""root"": ""ח-ו-ל"", ""binyan"": ""HIFIL"", ""record"": ""wikt:conj:p20089:r163651:t0:הפעיל עבר"", ""page"": ""חול (שורש)""}, {""method"": ""conj_table_infinitive_exact"", ""root"": ""ח-י-ל"", ""binyan"": ""HIFIL"", ""record"": ""wikt:conj:p11583:r321026:t0:הפעיל שם הפועל"", ""page"": ""חיל א (שורש)""}, {""method"": ""conj_table_infinitive_exact"", ""root"": ""ח-ו-ל"", ""binyan"": ""HIFIL"", ""record"": ""wikt:conj:p20089:r163651:t0:הפעיל שם הפועל"", ""page"": ""חול (שורש)""}]"	wikt:conj:p11583:r321026:t0:הפעיל עבר|wikt:conj:p11583:r321026:t0:הפעיל שם הפועל|wikt:conj:p20089:r163651:t0:הפעיל עבר|wikt:conj:p20089:r163651:t0:הפעיל שם הפועל|wikt:entry:p11527:r494334:o0:t0|wikt:entry:p11527:r494334:o436:t0
+WIKT_FORM_MISMATCH	form	LX-0fc1f0960a.FUT.3MSG	הֵטִיב	UniMorph יֵטִיב vs Wiktionary יָטִיב		wikt:conj:p40792:r438225:t0:הפעיל עתיד
+WIKT_FORM_MISMATCH	form	LX-0fc1f0960a.IMP.2MSG	הֵטִיב	UniMorph הֵטֵב vs Wiktionary הָטֵב		wikt:conj:p40792:r438225:t0:הפעיל ציווי
+WIKT_FORM_MISMATCH	form	LX-0fc1f0960a.NFIN	הֵטִיב	UniMorph לְהֵטִיב vs Wiktionary לְהָטִיב		wikt:conj:p40792:r438225:t0:הפעיל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-11f8f3b455.IMP.2MSG	הֵיטִיב	UniMorph הֵיטֵב vs Wiktionary הַיְטֵב		wikt:conj:p34347:r422477:t0:הפעיל ציווי
+WIKT_FORM_MISMATCH	form	LX-c9a5b2736d.PRS.MSG	הֵימִין	UniMorph מֵימִין vs Wiktionary מַיְמִין		wikt:conj:p56607:r489899:t0:הפעיל הווה
+WIKT_FORM_MISMATCH	form	LX-c9a5b2736d.FUT.3MSG	הֵימִין	UniMorph יֵימִין vs Wiktionary יַיְמִין		wikt:conj:p56607:r489899:t0:הפעיל עתיד
+WIKT_FORM_MISMATCH	form	LX-c9a5b2736d.IMP.2MSG	הֵימִין	UniMorph הֵימֵן vs Wiktionary הַיְמֵן		wikt:conj:p56607:r489899:t0:הפעיל ציווי
+WIKT_FORM_MISMATCH	form	LX-c9a5b2736d.NFIN	הֵימִין	UniMorph לְהֵימִין vs Wiktionary לְהַיְמִין		wikt:conj:p56607:r489899:t0:הפעיל שם הפועל
+VOC_UNVOC_INCONSISTENT	form	LX-ea43dfa94f.PST.1SG	הֵמִית	vocalized הֵמַתִּי (stripped המתי) vs plene המתתי		heb_voc:21429|heb:18486
+VOC_UNVOC_INCONSISTENT	form	LX-ea43dfa94f.PST.2MSG	הֵמִית	vocalized הֵמַתָּ (stripped המת) vs plene המתת		heb_voc:21430|heb:18484
+VOC_UNVOC_INCONSISTENT	form	LX-ea43dfa94f.PST.2FSG	הֵמִית	vocalized הֵמַתְּ (stripped המת) vs plene המתת		heb_voc:21427|heb:18485
+VOC_UNVOC_INCONSISTENT	form	LX-ea43dfa94f.PST.2MPL	הֵמִית	vocalized הֲמַתֶּם (stripped המתם) vs plene המתתם		heb_voc:21421|heb:18487
+VOC_UNVOC_INCONSISTENT	form	LX-ea43dfa94f.PST.2FPL	הֵמִית	vocalized הֲמַתֶּן (stripped המתן) vs plene המתתן		heb_voc:21422|heb:18488
+WIKT_FORM_MISMATCH	form	LX-001c057dd4.FUT.3MSG	הֵנִיחַ	UniMorph יָנִיחַ vs Wiktionary יַנִּיחַ		wikt:conj:p56604:r385269:t0:הפעיל עתיד
+WIKT_FORM_MISMATCH	form	LX-001c057dd4.IMP.2MSG	הֵנִיחַ	UniMorph הָנַח vs Wiktionary הַנַּח		wikt:conj:p56604:r385269:t0:הפעיל ציווי
+BINYAN_AMBIGUOUS	lexeme	LX-10ba36eee3	הֵעִיר	evidence supports several binyanim: HIFIL, PAAL	"[{""method"": ""entry_headword_exact"", ""root"": ""ע-ו-ר"", ""binyan"": ""PAAL"", ""binyan_raw"": ""קל"", ""record"": ""wikt:entry:p53240:r395661:o0:t0"", ""page"": ""העיר""}, {""method"": ""conj_table_past_exact"", ""root"": ""ע-ו-ר"", ""binyan"": ""HIFIL"", ""binyan_raw"": ""הפעיל"", ""record"": ""wikt:conj:p32407:r266365:t0:הפעיל עבר"", ""page"": ""עור א (שורש)""}, {""method"": ""conj_table_infinitive_exact"", ""root"": ""ע-ו-ר"", ""binyan"": ""HIFIL"", ""binyan_raw"": ""הפעיל"", ""record"": ""wikt:conj:p32407:r266365:t0:הפעיל שם הפועל"", ""page"": ""עור א (שורש)""}]"	wikt:conj:p32407:r266365:t0:הפעיל עבר|wikt:conj:p32407:r266365:t0:הפעיל שם הפועל|wikt:entry:p53240:r395661:o0:t0
+WIKT_FORM_MISMATCH	form	LX-de6e534bda.IMP.2MSG	הָזָה	UniMorph הֲזֵה vs Wiktionary הֱזֵה		wikt:conj:p32387:r270690:t0:קל ציווי
+WIKT_FORM_MISMATCH	form	LX-b7acb7ab10.FUT.3MSG	הֻגְבַּר	UniMorph יֻגְבַּר vs Wiktionary יֻגְבָּר		wikt:conj:p56461:r383241:t0:הופעל עתיד
+WIKT_FORM_MISMATCH	form	LX-76b5be462b.FUT.3MSG	הֻרְשַׁע	UniMorph יֻרְשַׁע vs Wiktionary יֻרְשָׁע		wikt:conj:p57682:r399730:t0:הופעל עתיד
+WIKT_FORM_MISMATCH	form	LX-ff60cb398a.IMP.2MSG	הוֹשִׁיעַ	UniMorph הוֹשֵׁעַ vs Wiktionary הוֹשַׁע		wikt:conj:p33751:r522404:t0:הפעיל ציווי
+ROOT_AMBIGUOUS	lexeme	LX-d7a81169f7	הוּאַר	evidence supports several roots: אור, ארר	"[{""method"": ""conj_table_past_exact"", ""root"": ""א-ו-ר"", ""binyan"": ""HUFAL"", ""record"": ""wikt:conj:p31944:r408780:t0:הופעל עבר"", ""page"": ""אור (שורש)""}, {""method"": ""conj_table_past_exact"", ""root"": ""א-ר-ר"", ""binyan"": ""HUFAL"", ""record"": ""wikt:conj:p48014:r297601:t0:הופעל עבר"", ""page"": ""ארר (שורש)""}]"	wikt:conj:p31944:r408780:t0:הופעל עבר|wikt:conj:p48014:r297601:t0:הופעל עבר
+ROOT_AMBIGUOUS	lexeme	LX-b36fd75c35	הוּטַב	evidence supports several roots: טוב, יטב	"[{""method"": ""conj_table_past_exact"", ""root"": ""י-ט-ב"", ""binyan"": ""HUFAL"", ""record"": ""wikt:conj:p34347:r422477:t0:הופעל עבר"", ""page"": ""יטב (שורש)""}, {""method"": ""conj_table_past_exact"", ""root"": ""ט-ו-ב"", ""binyan"": ""HUFAL"", ""record"": ""wikt:conj:p40792:r438225:t0:הופעל עבר"", ""page"": ""טוב (שורש)""}]"	wikt:conj:p34347:r422477:t0:הופעל עבר|wikt:conj:p40792:r438225:t0:הופעל עבר
+WIKT_FORM_MISMATCH	form	LX-a74f1fcae7.PRS.MSG	הוּשַׁב	UniMorph מוּשָׁב vs Wiktionary מוּשַׁב		wikt:conj:p30554:r324083:t0:הופעל הווה
+ROOT_AMBIGUOUS	lexeme	LX-8d3da3f90b	חָג	evidence supports several roots: חגג, חוג, חיג	"[{""method"": ""entry_headword_exact"", ""root"": ""ח-ו-ג"", ""binyan"": ""PAAL"", ""record"": ""wikt:entry:p19874:r521539:o4538:t0"", ""page"": ""חג""}, {""method"": ""conj_table_past_exact"", ""root"": ""ח-ג-ג"", ""binyan"": ""PAAL"", ""record"": ""wikt:conj:p31977:r270602:t0:קל עבר"", ""page"": ""חגג (שורש)""}, {""method"": ""conj_table_past_exact"", ""root"": ""ח-י-ג"", ""binyan"": ""PAAL"", ""record"": ""wikt:conj:p32104:r370599:t0:קל עבר"", ""page"": ""חוג (שורש)""}, {""method"": ""conj_table_infinitive_exact"", ""root"": ""ח-י-ג"", ""binyan"": ""PAAL"", ""record"": ""wikt:conj:p32104:r370599:t0:קל שם הפועל"", ""page"": ""חוג (שורש)""}]"	wikt:conj:p31977:r270602:t0:קל עבר|wikt:conj:p32104:r370599:t0:קל עבר|wikt:conj:p32104:r370599:t0:קל שם הפועל|wikt:entry:p19874:r521539:o4538:t0
+WIKT_FORM_MISMATCH	form	LX-84c0234a15.FUT.3MSG	חָגַר	UniMorph יַחֲגֹר vs Wiktionary יַחְגֹּר		wikt:conj:p31118:r404550:t0:קל עתיד
+ROOT_AMBIGUOUS	lexeme	LX-f4db6e236f	חָל	evidence supports several roots: חול, חיל	"[{""method"": ""entry_headword_exact"", ""root"": ""ח-ו-ל"", ""binyan"": ""PAAL"", ""record"": ""wikt:entry:p3884:r511235:o156:t0"", ""page"": ""חל""}, {""method"": ""entry_headword_exact"", ""root"": ""ח-ו-ל"", ""binyan"": ""PAAL"", ""record"": ""wikt:entry:p3884:r511235:o1189:t0"", ""page"": ""חל""}, {""method"": ""conj_table_past_exact"", ""root"": ""ח-י-ל"", ""binyan"": ""PAAL"", ""record"": ""wikt:conj:p11583:r321026:t0:קל עבר"", ""page"": ""חיל א (שורש)""}, {""method"": ""conj_table_past_exact"", ""root"": ""ח-ו-ל"", ""binyan"": ""PAAL"", ""record"": ""wikt:conj:p20089:r163651:t0:קל עבר"", ""page"": ""חול (שורש)""}, {""method"": ""conj_table_infinitive_exact"", ""root"": ""ח-ו-ל"", ""binyan"": ""PAAL"", ""record"": ""wikt:conj:p20089:r163651:t0:קל שם הפועל"", ""page"": ""חול (שורש)""}]"	wikt:conj:p11583:r321026:t0:קל עבר|wikt:conj:p20089:r163651:t0:קל עבר|wikt:conj:p20089:r163651:t0:קל שם הפועל|wikt:entry:p3884:r511235:o1189:t0|wikt:entry:p3884:r511235:o156:t0
+WIKT_FORM_MISMATCH	form	LX-82433c8f40.NFIN	חָמַד	UniMorph לַחְמֹד vs Wiktionary לַחֲמֹד		wikt:conj:p45457:r270872:t0:קל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-736ba46633.FUT.3MSG	חָנַק	UniMorph יַחֲנֹק vs Wiktionary יַחְנֹק		wikt:conj:p46280:r380855:t0:קל עתיד
+WIKT_FORM_MISMATCH	form	LX-736ba46633.NFIN	חָנַק	UniMorph לַחֲנֹק vs Wiktionary לַחְנֹק		wikt:conj:p46280:r380855:t0:קל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-4bb8ff844c.FUT.3MSG	חָנָה	UniMorph יֶחֱנֶה vs Wiktionary יַחְנֶה		wikt:conj:p45454:r445397:t0:קל עתיד
+WIKT_FORM_MISMATCH	form	LX-4bb8ff844c.NFIN	חָנָה	UniMorph לַחֲנוֹת vs Wiktionary לַחְנוֹת		wikt:conj:p45454:r445397:t0:קל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-c56987a72e.FUT.3MSG	חָקַר	UniMorph יַחְקֹר vs Wiktionary יַחֲקֹר		wikt:conj:p22236:r158531:t0:קל עתיד
+WIKT_FORM_MISMATCH	form	LX-c56987a72e.NFIN	חָקַר	UniMorph לַחְקֹר vs Wiktionary לַחֲקֹר		wikt:conj:p22236:r158531:t0:קל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-87906e22bd.FUT.3MSG	חָרַב	UniMorph יֶחֱרַב vs Wiktionary יֶחְרַב		wikt:conj:p32826:r513463:t0:קל עתיד
+ROOT_AMBIGUOUS	lexeme	LX-ef36af359d	חָרָה	evidence supports several roots: חרה, חרר	"[{""method"": ""entry_headword_exact"", ""root"": ""ח-ר-ה"", ""binyan"": ""PAAL"", ""record"": ""wikt:entry:p11898:r518311:o66:t0"", ""page"": ""חרה""}, {""method"": ""entry_headword_exact"", ""root"": ""ח-ר-ר"", ""binyan"": null, ""record"": ""wikt:entry:p11898:r518311:o1133:t0"", ""page"": ""חרה""}]"	wikt:entry:p11898:r518311:o1133:t0|wikt:entry:p11898:r518311:o66:t0
+WIKT_FORM_MISMATCH	form	LX-f77a5756d8.FUT.3MSG	חָתַךְ	UniMorph יַחְתֹּךְ vs Wiktionary יַחְתוֹךְ		wikt:conj:p58521:r521367:t0:קל עתיד
+WIKT_FORM_MISMATCH	form	LX-f77a5756d8.NFIN	חָתַךְ	UniMorph לַחְתֹּךְ vs Wiktionary לַחְתוֹךְ		wikt:conj:p58521:r521367:t0:קל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-ebbb34c23c.PRS.MSG	חֻזַּק	UniMorph מְחֻזָּק vs Wiktionary מְחַזָּק		wikt:conj:p45614:r237300:t0:פועל הווה
+WIKT_FORM_MISMATCH	form	LX-ebbb34c23c.FUT.3MSG	חֻזַּק	UniMorph יְחֻזַּק vs Wiktionary יְחַזַּק		wikt:conj:p45614:r237300:t0:פועל עתיד
+WIKT_FORM_MISMATCH	form	LX-616f0e955d.PST.1SG	יָצַר	UniMorph יָצַרְתִּי vs Wiktionary יָצַרתִּי		wikt:full:p24870:r508929:t0:מדבר_עבר
+WIKT_FORM_MISMATCH	form	LX-616f0e955d.IMP.2MSG	יָצַר	UniMorph צור vs Wiktionary יְצֹר | צֹר		wikt:conj:p52581:r402724:t0:קל ציווי|wikt:full:p24870:r508929:t0:נוכח_צווי
+WIKT_FORM_MISMATCH	form	LX-616f0e955d.NFIN	יָצַר	UniMorph ליצור vs Wiktionary לִצֹּר		wikt:conj:p52581:r402724:t0:קל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-85351b2f42.IMP.2MSG	יָרַשׁ	UniMorph יְרַשׁ vs Wiktionary רֵשׁ | רַשׁ		wikt:conj:p33119:r324085:t0:קל ציווי
+WIKT_FORM_MISMATCH	form	LX-16667d60db.IMP.2MSG	יָשַׁן	UniMorph יְשַׁן vs Wiktionary שַׁן		wikt:conj:p30833:r234469:t0:קל ציווי|wikt:conj:p30834:r270098:t0:קל ציווי
+WIKT_FORM_MISMATCH	form	LX-359f94bcdb.PRS.MSG	כָּלָה	UniMorph כָּלֶה vs Wiktionary כּוֹלֶה		wikt:conj:p33261:r266412:t0:קל הווה
+WIKT_FORM_MISMATCH	form	LX-4f44e4fd0c.NFIN	כָּעַס	UniMorph לִכְעֹס vs Wiktionary לְכְעוֹס		wikt:conj:p57622:r398414:t0:קל שם הפועל
+VOC_UNVOC_INCONSISTENT	form	LX-84d1314266.PST.1SG	כָּרַת	vocalized כָּרַתִּי (stripped כרתי) vs plene כרתתי		heb_voc:25261|heb:25293
+VOC_UNVOC_INCONSISTENT	form	LX-84d1314266.PST.2MSG	כָּרַת	vocalized כָּרַתָּ (stripped כרת) vs plene כרתת		heb_voc:25262|heb:25291
+VOC_UNVOC_INCONSISTENT	form	LX-84d1314266.PST.2FSG	כָּרַת	vocalized כָּרַתְּ (stripped כרת) vs plene כרתת		heb_voc:25259|heb:25292
+VOC_UNVOC_INCONSISTENT	form	LX-84d1314266.PST.2MPL	כָּרַת	vocalized כְּרַתֶּם (stripped כרתם) vs plene כרתתם		heb_voc:25250|heb:25294
+VOC_UNVOC_INCONSISTENT	form	LX-84d1314266.PST.2FPL	כָּרַת	vocalized כְּרַתֶּן (stripped כרתן) vs plene כרתתן		heb_voc:25251|heb:25295
+WIKT_FORM_MISMATCH	form	LX-14fb70d88d.IMP.2MSG	לָקַח	UniMorph לְקַח vs Wiktionary קַח		wikt:conj:p30682:r486224:t0:קל ציווי
+WIKT_FORM_MISMATCH	form	LX-14fb70d88d.NFIN	לָקַח	UniMorph לִקֹּחַ vs Wiktionary לִקַּח | לָקַחַת		wikt:conj:p30682:r486224:t0:קל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-e2d7408010.IMP.2MSG	נִבְנָה	UniMorph הִבָּנֵה vs Wiktionary הִבָּנֶה		wikt:conj:p17633:r414328:t0:נפעל ציווי
+WIKT_FORM_MISMATCH	form	LX-770850bf80.IMP.2MSG	נִדְחָה	UniMorph הִדָּחֵה vs Wiktionary הִדָּחֶה		wikt:conj:p56539:r384341:t0:נפעל ציווי
+VOC_UNVOC_INCONSISTENT	form	LX-073639b610.PST.1SG	נִכְרַת	vocalized נִכְרַתִּי (stripped נכרתי) vs plene נכרתתי		heb_voc:26306|heb:27039
+VOC_UNVOC_INCONSISTENT	form	LX-073639b610.PST.2MSG	נִכְרַת	vocalized נִכְרַתָּ (stripped נכרת) vs plene נכרתת		heb_voc:26309|heb:27036
+VOC_UNVOC_INCONSISTENT	form	LX-073639b610.PST.2FSG	נִכְרַת	vocalized נִכְרַתְּ (stripped נכרת) vs plene נכרתת		heb_voc:26304|heb:27037
+VOC_UNVOC_INCONSISTENT	form	LX-073639b610.PST.2MPL	נִכְרַת	vocalized נִכְרַתֶּם (stripped נכרתם) vs plene נכרתתם		heb_voc:26307|heb:27040
+VOC_UNVOC_INCONSISTENT	form	LX-073639b610.PST.2FPL	נִכְרַת	vocalized נִכְרַתֶּן (stripped נכרתן) vs plene נכרתתן		heb_voc:26308|heb:27041
+WIKT_FORM_MISMATCH	form	LX-9c8c65490a.PRS.MSG	נִסְגַּר	UniMorph נִסְגָּר vs Wiktionary נְסְגָּר		wikt:conj:p56472:r383392:t0:נפעל הווה
+BINYAN_AMBIGUOUS	lexeme	LX-5a8b7d9716	נִצֵּל	evidence supports several binyanim: NIFAL, PIEL	"[{""method"": ""entry_headword_exact"", ""root"": ""נ-צ-ל"", ""binyan"": ""NIFAL"", ""binyan_raw"": ""נפעל"", ""record"": ""wikt:entry:p25480:r512639:o1700:t0"", ""page"": ""נצל""}, {""method"": ""conj_table_past_exact"", ""root"": ""נ-צ-ל"", ""binyan"": ""PIEL"", ""binyan_raw"": ""פיעל"", ""record"": ""wikt:conj:p45607:r297018:t0:פיעל עבר"", ""page"": ""נצל (שורש)""}, {""method"": ""conj_table_infinitive_exact"", ""root"": ""נ-צ-ל"", ""binyan"": ""PIEL"", ""binyan_raw"": ""פיעל"", ""record"": ""wikt:conj:p45607:r297018:t0:פיעל שם הפועל"", ""page"": ""נצל (שורש)""}]"	wikt:conj:p45607:r297018:t0:פיעל עבר|wikt:conj:p45607:r297018:t0:פיעל שם הפועל|wikt:entry:p25480:r512639:o1700:t0
+WIKT_FORM_MISMATCH	form	LX-9300efaa00.PRS.MSG	נִקְנָה	UniMorph נִקְנֶה vs Wiktionary נִקְנָה		wikt:conj:p32968:r270804:t0:נפעל הווה
+BINYAN_AMBIGUOUS	lexeme	LX-415c771e37	נִקָּה	evidence supports several binyanim: NIFAL, PIEL	"[{""method"": ""entry_headword_exact"", ""root"": ""נ-ק-ה"", ""binyan"": ""PIEL"", ""binyan_raw"": ""פיעל"", ""record"": ""wikt:entry:p51008:r516599:o0:t0"", ""page"": ""נקה""}, {""method"": ""entry_headword_exact"", ""root"": ""נ-ק-ה"", ""binyan"": ""NIFAL"", ""binyan_raw"": ""נפעל"", ""record"": ""wikt:entry:p51008:r516599:o1030:t0"", ""page"": ""נקה""}]"	wikt:entry:p51008:r516599:o0:t0|wikt:entry:p51008:r516599:o1030:t0
+WIKT_FORM_MISMATCH	form	LX-03b66917fd.NFIN	נֶאֱמַן	UniMorph לְהֵאָמֵן vs Wiktionary להֵאָמֵן		wikt:conj:p45987:r521925:t0:נפעל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-488a06c074.NFIN	נֶהֱנָה	UniMorph ליהנות vs Wiktionary לֵהָנוֹת		wikt:conj:p34897:r286118:t0:נפעל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-7f3553a9e1.NFIN	נֶחְקַר	UniMorph לְהֵחָקֵר vs Wiktionary לְהֵחָקר		wikt:conj:p22236:r158531:t0:נפעל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-50f7529e25.IMP.2MSG	נָבַל	UniMorph נְבֹל vs Wiktionary בֹּל		wikt:conj:p33139:r270859:t0:קל ציווי
+WIKT_FORM_MISMATCH	form	LX-50f7529e25.NFIN	נָבַל	UniMorph לִבֹּל vs Wiktionary לִנְבֹּל		wikt:conj:p33139:r270859:t0:קל שם הפועל
+WIKT_TABLE_ASSERTS_ROOT_BINYAN_ABSENT	lexeme	LX-66f2569f15	נָגַהּ	a Wiktionary conjugation table marks נגה x PAAL as non-existent (-אין-)		wikt:conj:p17782:r266301:t0:קל עבר
+WIKT_FORM_MISMATCH	form	LX-b49f377bc6.IMP.2MSG	נָטַל	UniMorph נְטֹל vs Wiktionary טֹל		wikt:conj:p30884:r270443:t0:קל ציווי
+WIKT_FORM_MISMATCH	form	LX-4dbe934641.PRS.MSG	נָטַע	UniMorph נוֹטֵעַ vs Wiktionary נָטוּע | נוֹטֵע		wikt:conj:p30813:r472333:t0:קל הווה
+WIKT_FORM_MISMATCH	form	LX-4dbe934641.IMP.2MSG	נָטַע	UniMorph נְטַע vs Wiktionary טַע		wikt:conj:p30813:r472333:t0:קל ציווי
+WIKT_FORM_MISMATCH	form	LX-4dbe934641.NFIN	נָטַע	UniMorph לִטֹּעַ vs Wiktionary לִטַּע | לִנְטֹעַ | לָטַעַת		wikt:conj:p30813:r472333:t0:קל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-e0f85e0df1.PRS.MSG	נָעַם	UniMorph נָעִים vs Wiktionary נָעֵם | נוֹעֵם		wikt:conj:p56858:r388233:t0:קל הווה
+WIKT_FORM_MISMATCH	form	LX-e0f85e0df1.FUT.3MSG	נָעַם	UniMorph יִנְעַם vs Wiktionary יִנְעָם		wikt:conj:p56858:r388233:t0:קל עתיד
+WIKT_FORM_MISMATCH	form	LX-e0f85e0df1.NFIN	נָעַם	UniMorph לִנְעֹם vs Wiktionary לִנְעָם		wikt:conj:p56858:r388233:t0:קל שם הפועל
+WIKT_FORM_MISMATCH	form	LX-7d64a73c52.FUT.3MSG	נָעַר	UniMorph יִנְעַר vs Wiktionary יִנְעֹר		wikt:conj:p22389:r101684:t0:קל עתיד
+WIKT_FORM_MISMATCH	form	LX-80738017ef.IMP.2MSG	נָפַל	UniMorph נְפֹל vs Wiktionary פֹּל		wikt:conj:p31101:r353599:t0:קל ציווי
+WIKT_FORM_MISMATCH	form	LX-0dd13b0a79.IMP.2MSG	נָשַׁךְ	UniMorph נְשֹׁךְ vs Wiktionary נְשַׁךְ | שַׁךְ		wikt:conj:p31103:r511205:t0:קל ציווי
+WIKT_FORM_MISMATCH	form	LX-cfb75fb8a2.NFIN	נָשַׁק	UniMorph לנשוק vs Wiktionary לִנְשֹׁק | לִנְשׁוֹק | לִשַּׁק | לִשּׁוֹק | נָשֹׁק		wikt:conj:p43013:r445401:t0:קל שם הפועל|wikt:conj:p56708:r386332:t0:קל שם הפועל|wikt:full:p23828:r508930:t0:מקור
+BINYAN_AMBIGUOUS	lexeme	LX-cb3830c820	סִמֵּן	evidence supports several binyanim: PAAL, PIEL	"[{""method"": ""entry_headword_exact"", ""root"": ""ס-מ-נ"", ""binyan"": ""PAAL"", ""binyan_raw"": ""קל"", ""record"": ""wikt:entry:p8592:r453028:o48:t0"", ""page"": ""סמן""}, {""method"": ""conj_table_past_exact"", ""root"": ""ס-מ-נ"", ""binyan"": ""PIEL"", ""binyan_raw"": ""פיעל"", ""record"": ""wikt:conj:p20099:r429830:t0:פיעל עבר"", ""page"": ""סמן (שורש)""}]"	wikt:conj:p20099:r429830:t0:פיעל עבר|wikt:entry:p8592:r453028:o48:t0
+WIKT_FORM_MISMATCH	form	LX-f1da8bbf7d.PRS.MSG	עָצַם	UniMorph עוֹצֵם vs Wiktionary עָצֵם		wikt:conj:p57830:r402861:t0:קל הווה
+WIKT_FORM_MISMATCH	form	LX-6bdcd8bb1b.PRS.MSG	פֻּשַּׁט	UniMorph מְפֻשָּׁט vs Wiktionary מְפֻשַּׁט		wikt:conj:p22237:r438681:t0:פועל הווה
+WIKT_FORM_MISMATCH	form	LX-6bdcd8bb1b.FUT.3MSG	פֻּשַּׁט	UniMorph יְפֻשַּׁט vs Wiktionary יְפֻשֵּׁט		wikt:conj:p22237:r438681:t0:פועל עתיד
+WIKT_TABLE_ASSERTS_ROOT_BINYAN_ABSENT	lexeme	LX-d335ed95d8	צָבַע	a Wiktionary conjugation table marks צבע x PAAL as non-existent (-אין-)		wikt:conj:p10884:r269950:t0:קל עבר
+WIKT_FORM_MISMATCH	form	LX-9359efa622.FUT.3MSG	צָחַק	UniMorph יִצְחַק vs Wiktionary יִצְחָק		wikt:conj:p46466:r518942:t0:קל עתיד
+WIKT_FORM_MISMATCH	form	LX-e5cd4ef5f5.PRS.MSG	צָמַח	UniMorph צוֹמֵחַ vs Wiktionary צוֹמַחַ		wikt:conj:p56995:r518943:t0:קל הווה
+WIKT_FORM_MISMATCH	form	LX-e5cd4ef5f5.NFIN	צָמַח	UniMorph לִצְמֹחַ vs Wiktionary לְצְמוֹחַ		wikt:conj:p56995:r518943:t0:קל שם הפועל
+BINYAN_SHAPE_DISAGREES	lexeme	LX-c9f52c0679	רִצֵּד	source binyan PAAL but paradigm shape suggests PIEL (prs_me); PRS.MSG=מְרַצֵּד NFIN=לְרַצֵּד		wikt:entry:p28627:r372947:o0:t0
+VOC_UNVOC_INCONSISTENT	form	LX-f24c0c7236.PST.1SG	רִשֵּׁת	vocalized רִשַּׁתִּי (stripped רשתי) vs plene רישתתי		heb_voc:31301|heb:31435
+VOC_UNVOC_INCONSISTENT	form	LX-f24c0c7236.PST.2MSG	רִשֵּׁת	vocalized רִשַּׁתָּ (stripped רשת) vs plene רישתת		heb_voc:31304|heb:31433
+VOC_UNVOC_INCONSISTENT	form	LX-f24c0c7236.PST.2FSG	רִשֵּׁת	vocalized רִשַּׁתְּ (stripped רשת) vs plene רישתת		heb_voc:31299|heb:31434
+VOC_UNVOC_INCONSISTENT	form	LX-f24c0c7236.PST.2MPL	רִשֵּׁת	vocalized רִשַּׁתֶּם (stripped רשתם) vs plene רישתתם		heb_voc:31302|heb:31436
+VOC_UNVOC_INCONSISTENT	form	LX-f24c0c7236.PST.2FPL	רִשֵּׁת	vocalized רִשַּׁתֶּן (stripped רשתן) vs plene רישתתן		heb_voc:31303|heb:31437
+WIKT_FORM_MISMATCH	form	LX-47d1ba36b1.FUT.3MSG	רָכַב	UniMorph יִרְכֹּב vs Wiktionary יִרְכַּב		wikt:conj:p43839:r270866:t0:קל עתיד
+WIKT_FORM_MISMATCH	form	LX-47d1ba36b1.IMP.2MSG	רָכַב	UniMorph רְכֹב vs Wiktionary רְכַב		wikt:conj:p43839:r270866:t0:קל ציווי
+VOC_UNVOC_INCONSISTENT	form	LX-d602805687.PST.1SG	שֵׁרֵת	vocalized שֵׁרַתִּי (stripped שרתי) vs plene שירתתי		heb_voc:32042|heb:32448
+VOC_UNVOC_INCONSISTENT	form	LX-d602805687.PST.2MSG	שֵׁרֵת	vocalized שֵׁרַתָּ (stripped שרת) vs plene שירתת		heb_voc:32045|heb:32446
+VOC_UNVOC_INCONSISTENT	form	LX-d602805687.PST.2FSG	שֵׁרֵת	vocalized שֵׁרַתְּ (stripped שרת) vs plene שירתת		heb_voc:32040|heb:32447
+VOC_UNVOC_INCONSISTENT	form	LX-d602805687.PST.2MPL	שֵׁרֵת	vocalized שֵׁרַתֶּם (stripped שרתם) vs plene שירתתם		heb_voc:32043|heb:32449
+VOC_UNVOC_INCONSISTENT	form	LX-d602805687.PST.2FPL	שֵׁרֵת	vocalized שֵׁרַתֶּן (stripped שרתן) vs plene שירתתן		heb_voc:32044|heb:32450
+WIKT_FORM_MISMATCH	form	LX-c498149530.FUT.3MSG	שָׁבַר	UniMorph יִשְׁבֹּר vs Wiktionary יִשׁבֹּר		wikt:conj:p37647:r444409:t0:קל עתיד
+VOC_UNVOC_INCONSISTENT	form	LX-84c2e16a81.PST.1SG	שָׁבַת	vocalized שָׁבַתִּי (stripped שבתי) vs plene שבתתי		heb_voc:32161|heb:31725
+VOC_UNVOC_INCONSISTENT	form	LX-84c2e16a81.PST.2MSG	שָׁבַת	vocalized שָׁבַתָּ (stripped שבת) vs plene שבתת		heb_voc:32162|heb:31723
+VOC_UNVOC_INCONSISTENT	form	LX-84c2e16a81.PST.2FSG	שָׁבַת	vocalized שָׁבַתְּ (stripped שבת) vs plene שבתת		heb_voc:32159|heb:31724
+VOC_UNVOC_INCONSISTENT	form	LX-84c2e16a81.PST.2MPL	שָׁבַת	vocalized שְׁבַתֶּם (stripped שבתם) vs plene שבתתם		heb_voc:32150|heb:31726
+VOC_UNVOC_INCONSISTENT	form	LX-84c2e16a81.PST.2FPL	שָׁבַת	vocalized שְׁבַתֶּן (stripped שבתן) vs plene שבתתן		heb_voc:32151|heb:31727
+WIKT_FORM_MISMATCH	form	LX-46234064d7.NFIN	שָׁפַט	UniMorph לִשְׁפֹּט vs Wiktionary לְשְׁפֹּט		wikt:conj:p20043:r329086:t0:קל שם הפועל
+ROOT_AMBIGUOUS	lexeme	LX-156883c374	שָׁר	evidence supports several roots: שור, שיר	"[{""method"": ""entry_headword_exact"", ""root"": ""שׁ-י-ר"", ""binyan"": ""PAAL"", ""record"": ""wikt:entry:p11842:r520476:o67:t0"", ""page"": ""שר""}, {""method"": ""entry_headword_exact"", ""root"": ""שׁ-ו-ר"", ""binyan"": ""PAAL"", ""record"": ""wikt:entry:p11842:r520476:o3407:t0"", ""page"": ""שר""}, {""method"": ""conj_table_past_exact"", ""root"": ""שׁ-י-ר"", ""binyan"": ""PAAL"", ""record"": ""wikt:conj:p31134:r513113:t0:קל עבר"", ""page"": ""שׁיר א (שורש)""}, {""method"": ""conj_table_infinitive_exact"", ""root"": ""שׁ-י-ר"", ""binyan"": ""PAAL"", ""record"": ""wikt:conj:p31134:r513113:t0:קל שם הפועל"", ""page"": ""שׁיר א (שורש)""}]"	wikt:conj:p31134:r513113:t0:קל עבר|wikt:conj:p31134:r513113:t0:קל שם הפועל|wikt:entry:p11842:r520476:o3407:t0|wikt:entry:p11842:r520476:o67:t0
+VOC_UNVOC_INCONSISTENT	form	LX-42d535a285.PST.1SG	שָׁת	vocalized שַׁתִּי (stripped שתי) vs plene שתתי		heb_voc:32473|heb:32856
+VOC_UNVOC_INCONSISTENT	form	LX-42d535a285.PST.2MSG	שָׁת	vocalized שַׁתָּ (stripped שת) vs plene שתת		heb_voc:32476|heb:32854
+VOC_UNVOC_INCONSISTENT	form	LX-42d535a285.PST.2FSG	שָׁת	vocalized שַׁתְּ (stripped שת) vs plene שתת		heb_voc:32471|heb:32855
+VOC_UNVOC_INCONSISTENT	form	LX-42d535a285.PST.2MPL	שָׁת	vocalized שַׁתֶּם (stripped שתם) vs plene שתתם		heb_voc:32474|heb:32857
+VOC_UNVOC_INCONSISTENT	form	LX-42d535a285.PST.2FPL	שָׁת	vocalized שַׁתֶּן (stripped שתן) vs plene שתתן		heb_voc:32475|heb:32858
+VOC_UNVOC_INCONSISTENT	form	LX-44b810fc8a.PST.1SG	תִּכְנֵת	vocalized תִּכְנַתִּי (stripped תכנתי) vs plene תיכנתתי		heb_voc:32915|heb:32962
+VOC_UNVOC_INCONSISTENT	form	LX-44b810fc8a.PST.2MSG	תִּכְנֵת	vocalized תִּכְנַתָּ (stripped תכנת) vs plene תיכנתת		heb_voc:32918|heb:32960
+VOC_UNVOC_INCONSISTENT	form	LX-44b810fc8a.PST.2FSG	תִּכְנֵת	vocalized תִּכְנַתְּ (stripped תכנת) vs plene תיכנתת		heb_voc:32913|heb:32961
+VOC_UNVOC_INCONSISTENT	form	LX-44b810fc8a.PST.2MPL	תִּכְנֵת	vocalized תִּכְנַתֶּם (stripped תכנתם) vs plene תיכנתתם		heb_voc:32916|heb:32963
+VOC_UNVOC_INCONSISTENT	form	LX-44b810fc8a.PST.2FPL	תִּכְנֵת	vocalized תִּכְנַתֶּן (stripped תכנתן) vs plene תיכנתתן		heb_voc:32917|heb:32964
+WIKT_FORM_MISMATCH	form	LX-63fbaf3997.NFIN	תָּפַס	UniMorph לִתְפֹּס vs Wiktionary לִתְפֹס		wikt:conj:p17398:r392709:t0:קל שם הפועל
+VOC_UNVOC_INCONSISTENT	form	LX-fc220aa712.PST.3MSG	הִתְחַרְפֵן	הִתְחַרְפֵן vs ktiv male חרפן		wikt:entry:p6366:r397871:o0:t0
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-7e55965401	נִפַּח	entry says נפח x NIFAL; other records support roots ['נפח'] binyanim ['NIFAL', 'PIEL']		wikt:entry:p6762:r439887:o2764:t0|wikt:entry:p6762:r439887:o3179:t0
+WIKT_TABLE_ASSERTS_ROOT_BINYAN_ABSENT	lexeme	LX-e8e7d2cc06	צִבַּע	entry exists but a conjugation table marks צבע x PIEL as non-existent		wikt:conj:p10884:r269950:t0:פיעל עבר
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-d4fa343e3f	סָכָה	entry says סכה x PAAL; other records support roots ['סכה', 'שכה'] binyanim ['PAAL']		wikt:entry:p8948:r508064:o3195:t0|wikt:entry:p60178:r512197:o9:t0|wikt:conj:p58546:r414473:t0:קל עבר
+WIKT_TABLE_ASSERTS_ROOT_BINYAN_ABSENT	lexeme	LX-2db5aa5470	עֵר	entry exists but a conjugation table marks עור x PAAL as non-existent		wikt:conj:p32407:r266365:t0:קל עבר|wikt:conj:p33029:r269974:t0:קל עבר
+BINYAN_SHAPE_DISAGREES	lexeme	LX-1d17b0a590	כֻּתַּר	source PUAL vs shape PAAL (prs_no_prefix)		wikt:entry:p10976:r519795:o8657:t0
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-44c2655f1b	אֻכַּף	entry says אכפ x PIEL; other records support roots ['אכפ'] binyanim ['PIEL', 'PUAL']		wikt:entry:p11348:r511239:o4469:t0|wikt:conj:p17729:r85517:t0:פועל עבר
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-01e1ef29e8	הוּחַל	entry says חול x HUFAL; other records support roots ['חול', 'חלל'] binyanim ['HUFAL']		wikt:entry:p11444:r494232:o0:t0|wikt:entry:p11444:r494232:o663:t0|wikt:conj:p17741:r321035:t0:הופעל עבר|wikt:conj:p20089:r163651:t0:הופעל עבר
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-82f9f837f2	הוּחַל	entry says חלל x HUFAL; other records support roots ['חול', 'חלל'] binyanim ['HUFAL']		wikt:entry:p11444:r494232:o0:t0|wikt:entry:p11444:r494232:o663:t0|wikt:conj:p17741:r321035:t0:הופעל עבר|wikt:conj:p20089:r163651:t0:הופעל עבר
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-477328f513	צָר	entry says צור x PAAL; other records support roots ['צור', 'צרר'] binyanim ['PAAL']		wikt:entry:p13896:r517389:o3480:t0|wikt:entry:p13896:r517389:o4659:t0|wikt:entry:p50364:r520875:o0:t0|wikt:conj:p20075:r520876:t0:קל עבר
+WIKT_TABLE_ASSERTS_ROOT_BINYAN_ABSENT	lexeme	LX-07b18a92ca	פָּעַל	entry exists but a conjugation table marks פעל x PAAL as non-existent		wikt:conj:p56847:r388064:t0:קל עבר
+SHIN_SIN_MISMATCH	lexeme	LX-6c276c1d5a	מִשְׂכֵּן	shin/sin: ['מ-שׁ-כ-נ'] vs מִשְׂכֵּן		wikt:entry:p15355:r445121:o2174:t0
+VOC_UNVOC_INCONSISTENT	form	LX-eefd507a95.PST.3MSG	גָּל	גָּל vs ktiv male גלגל		wikt:entry:p16732:r522989:o0:t0
+WIKT_TABLE_ASSERTS_ROOT_BINYAN_ABSENT	lexeme	LX-b98b6f732d	הִתְפַּעֵל	entry exists but a conjugation table marks פעל x HITPAEL as non-existent		wikt:conj:p56847:r388064:t0:התפעל עבר
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-c91baae462	נִכָּה	entry says נכה x NIFAL; other records support roots ['נכה'] binyanim ['NIFAL', 'PIEL']		wikt:entry:p22422:r475472:o0:t0|wikt:entry:p22422:r475472:o569:t0|wikt:conj:p32643:r301996:t0:נפעל עבר|wikt:conj:p32643:r301996:t0:פיעל עבר
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-a457d161ee	נִכָּה	entry says נכה x PIEL; other records support roots ['נכה'] binyanim ['NIFAL', 'PIEL']		wikt:entry:p22422:r475472:o0:t0|wikt:entry:p22422:r475472:o569:t0|wikt:conj:p32643:r301996:t0:נפעל עבר|wikt:conj:p32643:r301996:t0:פיעל עבר
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-14e5e6e90a	נוֹכַח	entry says וכח x NIFAL; other records support roots ['וכח', 'יכח'] binyanim ['NIFAL']		wikt:entry:p23225:r512332:o60:t0|wikt:conj:p32022:r509699:t0:נפעל עבר
+ROOT_FORM_MISMATCH	lexeme	LX-7c885b5a2e	שורש	root נדר vs headword שורש		wikt:entry:p27978:r516781:o3155:t0
+VOC_UNVOC_INCONSISTENT	form	LX-7c885b5a2e.PST.3MSG	שורש	שורש vs ktiv male הודר		wikt:entry:p27978:r516781:o3155:t0
+ROOT_FORM_MISMATCH	lexeme	LX-d5938fa4a1	צִ	root צזבט vs headword צִ		wikt:entry:p28802:r391783:o0:t0
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-a52a3aab56	סֻלָּא	entry says סלא x PAAL; other records support roots ['סלא'] binyanim ['PAAL', 'PUAL']		wikt:entry:p30447:r519853:o0:t0|wikt:conj:p31300:r152831:t0:פועל עבר
+WIKT_TABLE_ASSERTS_ROOT_BINYAN_ABSENT	lexeme	LX-6f7c2b0f82	צִיֵּץ	entry exists but a conjugation table marks צוצ x PIEL as non-existent		wikt:conj:p30076:r441307:t0:פיעל עבר
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-6483f88c0d	הוֹלִיךְ	entry says ילכ x HIFIL; other records support roots ['הלכ', 'ילכ'] binyanim ['HIFIL']		wikt:entry:p34120:r402701:o0:t0|wikt:conj:p17672:r352781:t0:הפעיל עבר
+ROOT_FORM_MISMATCH	lexeme	LX-65901fb26d	סִנְגֵ	root סנגר vs headword סִנְגֵ		wikt:entry:p35205:r522901:o311:t0
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-1945407efd	שִֹבֵּר	entry says שבר x PIEL; other records support roots ['סבר', 'שבר'] binyanim ['PIEL']		wikt:entry:p41000:r523174:o5467:t0|wikt:entry:p51253:r512385:o1568:t0
+VOC_UNVOC_INCONSISTENT	form	LX-76e7a20c07.PST.3MSG	הִתְרַצָה	הִתְרַצָה vs ktiv male נרצה		wikt:entry:p42094:r261350:o19:t0
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-3c59cc9776	נִצָּה	entry says נצה x NIFAL; other records support roots ['נצה'] binyanim ['NIFAL', 'PIEL']		wikt:entry:p44818:r519935:o1980:t0|wikt:entry:p44818:r519935:o2709:t0|wikt:entry:p44818:r519935:o3320:t0
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-28debcf2e2	נִצָּה	entry says נצה x PIEL; other records support roots ['נצה'] binyanim ['NIFAL', 'PIEL']		wikt:entry:p44818:r519935:o1980:t0|wikt:entry:p44818:r519935:o2709:t0|wikt:entry:p44818:r519935:o3320:t0
+ROOT_FORM_MISMATCH	lexeme	LX-f00bfd179b	נִגֵּ	root נגס vs headword נִגֵּ		wikt:entry:p45839:r490342:o23:t0
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-604cf9784b	מָחָה	entry says מחה x PAAL; other records support roots ['מחה', 'מחי'] binyanim ['PAAL']		wikt:entry:p51460:r517777:o0:t0|wikt:entry:p51460:r517777:o1770:t0
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-0c975d4a1c	מָחָה	entry says מחי x PAAL; other records support roots ['מחה', 'מחי'] binyanim ['PAAL']		wikt:entry:p51460:r517777:o0:t0|wikt:entry:p51460:r517777:o1770:t0
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-3ffb39c040	חָשׁ	entry says חוש x PAAL; other records support roots ['חוש', 'חשש'] binyanim ['PAAL']		wikt:entry:p52229:r489705:o79:t0|wikt:entry:p52229:r489705:o1110:t0
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-d87b5c856f	חָשׁ	entry says חשש x PAAL; other records support roots ['חוש', 'חשש'] binyanim ['PAAL']		wikt:entry:p52229:r489705:o79:t0|wikt:entry:p52229:r489705:o1110:t0
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-a293280b97	נִקְלָה	entry says קלל x NIFAL; other records support roots ['קלה', 'קלל'] binyanim ['NIFAL']		wikt:entry:p52310:r510579:o74:t0|wikt:entry:p52310:r510579:o722:t0
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-0a6ced5078	נִקְלָה	entry says קלה x NIFAL; other records support roots ['קלה', 'קלל'] binyanim ['NIFAL']		wikt:entry:p52310:r510579:o74:t0|wikt:entry:p52310:r510579:o722:t0
+WIKT_TABLE_ASSERTS_ROOT_BINYAN_ABSENT	lexeme	LX-4c7aaee15e	הִבְרָה	entry exists but a conjugation table marks ברה x HIFIL as non-existent		wikt:conj:p46467:r317388:t0:הפעיל עבר
+ROOT_FORM_MISMATCH	lexeme	LX-5f8867e01b	עִסָּה	root עשה vs headword עִסָּה		wikt:entry:p53381:r493222:o0:t0
+WIKT_TABLE_ASSERTS_ROOT_BINYAN_ABSENT	lexeme	LX-730464a7ea	קוֹסֵס	entry exists but a conjugation table marks קסס x PIEL as non-existent		wikt:conj:p58517:r414003:t0:פיעל עבר
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-4028bdf1e9	הוֹבִישׁ	entry says בוש x HIFIL; other records support roots ['בוש', 'יבש'] binyanim ['HIFIL']		wikt:entry:p53516:r510203:o0:t0|wikt:entry:p53516:r510203:o667:t0
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-9e25ae0545	הוֹבִישׁ	entry says יבש x HIFIL; other records support roots ['בוש', 'יבש'] binyanim ['HIFIL']		wikt:entry:p53516:r510203:o0:t0|wikt:entry:p53516:r510203:o667:t0
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-3defd9e540	שָׁלָה	entry says שלה x PAAL; other records support roots ['שלה'] binyanim ['PAAL', 'PIEL']		wikt:entry:p55939:r510850:o106:t0|wikt:entry:p55939:r510850:o106:t1
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-79fc5bc4c1	שָׁלָה	entry says שלה x PIEL; other records support roots ['שלה'] binyanim ['PAAL', 'PIEL']		wikt:entry:p55939:r510850:o106:t0|wikt:entry:p55939:r510850:o106:t1
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-42cdf222ef	הִתְעַבָּה	entry says עבה x HITPAEL; other records support roots ['עבה', 'עבי'] binyanim ['HITPAEL']		wikt:entry:p56309:r514699:o0:t0|wikt:conj:p56307:r475457:t0:התפעל עבר
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-e20c67fd03	סָטָה	entry says סטה x PAAL; other records support roots ['סטה', 'שטה'] binyanim ['PAAL']		wikt:entry:p56321:r409073:o0:t0|wikt:entry:p22315:r493224:o1383:t0
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-4a39ca6e62	הִשִּׂיק	entry says נשק x HIFIL; other records support roots ['נסק', 'נשק'] binyanim ['HIFIL']		wikt:entry:p56703:r437349:o2331:t0|wikt:entry:p55519:r457688:o0:t0|wikt:conj:p56705:r386329:t0:הפעיל עבר
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-4825e09b01	הִתְמוֹגֵג	entry says מוג x HITPAEL; other records support roots ['מגג', 'מוג'] binyanim ['HITPAEL']		wikt:entry:p56912:r454125:o0:t0|wikt:conj:p30054:r388887:t0:התפעל עבר|wikt:conj:p56911:r388882:t0:התפעל עבר
+BINYAN_SHAPE_DISAGREES	lexeme	LX-b822ef4949	שִׁכְלֵל	source PIEL vs shape PUAL (prs_me_no_inf)		wikt:entry:p57137:r510847:o23:t0
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-e4f099c845	קָצַע	entry says קצע x PIEL; other records support roots ['קצע'] binyanim ['PAAL', 'PIEL']		wikt:entry:p57786:r509769:o0:t0|wikt:conj:p60226:r441280:t0:קל עבר
+WIKT_TABLE_ASSERTS_ROOT_BINYAN_ABSENT	lexeme	LX-ef73ea314b	נִסְמָן	entry exists but a conjugation table marks סמנ x NIFAL as non-existent		wikt:conj:p20099:r429830:t0:נפעל עבר
+WIKT_TABLE_ASSERTS_ROOT_BINYAN_ABSENT	lexeme	LX-d0ae699a21	יָפַח	entry exists but a conjugation table marks יפח x PAAL as non-existent		wikt:conj:p32898:r266405:t0:קל עבר
+VOC_UNVOC_INCONSISTENT	form	LX-7a6fb752a3.PST.3MSG	הִגִּיר	הִגִּיר vs ktiv male הי		wikt:entry:p59819:r467370:o0:t0
+WIKT_TABLE_ASSERTS_ROOT_BINYAN_ABSENT	lexeme	LX-987751f905	הוֹדַע	entry exists but a conjugation table marks ידע x HUFAL as non-existent		wikt:conj:p20093:r422476:t0:הופעל עבר
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-76696b3a68	שָׂכָה	entry says שכה x PAAL; other records support roots ['סכה', 'שכה', 'שככ'] binyanim ['PAAL']		wikt:entry:p60178:r512197:o9:t0|wikt:entry:p60178:r512197:o317:t0|wikt:entry:p8948:r508064:o3195:t0
+WIKT_ONLY_EVIDENCE_DISAGREES	lexeme	LX-70006a8e7c	שָׂכָה	entry says שככ x PAAL; other records support roots ['סכה', 'שכה', 'שככ'] binyanim ['PAAL']		wikt:entry:p60178:r512197:o9:t0|wikt:entry:p60178:r512197:o317:t0|wikt:entry:p8948:r508064:o3195:t0
+SHIN_SIN_MISMATCH	lexeme	LX-5e2a552ecd	הִתְנַשֵּׁא	shin/sin: ['נ-שׂ-א'] vs הִתְנַשֵּׁא		wikt:entry:p64171:r518851:o0:t0
