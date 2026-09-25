@@ -107,3 +107,21 @@ def test_teacher_forcing_exact_match_equals_greedy():
             a = evaluate(m, e, v, "cpu", method="greedy")["exact_match"]
             b = evaluate(m, e, v, "cpu", method="teacher_forcing")["exact_match"]
             assert a == b, (step, a, b)
+
+
+def test_synthetic_v2_weak_rules_match_hebrew():
+    from hebmorph.synthetic_v2 import realize, templates
+    def f(root, b, c):
+        return realize(templates(b)[c], root, b, c, final_forms=True)
+    assert f(list("נפל"), "HIFIL", "PST.3MSG") == "הִפִּיל"
+    assert f(list("נפל"), "PAAL", "FUT.3MSG") == "יִפֹּל"
+    assert f(list("נפל"), "PAAL", "PST.3MSG") == "נָפַל"            # nun kept when it has a vowel
+    assert f(["י", "שׁ", "ב"], "HIFIL", "PST.3MSG") == "הוֹשִׁיב"
+    assert f(["י", "שׁ", "ב"], "NIFAL", "PST.3MSG") == "נוֹשַׁב"
+    assert f(list("בנה"), "PAAL", "PST.3FSG") == "בָנְתָה"
+    assert f(list("בנה"), "PAAL", "PST.3PL") == "בָנוּ"
+    assert f(list("בנה"), "PAAL", "PST.1SG") == "בָנִיתִי"
+    assert f(list("בנה"), "PAAL", "FUT.3MSG") == "יִבְנֶה"
+    assert f(list("קומ"), "PAAL", "PST.1SG") == "קַמְתִּי"
+    assert f(list("קומ"), "PAAL", "PRS.MPL") == "קָמִים"
+    assert f(list("כתב"), "PAAL", "PST.1SG") == "כָתַבְתִּי"         # strong: pure slot filling
