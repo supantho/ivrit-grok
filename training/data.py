@@ -14,7 +14,7 @@ from dataclasses import dataclass
 
 import torch
 
-from hebmorph.loader import Example, load_split
+from hebmorph.loader import Example, TableExample, load_split, load_table_split
 
 SPECIALS = ["<pad>", "<bos>", "<sep>", "<eos>", "<unk>"]
 PAD, BOS, SEP, EOS, UNK = range(5)
@@ -26,11 +26,15 @@ class Vocab:
         self.stoi = {s: i for i, s in enumerate(self.itos)}
 
     @classmethod
-    def build(cls, examples: list[Example]) -> "Vocab":
+    def build(cls, examples) -> "Vocab":
         chars, feats = set(), set()
         for e in examples:
-            chars |= set(e.source_form) | set(e.target_form)
-            feats |= set(e.target_features.split(","))
+            if isinstance(e, TableExample):
+                chars |= set(e.target_form)
+                feats |= {"S:" + e.root_symbol, "S:" + e.template_symbol, "S:" + e.cell_symbol}
+            else:
+                chars |= set(e.source_form) | set(e.target_form)
+                feats |= set(e.target_features.split(","))
         return cls(sorted(chars), sorted(feats))
 
     def __len__(self):
@@ -47,7 +51,7 @@ class Vocab:
         for i in ids:
             if i == EOS:
                 break
-            if i >= len(SPECIALS) and not self.itos[i].startswith("F:"):
+            if i >= len(SPECIALS) and len(self.itos[i]) == 1:   # characters are single code points
                 out.append(self.itos[i])
         return "".join(out)
 
@@ -74,7 +78,10 @@ class Encoded:
 def encode(examples: list[Example], vocab: Vocab, max_len: int) -> Encoded:
     seqs, plens = [], []
     for e in examples:
-        prompt = [BOS] + vocab.enc_chars(e.source_form) + [SEP] + vocab.enc_feats(e.target_features) + [SEP]
+        if isinstance(e, TableExample):   # <bos> <R..> <T..> <C..> = target
+            prompt = [BOS] + [vocab.stoi.get("F:S:" + x, UNK) for x in (e.root_symbol, e.template_symbol, e.cell_symbol)] + [SEP]
+        else:
+            prompt = [BOS] + vocab.enc_chars(e.source_form) + [SEP] + vocab.enc_feats(e.target_features) + [SEP]
         seq = prompt + vocab.enc_chars(e.target_form) + [EOS]
         if len(seq) > max_len:
             raise ValueError(f"sequence of length {len(seq)} > max_len {max_len}: {e}")
@@ -87,15 +94,18 @@ def encode(examples: list[Example], vocab: Vocab, max_len: int) -> Encoded:
         tok[i, : len(s)] = torch.tensor(s)
         mask[i, p - 1: len(s) - 1] = True   # predict tokens p .. len-1 (target chars + <eos>)
     return Encoded(tok, mask, torch.tensor(plens), [e.target_form for e in examples],
-                   [e.target_features for e in examples])
+                   [e.cell_symbol if isinstance(e, TableExample) else e.target_features for e in examples])
 
 
 def load_partitions(view: str, split: str, condition: str, derived_base, splits_base,
-                    partitions=("train", "dev", "test")) -> dict[str, list[Example]]:
+                    partitions=("train", "dev", "test"), table: str | None = None) -> dict:
     out = {}
     for p in partitions:
         try:
-            out[p] = load_split(view, split, p, condition, derived_base=derived_base, splits_base=splits_base)
+            if table:
+                out[p] = load_table_split(table, split, p, condition)
+            else:
+                out[p] = load_split(view, split, p, condition, derived_base=derived_base, splits_base=splits_base)
         except KeyError:
             continue  # e.g. OOD splits have no 'test' in dev-only configs
     return out

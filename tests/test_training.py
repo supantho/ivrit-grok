@@ -62,3 +62,48 @@ def test_layernorm_free_variant_and_decay_groups():
     assert not any("ln" in n for n, _ in m.named_parameters())
     assert torch.isfinite(m(torch.tensor([[1, 5, 6, 2]]))).all()
     assert TrainConfig().decay_norm_and_bias is True   # Power et al.: AdamW decays every parameter
+
+
+def test_analysis_loader_rows_match_model_loader():
+    from hebmorph import paths
+    from hebmorph.loader import load_split, load_split_analysis
+    base = paths.DERIVED / "synthetic" / "v1"
+    if not (base / "splits").exists():
+        pytest.skip("synthetic splits not generated")
+    a = load_split("past_reinflection", "root_holdout_seed0", "test", "voc", base, base / "splits")
+    b = load_split_analysis("past_reinflection", "root_holdout_seed0", "test", "voc", base, base / "splits")
+    assert [(e.source_form, e.target_features, e.target_form) for e in a] == \
+        list(zip(b.source_form, b.target_features, b.target_form))
+
+
+def test_model_family_forward_and_hidden():
+    from training.model import CausalMLPLM, LSTMConfig, LSTMLM, MLPConfig, forward_hidden
+    x = torch.tensor([[1, 5, 6, 2, 7, 2, 8, 3]])
+    for m in [LSTMLM(LSTMConfig(vocab_size=12, max_len=16, d_emb=8, d_hidden=16, n_layers=2)),
+              CausalMLPLM(MLPConfig(vocab_size=12, max_len=16, d_emb=4, d_hidden=16, n_layers=2, window=16))]:
+        logits, hs = forward_hidden(m, x)
+        assert logits.shape == (1, 8, 12) and all(h.shape[:2] == (1, 8) for h in hs)
+        # causality: changing a later token must not change earlier logits
+        y = x.clone(); y[0, 6] = 9
+        assert torch.allclose(m(x)[0, :6], m(y)[0, :6], atol=1e-6)
+
+
+def test_teacher_forcing_exact_match_equals_greedy():
+    """exact_match_method='teacher_forcing' must give the same count as greedy decoding,
+    also for a half-trained model where many answers are wrong."""
+    from training.train import evaluate
+    torch.manual_seed(0)
+    ex = [Example(s, f, t) for s, f, t in [("כָּתַב", "PST,1,SG", "כָּתַבְתִּי"), ("כָּתַב", "PST,3,PL", "כָּתְבוּ"),
+                                            ("לָמַד", "PST,1,SG", "לָמַדְתִּי"), ("לָמַד", "PST,3,PL", "לָמְדוּ"),
+                                            ("שָׁמַר", "PST,1,SG", "שָׁמַרְתִּי"), ("שָׁמַר", "PST,3,PL", "שָׁמְרוּ")]]
+    v = Vocab.build(ex)
+    e = encode(ex, v, 48)
+    m = TinyGPT(ModelConfig(vocab_size=len(v), max_len=48, d_model=32, n_layers=1, n_heads=2, d_mlp=64))
+    opt = torch.optim.AdamW(m.parameters(), lr=3e-3)
+    for step in range(120):
+        loss = lm_loss(m(e.tokens), e.tokens, e.loss_mask)
+        opt.zero_grad(); loss.backward(); opt.step()
+        if step % 20 == 0:
+            a = evaluate(m, e, v, "cpu", method="greedy")["exact_match"]
+            b = evaluate(m, e, v, "cpu", method="teacher_forcing")["exact_match"]
+            assert a == b, (step, a, b)

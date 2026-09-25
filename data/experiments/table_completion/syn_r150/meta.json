@@ -1,0 +1,24 @@
+{
+ "name": "syn_r150",
+ "n_roots": 150,
+ "templates": 7,
+ "cells": 9,
+ "n_equations": 9450,
+ "select_seed": 2201,
+ "source": "data/derived/synthetic/v1/canonical (frozen HEB_MORPH_GROK_v0.1)",
+ "fractions": [
+  0.2,
+  0.3,
+  0.4,
+  0.5,
+  0.6,
+  0.7,
+  0.8
+ ],
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "table_sha256": "aab7b4a10d8a751a615f25f931d711f480aa41a8dc6d4fb6a61bc117cc6d5ba3"
+}

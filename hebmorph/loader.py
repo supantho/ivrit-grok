@@ -42,3 +42,55 @@ def load_split(view: str, split: str, partition: str, condition: str = "voc",
     df = df[(df.condition == condition) & df.pair_id.isin(ids)]
     df = df[list(VISIBLE_FIELDS)]  # hard whitelist
     return [Example(*row) for row in df.itertuples(index=False, name=None)]
+
+
+def load_split_analysis(view: str, split: str, partition: str, condition: str = "voc",
+                        derived_base: Path | None = None, splits_base: Path | None = None) -> pd.DataFrame:
+    """ANALYSIS ONLY -- never feed this to a model.  Same rows, in the same order, as
+    load_split(), plus identity and analysis__* metadata (root, binyan, cell, ...),
+    for probing / information-theoretic analysis of trained models."""
+    splits_base = splits_base or paths.SPLITS
+    manifest = json.loads((splits_base / view / split / "manifest.json").read_text())
+    ids = set(manifest["partitions"][partition]["pair_ids"])
+    df = pd.read_parquet(_view_path(view, derived_base))
+    df = df[(df.condition == condition) & df.pair_id.isin(ids)]
+    return df.reset_index(drop=True)
+
+
+# ---------------------------------------------------------------------------
+# Table-completion task (Power et al.-style): opaque root/template/cell symbols
+# ---------------------------------------------------------------------------
+TABLE_VISIBLE = ("root_symbol", "template_symbol", "cell_symbol", "target_form")
+
+
+@dataclass(frozen=True)
+class TableExample:
+    root_symbol: str       # opaque, e.g. 'R017' -- carries no letters
+    template_symbol: str   # opaque, e.g. 'T3'
+    cell_symbol: str       # opaque, e.g. 'C4'
+    target_form: str
+
+
+def table_dir(name: str) -> Path:
+    return paths.DATA / "experiments" / "table_completion" / name
+
+
+def load_table_split(name: str, split: str, partition: str, condition: str = "voc") -> list[TableExample]:
+    d = table_dir(name)
+    m = json.loads((d / "splits" / split / "manifest.json").read_text())
+    ids = set(m["partitions"][partition]["pair_ids"])
+    col = {"voc": "target_voc", "unv": "target_unv"}[condition]
+    df = pd.read_parquet(d / "table.parquet", columns=["eq_id", "root_symbol", "template_symbol", "cell_symbol", col])
+    df = df[df.eq_id.isin(ids)]
+    return [TableExample(*r) for r in df[["root_symbol", "template_symbol", "cell_symbol", col]].itertuples(index=False, name=None)]
+
+
+def load_table_split_analysis(name: str, split: str, partition: str, condition: str = "voc") -> pd.DataFrame:
+    """ANALYSIS ONLY: same rows/order as load_table_split plus analysis__* columns."""
+    d = table_dir(name)
+    m = json.loads((d / "splits" / split / "manifest.json").read_text())
+    ids = set(m["partitions"][partition]["pair_ids"])
+    df = pd.read_parquet(d / "table.parquet")
+    df = df[df.eq_id.isin(ids)].reset_index(drop=True)
+    df["target_form"] = df["target_voc" if condition == "voc" else "target_unv"]
+    return df
