@@ -1,0 +1,40 @@
+{
+ "name": "syn2_w030",
+ "n_roots": 60,
+ "weak_fraction": 0.3,
+ "tenses": [
+  "PST",
+  "PRS",
+  "FUT",
+  "IMP"
+ ],
+ "classes": [
+  "PE_NUN",
+  "PE_YOD",
+  "LAMED_HE",
+  "HOLLOW",
+  "GEMINATE"
+ ],
+ "seed": 0,
+ "fractions": [
+  0.2,
+  0.3,
+  0.5
+ ],
+ "split_seeds": [
+  0,
+  1
+ ],
+ "n_equations": 10860,
+ "n_cells": 27,
+ "class_counts": {
+  "STRONG": 42,
+  "PE_YOD": 4,
+  "PE_NUN": 4,
+  "LAMED_HE": 4,
+  "GEMINATE": 3,
+  "HOLLOW": 3
+ },
+ "generator": "hebmorph/synthetic_v2.py",
+ "table_sha256": "20f8c65d453bf02966704e453f2ef07dc5ee86cbea830b6761ae1c41fa666a41"
+}

@@ -85,7 +85,9 @@ def soft_measures(A: torch.Tensor, labels: dict[str, np.ndarray]) -> dict:
         inv_t = torch.as_tensor(inv, device=A.device)
         sums = torch.zeros(len(codes), n, device=A.device, dtype=A.dtype).index_add_(0, inv_t, A)
         cnt = torch.bincount(inv_t, minlength=len(codes)).to(A.dtype)
-        cond = sum(float(cnt[k] / cnt.sum()) * _H(sums[k]) for k in range(len(codes)))
+        P = sums / sums.sum(1, keepdim=True)                      # (labels, n): P(Z | L=l)
+        Hl = -(P * P.clamp(min=1e-12).log()).sum(1)               # vectorised H(Z | L=l)
+        cond = float(((cnt / cnt.sum()) * Hl).sum())
         out[f"I_{name}_Z"] = HZ - cond
         out[f"H_{name}"] = float(-(cnt / cnt.sum() * (cnt / cnt.sum()).log()).sum())
     for k in list(out):
@@ -107,6 +109,9 @@ def analysis_frames(cfg: TrainConfig, parts, n_max: int, seed: int = 0) -> dict:
             df["root_lbl"], df["binyan_lbl"], df["cell_lbl"] = df.analysis__root, df.analysis__binyan, df.analysis__cell
             for k in (1, 2, 3):
                 df[f"r{k}_lbl"] = df[f"analysis__r{k}"]
+            for extra in ("class", "tense"):
+                if f"analysis__{extra}" in df:
+                    df[f"{extra}_lbl"] = df[f"analysis__{extra}"]
         else:
             d, s = data_bases(cfg.dataset)
             df = load_split_analysis(cfg.view, cfg.split, p, cfg.condition, d, s)
@@ -139,13 +144,15 @@ def to_examples(cfg, df):
 def collect(model, enc, device, batch=2048):
     """Per layer: query states (N, d); answer states (M, d) with current/next token ids;
     and output-layer CE per answer token."""
-    q_layers, a_layers, x_tok, y_tok, ce = None, None, [], [], []
+    q_layers, a_layers, x_tok, y_tok, ce, exact = None, None, [], [], [], []
     for i in range(0, enc.tokens.shape[0], batch):
         tok = enc.tokens[i:i + batch].to(device)
         m = enc.loss_mask[i:i + batch].to(device)
         logits, hs = forward_hidden(model, tok)
         rows = torch.arange(tok.shape[0], device=device)
         pos = (enc.prompt_len[i:i + batch] - 1).to(device)
+        ok = (logits[:, :-1].argmax(-1) == tok[:, 1:]) | ~m[:, :-1]
+        exact.append(ok.all(1).cpu())   # teacher-forced exact match == greedy exact match
         mm = m.clone()
         mm[:, -1] = False  # positions whose NEXT token is an answer token
         q = [h[rows, pos].float() for h in hs]
@@ -155,7 +162,8 @@ def collect(model, enc, device, batch=2048):
         ce.append(F.cross_entropy(logits[:, :-1][mm[:, :-1]].float(), tok[:, 1:][mm[:, :-1]], reduction="none").cpu())
         q_layers = q if q_layers is None else [torch.cat([u, v]) for u, v in zip(q_layers, q)]
         a_layers = a if a_layers is None else [torch.cat([u, v]) for u, v in zip(a_layers, a)]
-    return q_layers, a_layers, torch.cat(x_tok).numpy(), torch.cat(y_tok).numpy(), torch.cat(ce)
+    return (q_layers, a_layers, torch.cat(x_tok).numpy(), torch.cat(y_tok).numpy(), torch.cat(ce),
+            torch.cat(exact).numpy())
 
 
 def run(run_dir: Path, parts=("train", "test"), n_max=3000, n_anchors=256, device=None, every: int = 1):
@@ -180,8 +188,14 @@ def run(run_dir: Path, parts=("train", "test"), n_max=3000, n_anchors=256, devic
         step = state["step"]
         for p, enc in encs.items():
             df = frames[p]
-            q_layers, a_layers, x_tok, y_tok, ce = collect(model, enc, device)
-            qlab = {k: df[f"{k}_lbl"].values for k in ["root", "r1", "r2", "r3", "binyan", "cell"]}
+            q_layers, a_layers, x_tok, y_tok, ce, exact = collect(model, enc, device)
+            acc_groups = {"all": float(exact.mean())}
+            for g in ("class", "tense"):
+                if f"{g}_lbl" in df:
+                    for v in sorted(set(df[f"{g}_lbl"])):
+                        acc_groups[f"{g}={v}"] = float(exact[(df[f"{g}_lbl"] == v).values].mean())
+            qlab = {k: df[f"{k}_lbl"].values for k in ["root", "r1", "r2", "r3", "binyan", "cell", "class", "tense"]
+                    if f"{k}_lbl" in df}
             qlab["answer"] = df.target_form.values
             ycounts = np.bincount(y_tok)
             py = ycounts[ycounts > 0] / ycounts.sum()
@@ -189,7 +203,7 @@ def run(run_dir: Path, parts=("train", "test"), n_max=3000, n_anchors=256, devic
             for li, (q, a) in enumerate(zip(q_layers, a_layers)):
                 rq = soft_measures(soft_assign(q, n_anchors), qlab)
                 ra = soft_measures(soft_assign(a, n_anchors), {"x": x_tok, "y": y_tok})
-                rec = dict(step=step, partition=p, layer=li, n_query=len(q), n_answer_tokens=len(a),
+                rec = dict(step=step, partition=p, layer=li, n_query=len(q), n_answer_tokens=len(a), acc=acc_groups,
                            n_anchors=n_anchors, **{f"query/{k}": v for k, v in rq.items()},
                            **{f"answer/{k}": v for k, v in ra.items()})
                 rec["answer/complexity_eff"] = ra["I_x_Z_eff"]

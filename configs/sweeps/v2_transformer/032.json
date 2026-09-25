@@ -1,0 +1,31 @@
+{
+ "condition": "voc",
+ "max_len": 40,
+ "arch": "transformer",
+ "n_layers": 1,
+ "d_model": 128,
+ "n_heads": 4,
+ "d_mlp": 512,
+ "init": "torch_default",
+ "lr": 0.0003,
+ "betas": [
+  0.9,
+  0.98
+ ],
+ "weight_decay": 1.0,
+ "decay_norm_and_bias": true,
+ "warmup_steps": 10,
+ "batch_rule": "power",
+ "steps": 100000,
+ "eval_every": 2000,
+ "eval_log_points": 60,
+ "eval_max_examples": null,
+ "exact_match_method": "teacher_forcing",
+ "n_checkpoints": 40,
+ "ckpt_every": 2000,
+ "table": "syn2_w060",
+ "split": "frac50_seed0",
+ "init_scale": 1.0,
+ "seed": 0,
+ "run_name": "v2_transformer/w060_f50_a1_s0"
+}
