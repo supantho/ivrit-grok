@@ -6,6 +6,9 @@ cd "$(dirname "$0")/.."
 SWEEP=$1; P=${2:-6}
 PY=${PYTHON:-/home/sr2982/.conda/envs/gpt-env/bin/python}
 mkdir -p "runs/$SWEEP/logs"
+# one runner per sweep: a second launch would write into the same run directories
+exec 9>"runs/$SWEEP/.lock"
+if ! flock -n 9; then echo "ERROR: sweep $SWEEP is already running (lock held)"; exit 1; fi
 ls configs/sweeps/"$SWEEP"/*.json | xargs -P "$P" -I{} bash -c \
   'f={}; n=$(basename $f .json); echo "$(date +%T) start $n"; '"$PY"' -m training.train --config $f > runs/'"$SWEEP"'/logs/$n.log 2>&1; echo "$(date +%T) done $n exit=$?"'
 echo "ALL DONE"

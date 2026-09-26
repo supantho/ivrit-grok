@@ -15,10 +15,18 @@ for d in sorted((ROOT / "runs" / name).glob("*")):
     mf = d / "metrics.jsonl"
     if not mf.exists():
         continue
-    L = [json.loads(l) for l in mf.read_text().splitlines() if l.strip()]
+    L = []
+    for l in mf.read_text().splitlines():
+        try:
+            L.append(json.loads(l))
+        except json.JSONDecodeError:   # line still being written by a running job
+            pass
+    try:
+        cfg = json.loads((d / "config.json").read_text())
+    except (json.JSONDecodeError, FileNotFoundError):
+        continue
     if not L:
         continue
-    cfg = json.loads((d / "config.json").read_text())
     first = lambda p: next((x["step"] for x in L if x.get(f"{p}/exact_match", 0) >= thr), None)
     tr, te = first("train"), first("test")
     last = L[-1]
